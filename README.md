@@ -15,3 +15,12 @@ Items
 Locations
 - Challenges for each survivor and killer
 - Optional Map wins
+
+Options
+- Toggles for each game
+- Optional additional checks for each game
+- Movesanity
+
+Disclaimers for Movesanity
+- Winning 3 times with each character requires all moves of the character
+- Only works for Forsaken currently and only survivors
