@@ -8,7 +8,8 @@ Items
 - DoD movesets
 - DoD Synergies
 - Killers
-- Skins as filler items for Forsaken, DoD, and SJ
+- Skins as filler items for Forsaken, DoD, SJ, and PS
+- Killer Door Uses
 - Reset trap
 - Wintokens
 
@@ -23,4 +24,4 @@ Options
 
 Disclaimers for Movesanity
 - Winning 3 times with each character requires all moves of the character
-- Only works for Forsaken currently and only survivors
+- Only works for Forsaken and Outcome Memories currently and only survivors
