@@ -1,0 +1,28 @@
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.game.schema.json",
+  "game": "robloxasyms",
+  "creator": "noonly",
+  "filler_item_name": "Any skin of your choice",
+  "death_link": true,
+  "starting_items": [
+    {
+      "items": [
+        "Civilian",
+        "Trickstabs",
+        "React Blocking"
+      ]
+    },
+	{
+      "item_categories": [
+        "Forsaken Maps"
+      ],
+      "random": 2
+    },
+	{
+	  "item_categories": [
+		"All Skins"
+	],
+  "random": 10
+  }
+]
+}
