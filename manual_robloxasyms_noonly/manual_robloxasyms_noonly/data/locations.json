@@ -1,0 +1,7241 @@
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.locations.schema.json",
+  "data": [
+    {
+      "name": "Win (Collect your necessary amount of Wintokens)",
+      "category": [
+        "The Win Button"
+      ],
+      "requires": "",
+      "victory": true
+    },
+	{
+      "name": "Win (Collect all Survivors)",
+      "category": [
+        "The Win Button"
+      ],
+      "requires": "",
+      "victory": true
+    },
+	{
+      "name": "Win (Collect all Survivors and Killers)",
+      "category": [
+        "The Win Button"
+      ],
+      "requires": "",
+      "victory": true
+    },
+	{
+      "name": "Win (Collect Specified amount of Survivors)",
+      "category": [
+        "The Win Button"
+      ],
+      "requires": "",
+      "victory": true
+    },
+	{
+      "name": "Win (Collect Specified amount of Survivors and Killers)",
+      "category": [
+        "The Win Button"
+      ],
+      "requires": "",
+      "victory": true
+    },
+    {
+      "name": "Win 10 times (Civilian)",
+      "category": [
+        "DoD",
+        "Civilian Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|@DoD Movesets|"
+    },
+    {
+      "name": "Stun the killer 20 times",
+      "category": [
+        "DoD",
+        "Civilian Tasks",
+        "Punch Tasks",
+        "Revolver Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Punch| or |Revolver|"
+    },
+    {
+      "name": "Stack damage on a stunned killer",
+      "category": [
+        "DoD",
+        "Civilian Tasks",
+        "Punch Tasks",
+        "Revolver Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Punch| or |Revolver|"
+    },
+    {
+      "name": "Stun the killer with Punch 10 times",
+      "category": [
+        "DoD",
+        "Punch Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Punch|"
+    },
+    {
+      "name": "Stun the killer with Punch while a teammate is in chase",
+      "category": [
+        "DoD",
+        "Punch Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Punch|"
+    },
+    {
+      "name": "Stun the killer with Punch while in chase 5 times",
+      "category": [
+        "DoD",
+        "Punch Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Punch|"
+    },
+    {
+      "name": "Stun the killer in the startup or endlag of a move",
+      "category": [
+        "DoD",
+        "Punch Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Punch|"
+    },
+    {
+      "name": "Shoot the killer with Revolver 10 times",
+      "category": [
+        "DoD",
+        "Revolver Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Revolver|"
+    },
+    {
+      "name": "Shoot the killer while a teammate is in chase 5 times",
+      "category": [
+        "DoD",
+        "Revolver Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Revolver|"
+    },
+    {
+      "name": "Shoot the killer from a sizable distance",
+      "category": [
+        "DoD",
+        "Revolver Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Revolver|"
+    },
+    {
+      "name": "Shoot the killer while in chase",
+      "category": [
+        "DoD",
+        "Revolver Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Revolver|"
+    },
+    {
+      "name": "Make the killer slip on a Banana Peel 10 times",
+      "category": [
+        "DoD",
+        "Banana Peel Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Banana Peel|"
+    },
+    {
+      "name": "Make the killer slip on a Banana Peel right after shooting it",
+      "category": [
+        "DoD",
+        "Banana Peel Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Banana Peel|"
+    },
+    {
+      "name": "Have a killer get stunned while ragdolled from your banana",
+      "category": [
+        "DoD",
+        "Banana Peel Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Banana Peel|"
+    },
+    {
+      "name": "Slip on your Banana Peel and sustain damage",
+      "category": [
+        "DoD",
+        "Banana Peel Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Banana Peel|"
+    },
+    {
+      "name": "Block an attack 10 times",
+      "category": [
+        "DoD",
+        "Block Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Block|"
+    },
+    {
+      "name": "Block a ranged attack 5 times",
+      "category": [
+        "DoD",
+        "Block Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Block|"
+    },
+    {
+      "name": "Block an attack for a teammate 5 times",
+      "category": [
+        "DoD",
+        "Block Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Block|"
+    },
+    {
+      "name": "Taunt the killer 10 times",
+      "category": [
+        "DoD",
+        "Taunt Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Taunt|"
+    },
+    {
+      "name": "Taunt the killer after taking damage with the shield",
+      "category": [
+        "DoD",
+        "Taunt Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Taunt|"
+    },
+    {
+      "name": "Don't get hit long enough for the slowness to effect the killer",
+      "category": [
+        "DoD",
+        "Taunt Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Taunt|"
+    },
+    {
+      "name": "Taunt a killer from around the corner",
+      "category": [
+        "DoD",
+        "Taunt Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Taunt|"
+    },
+    {
+      "name": "Heal a teammate 10 times",
+      "category": [
+        "DoD",
+        "Caretaker Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Caretaker|"
+    },
+    {
+      "name": "Heal at least 3 teammates at once",
+      "category": [
+        "DoD",
+        "Caretaker Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Caretaker|"
+    },
+    {
+      "name": "Try and fail to befriend the killer with a heal",
+      "category": [
+        "DoD",
+        "Caretaker Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Caretaker|"
+    },
+    {
+      "name": "Heal a teammate to full 5 times (Caretaker)",
+      "category": [
+        "DoD",
+        "Caretaker Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Caretaker|"
+    },
+    {
+      "name": "Have a teammate use your bonuspad 20 times",
+      "category": [
+        "DoD",
+        "Bonuspad Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Bonuspad|"
+    },
+    {
+      "name": "Utilize your own bonuspad in chase 5 times",
+      "category": [
+        "DoD",
+        "Bonuspad Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Bonuspad|"
+    },
+    {
+      "name": "Have a killer destroy your bonuspad 5 times",
+      "category": [
+        "DoD",
+        "Bonuspad Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Bonuspad|"
+    },
+    {
+      "name": "Reach max HP (120)",
+      "category": [
+        "DoD",
+        "Hotdog Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Hotdog|"
+    },
+    {
+      "name": "Survive with max HP",
+      "category": [
+        "DoD",
+        "Hotdog Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Hotdog|"
+    },
+    {
+      "name": "Eat a hotdog and dodge an attack",
+      "category": [
+        "DoD",
+        "Hotdog Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Hotdog|"
+    },
+    {
+      "name": "Trick a killer 10 times",
+      "category": [
+        "DoD",
+        "Cloak Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Cloak|"
+    },
+    {
+      "name": "End a chase with Adrenaline 10 times",
+      "category": [
+        "DoD",
+        "Adrenaline Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Adrenaline|"
+    },
+    {
+      "name": "End Adrenaline right next to the killer",
+      "category": [
+        "DoD",
+        "Adrenaline Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Adrenaline|"
+    },
+    {
+      "name": "Speed up 20 Civilians with Adrenaline",
+      "category": [
+        "DoD",
+        "Adrenaline Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Adrenaline|"
+    },
+    {
+      "name": "Speed up five Civilians with one Adrenaline use",
+      "category": [
+        "DoD",
+        "Adrenaline Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Adrenaline|"
+    },
+    {
+      "name": "Dash away from the killer 10 times",
+      "category": [
+        "DoD",
+        "Dash Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Dash|"
+    },
+    {
+      "name": "Dropkick the killer 10 times",
+      "category": [
+        "DoD",
+        "Dash Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Dash|"
+    },
+    {
+      "name": "Dropkick the killer off an incline 3 times",
+      "category": [
+        "DoD",
+        "Dash Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Dash|"
+    },
+    {
+      "name": "Reroll Dash or Cloak or Banana Peel",
+      "category": [
+        "DoD",
+        "Reroll Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Reroll|"
+    },
+    {
+      "name": "Reroll Revolver or Punch",
+      "category": [
+        "DoD",
+        "Reroll Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Reroll|"
+    },
+    {
+      "name": "Reroll Hotdog or Pie",
+      "category": [
+        "DoD",
+        "Reroll Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Reroll|"
+    },
+    {
+      "name": "Reroll a synergy move",
+      "category": [
+        "DoD",
+        "Reroll Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Reroll|"
+    },
+    {
+      "name": "Reroll Block or Adrenaline",
+      "category": [
+        "DoD",
+        "Reroll Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Reroll|"
+    },
+    {
+      "name": "Reroll Bugle or Flashlight",
+      "category": [
+        "DoD",
+        "Reroll Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Reroll|"
+    },
+    {
+      "name": "Reroll Bonuspad or Caretaker",
+      "category": [
+        "DoD",
+        "Reroll Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Reroll|"
+    },
+    {
+      "name": "Buff teammates with the Bugle 10 times",
+      "category": [
+        "DoD",
+        "Bugle Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Bugle|"
+    },
+    {
+      "name": "Buff 5 teammates at once with the Bugle",
+      "category": [
+        "DoD",
+        "Bugle Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Bugle|"
+    },
+    {
+      "name": "Get hit while using the Bugle",
+      "category": [
+        "DoD",
+        "Bugle Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Bugle|"
+    },
+    {
+      "name": "Daze the killer with Flashlight 5 times",
+      "category": [
+        "DoD",
+        "Flashlight Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Flashlight|"
+    },
+    {
+      "name": "Have the killer get stunned while Dazed from your Flashlight",
+      "category": [
+        "DoD",
+        "Flashlight Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Flashlight|"
+    },
+    {
+      "name": "Heal to full HP from Flashlight's self heal",
+      "category": [
+        "DoD",
+        "Flashlight Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Flashlight|"
+    },
+    {
+      "name": "Throw a Pie at the killer 5 times",
+      "category": [
+        "DoD",
+        "Pie Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Pie|"
+    },
+    {
+      "name": "Hit the killer from a sizeable distance with Pie fully charged",
+      "category": [
+        "DoD",
+        "Pie Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Pie|"
+    },
+    {
+      "name": "Hit the killer with Pie at a really close distance",
+      "category": [
+        "DoD",
+        "Pie Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Pie|"
+    },
+    {
+      "name": "Play a round as Carepad",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "Carepad Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Carepad|"
+    },
+    {
+      "name": "Heal a teammate standing on a Carepad",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "Carepad Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Carepad|"
+    },
+    {
+      "name": "Heal 10 teammates to full",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "Carepad Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Carepad|"
+    },
+    {
+      "name": "Have your Carepad destroyed by the killer",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "Carepad Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Carepad|"
+    },
+    {
+      "name": "Play a round as Loveshot",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "Loveshot Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Loveshot|"
+    },
+    {
+      "name": "Hit all three shots of a revolver use",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "Loveshot Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Loveshot|"
+    },
+    {
+      "name": "Heal yourself to full as Loveshot",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "Loveshot Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Loveshot|"
+    },
+    {
+      "name": "Heal 5 teammates",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "Loveshot Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Loveshot|"
+    },
+    {
+      "name": "Play a round as SweetTooth",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "SweetTooth Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|SweetTooth|"
+    },
+    {
+      "name": "Lower your max HP to lower than 70",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "SweetTooth Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|SweetTooth|"
+    },
+    {
+      "name": "Hit the killer with a Pie as SweetTooth",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "SweetTooth Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|SweetTooth|"
+    },
+    {
+      "name": "Get hit while eating your cake, you chud",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "SweetTooth Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|SweetTooth|"
+    },
+    {
+      "name": "Buff your teammates with Bugle as Noisemaker 5 times",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "Noisemaker Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Noisemaker|"
+    },
+    {
+      "name": "Have you or a teammate take damage while being buffed by your bugle",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "Noisemaker Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Noisemaker|"
+    },
+    {
+      "name": "Taunt the killer 5 times as Noisemaker",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "Noisemaker Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Noisemaker|"
+    },
+    {
+      "name": "Play a round as Noisemaker",
+      "category": [
+        "DoD",
+        "DoD Special Movesets",
+        "Noisemaker Tasks"
+      ],
+      "region": "DoD_S",
+      "requires": "|Noisemaker|"
+    },
+    {
+      "name": "Win (Pursuer)",
+      "category": [
+        "DoD",
+        "Pursuer Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Pursuer|"
+    },
+    {
+      "name": "Get 10 kills (Pursuer)",
+      "category": [
+        "DoD",
+        "Pursuer Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Pursuer|"
+    },
+    {
+      "name": "Get stunned while roaring or going invis",
+      "category": [
+        "DoD",
+        "Pursuer Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Pursuer|"
+    },
+    {
+      "name": "Kill a civilian with cleave",
+      "category": [
+        "DoD",
+        "Pursuer Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Pursuer|"
+    },
+    {
+      "name": "Kill a civilian slowed by a roar",
+      "category": [
+        "DoD",
+        "Pursuer Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Pursuer|"
+    },
+	{
+      "name": "Land Lunge or Chomp 5 times",
+      "category": [
+        "DoD",
+        "Pursuer Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Pursuer|"
+    },
+    {
+      "name": "Win (Badware)",
+      "category": [
+        "DoD",
+        "Badware Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Badware|"
+    },
+    {
+      "name": "Get 10 kills (Badware)",
+      "category": [
+        "DoD",
+        "Badware Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Badware|"
+    },
+    {
+      "name": "Place down max computers (4)",
+      "category": [
+        "DoD",
+        "Badware Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Badware|"
+    },
+    {
+      "name": "Kill a civilian with bolt",
+      "category": [
+        "DoD",
+        "Badware Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Badware|"
+    },
+    {
+      "name": "Kill a civilian after rifting",
+      "category": [
+        "DoD",
+        "Badware Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Badware|"
+    },
+    {
+      "name": "Throw a Civilian into a computer with bolt",
+      "category": [
+        "DoD",
+        "Badware Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Badware|"
+    },
+    {
+      "name": "Win (Artful)",
+      "category": [
+        "DoD",
+        "Artful Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Artful|"
+    },
+    {
+      "name": "Get 10 kills (Artful)",
+      "category": [
+        "DoD",
+        "Artful Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Artful|"
+    },
+    {
+      "name": "Kill a cornered Civilian",
+      "category": [
+        "DoD",
+        "Artful Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Artful|"
+    },
+    {
+      "name": "Hit a civilian then immediately Repurpose them",
+      "category": [
+        "DoD",
+        "Artful Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Artful|"
+    },
+    {
+      "name": "Hit 5 Civilians with a repurposed wall",
+      "category": [
+        "DoD",
+        "Artful Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Artful|"
+    },
+    {
+      "name": "Deal damage with a repurposed civilian",
+      "category": [
+        "DoD",
+        "Artful Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Artful|"
+    },
+    {
+      "name": "Win (Harken)",
+      "category": [
+        "DoD",
+        "Harken Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Harken|"
+    },
+    {
+      "name": "Kill 10 Civilians (Harken)",
+      "category": [
+        "DoD",
+        "Harken Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Harken|"
+    },
+    {
+      "name": "Kill a Civilian inside of Repress",
+      "category": [
+        "DoD",
+        "Harken Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Harken|"
+    },
+    {
+      "name": "Kill a Civilian before going enraged",
+      "category": [
+        "DoD",
+        "Harken Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Harken|"
+    },
+    {
+      "name": "Kill a Civilian with Pummel",
+      "category": [
+        "DoD",
+        "Harken Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Harken|"
+    },
+    {
+      "name": "Kill yourself with Immolate",
+      "category": [
+        "DoD",
+        "Harken Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Harken|"
+    },
+    {
+      "name": "Win (Killdroid)",
+      "category": [
+        "DoD",
+        "Killdroid Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Killdroid|"
+    },
+    {
+      "name": "Kill 10 Civilians (Killdroid)",
+      "category": [
+        "DoD",
+        "Killdroid Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Killdroid|"
+    },
+    {
+      "name": "Kill a Civilian with Propel",
+      "category": [
+        "DoD",
+        "Killdroid Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Killdroid|"
+    },
+    {
+      "name": "Have down max Killbots",
+      "category": [
+        "DoD",
+        "Killdroid Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Killdroid|"
+    },
+    {
+      "name": "Fall off the map",
+      "category": [
+        "DoD",
+        "Killdroid Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Killdroid|"
+    },
+    {
+      "name": "Kill 5 Civilians while flying",
+      "category": [
+        "DoD",
+        "Killdroid Tasks"
+      ],
+      "region": "DoD_K",
+      "requires": "|Killdroid|"
+    },
+    {
+      "name": "Get Launched by a Teapot",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Get killed by a Drakoboulder",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Drown",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Block Evil Scary",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks",
+        "Block Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": "|Block|"
+    },
+    {
+      "name": "Rebirth on the Sauce Clicker minigame",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Survive a night on the FNAF minigame with no 0s",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Win a game with 50 Dektop Dombs on",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Win a game with Automatic Deck Selection",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": "|@DoD Movesets|"
+    },
+    {
+      "name": "Win a Careless LMS on either side",
+      "category": [
+        "DoD",
+        "DoD LMS Tasks",
+		"Caretaker Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": "|@DoD Killers| or |Caretaker|"
+    },
+    {
+      "name": "Win a Vigilante Showdown LMS on either side",
+      "category": [
+        "DoD",
+        "DoD LMS Tasks",
+		"Revolver Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": "|Killdroid| or |Revolver|"
+    },
+    {
+      "name": "Win a Showtime LMS on either side",
+      "category": [
+        "DoD",
+        "DoD LMS Tasks",
+		"Artful Tasks",
+		"Banana Peel Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": "|Artful| or |Banana Peel|"
+    },
+    {
+      "name": "Win a Sightbreaker LMS on either side",
+      "category": [
+        "DoD",
+        "DoD LMS Tasks",
+		"Flashlight Tasks",
+		"Pursuer Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": "|Pursuer| or |Flashlight|"
+    },
+    {
+      "name": "DoD Map Survival - Augury Exhibition",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "DoD Map Survival - Baseplate",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "DoD Map Survival - Teapot Paradise",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "DoD Map Survival - Temple",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "DoD Map Survival - The HQ",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "DoD Map Survival - Tundra Trench",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "DoD Map Survival - Grandma's Backyard",
+      "category": [
+        "DoD",
+        "DoD Misc Tasks"
+      ],
+      "region": "DoD_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Use 5 Colas in one match",
+      "category": [
+        "Forsaken",
+        "Noob (Forsaken) Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Noob (Forsaken)| or |Bloxy Cola|"
+    },
+    {
+      "name": "Successfully bodyblock a teammate with Slateskin",
+      "category": [
+        "Forsaken",
+        "Noob (Forsaken) Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Noob (Forsaken)| or |Slateskin Potion|"
+    },
+    {
+      "name": "Avoid any killer's detection with Ghost Burger",
+      "category": [
+        "Forsaken",
+        "Noob (Forsaken) Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Noob (Forsaken)| or |GhostBurger|"
+    },
+    {
+      "name": "Distract a killer for a collective time of 30-60 seconds",
+      "category": [
+        "Forsaken",
+        "Noob (Forsaken) Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Noob (Forsaken)| or |Bloxy Cola|"
+    },
+    {
+      "name": "Do a generator before being found by the killer",
+      "category": [
+        "Forsaken",
+        "Noob (Forsaken) Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Noob (Forsaken)| OR (|Bloxy Cola| and |GhostBurger|)"
+    },
+    {
+      "name": "Win 3 times as Noob (Forsaken)",
+      "category": [
+        "Forsaken",
+        "Noob (Forsaken) Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Noob (Forsaken)| OR (|Bloxy Cola| and |Slateskin Potion| and |GhostBurger|)"
+    },
+    {
+      "name": "Throw a pizza on top of a teammate 3 times",
+      "category": [
+        "Forsaken",
+        "Elliot Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Elliot| or |Pizza Toss|"
+    },
+    {
+      "name": "End 3 chases with Rush Hour",
+      "category": [
+        "Forsaken",
+        "Elliot Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Elliot| or |Rush Hour|"
+    },
+    {
+      "name": "Heal a teammate 5 times with Pizza Throw",
+      "category": [
+        "Forsaken",
+        "Elliot Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Elliot| or |Pizza Toss|"
+    },
+    {
+      "name": "Get +10 buff on your heals",
+      "category": [
+        "Forsaken",
+        "Elliot Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Elliot| or |Pizza Toss|"
+    },
+    {
+      "name": "Win 3 times as Elliot",
+      "category": [
+        "Forsaken",
+        "Elliot Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Elliot| OR (|Pizza Toss| and |Rush Hour|)"
+    },
+    {
+      "name": "Stun the killer 5 times",
+      "category": [
+        "Forsaken",
+        "Shedletsky Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Shedletsky| or |Slash|"
+    },
+    {
+      "name": "Get punished while eating a chicken",
+      "category": [
+        "Forsaken",
+        "Shedletsky Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Shedletsky| or |Fried Chicken|"
+    },
+    {
+      "name": "Save a teammate from chase with a stun",
+      "category": [
+        "Forsaken",
+        "Shedletsky Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Shedletsky| or |Slash|"
+    },
+    {
+      "name": "Hit a stun after sustaining damage",
+      "category": [
+        "Forsaken",
+        "Shedletsky Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Shedletsky| or |Slash|"
+    },
+    {
+      "name": "Win 3 times as Shedletsky",
+      "category": [
+        "Forsaken",
+        "Shedletsky Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Shedletsky| OR (|Slash| and |Fried Chicken|)"
+    },
+    {
+      "name": "Reach a stack of Resonance 3",
+      "category": [
+        "Forsaken",
+        "Jane Doe Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Jane Doe| or |Crystal Pitch|"
+    },
+    {
+      "name": "Hit a resonance level 3 stun",
+      "category": [
+        "Forsaken",
+        "Jane Doe Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Jane Doe| OR (|Crystal Pitch| AND |Hatchet|)"
+    },
+    {
+      "name": "Land a Crystal Pitch from far away",
+      "category": [
+        "Forsaken",
+        "Jane Doe Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Jane Doe| or |Crystal Pitch|"
+    },
+    {
+      "name": "Purify 3 or more survivors with one Crystal Pitch",
+      "category": [
+        "Forsaken",
+        "Jane Doe Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Jane Doe| or |Crystal Pitch|"
+    },
+    {
+      "name": "Win 3 times as Jane Doe",
+      "category": [
+        "Forsaken",
+        "Jane Doe Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Jane Doe| OR (|Crystal Pitch| and |Hatchet|)"
+    },
+    {
+      "name": "Land 5 trickstabs",
+      "category": [
+        "Forsaken",
+        "Trickstabs",
+        "Two Time Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "(|Two Time| and |Trickstabs|) OR (|Sacrificial Dagger| and |Trickstabs|)"
+    },
+	{
+      "name": "Land 5 backstabs",
+      "category": [
+        "Forsaken",
+        "Two Time Tasks"
+      ],
+      "region": "Forsaken_S",
+	  "requires": "|Two Time| OR |Sacrificial Dagger|"
+    },
+    {
+      "name": "Escape chase using Crouch, or it's speed buff",
+      "category": [
+        "Forsaken",
+        "Two Time Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Two Time| or |Crouch|"
+    },
+    {
+      "name": "Bring yourself back to above 60% HP with Pray",
+      "category": [
+        "Forsaken",
+        "Two Time Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Two Time| OR (|Pray| AND |Sacrificial Dagger| AND |Ritual|)"
+    },
+    {
+      "name": "Respawn with full oblation Two Times",
+      "category": [
+        "Forsaken",
+        "Two Time Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Two Time| OR (|Sacrificial Dagger| and |Ritual|)"
+    },
+    {
+      "name": "Win 3 times as Two Time",
+      "category": [
+        "Forsaken",
+        "Two Time Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Two Time| OR (|Sacrificial Dagger| and |Crouch| and |Pray| and |Ritual|)"
+    },
+    {
+      "name": "Gain +20 overheal with Guest's Block ability",
+      "category": [
+        "Forsaken",
+        "Guest 1337 Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Guest 1337| OR |Guest Block|"
+    },
+    {
+      "name": "Stun the killer 5 times as Guest",
+      "category": [
+        "Forsaken",
+        "Guest 1337 Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Guest 1337| OR (|Guest Block| and |Guest Punch|)"
+    },
+    {
+      "name": "Land 3 drag/react blocks",
+      "category": [
+        "Forsaken",
+        "React Blocking",
+        "Guest 1337 Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "(|Guest 1337| and |React Blocking|) OR (|Guest Block| and |Guest Punch| and |React Blocking|)"
+    },
+    {
+      "name": "Charge a killer off a ledge 3 times",
+      "category": [
+        "Forsaken",
+        "Guest 1337 Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Guest 1337| or |Charge|"
+    },
+    {
+      "name": "Parry a killer after sandbagging for a teammate",
+      "category": [
+        "Forsaken",
+        "Guest 1337 Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Guest 1337| OR (|Guest Punch| and |Guest Block|)"
+    },
+    {
+      "name": "Win 3 times as Guest 1337",
+      "category": [
+        "Forsaken",
+        "Guest 1337 Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Guest 1337| OR (|Guest Block| and |Charge| and |Guest Punch|)"
+    },
+    {
+      "name": "Land Plasma Beam 10 times",
+      "category": [
+        "Forsaken",
+        "Dusekkar Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Dusekkar| or |Plasma Beam|"
+    },
+    {
+      "name": "Shield a survivor 5 times",
+      "category": [
+        "Forsaken",
+        "Dusekkar Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Dusekkar| or |Spawn Protection|"
+    },
+    {
+      "name": "Protect a survivor from a fatal hit 3 times",
+      "category": [
+        "Forsaken",
+        "Dusekkar Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Dusekkar| or |Spawn Protection|"
+    },
+    {
+      "name": "Hit a survivor and a killer with one Plasma Beam",
+      "category": [
+        "Forsaken",
+        "Dusekkar Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Dusekkar| or |Plasma Beam|"
+    },
+    {
+      "name": "Win 3 times as Dusekkar",
+      "category": [
+        "Forsaken",
+        "Dusekkar Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Dusekkar| OR (|Plasma Beam| and |Spawn Protection|)"
+    },
+    {
+      "name": "Blind the killer fully with tripmines 5 times",
+      "category": [
+        "Forsaken",
+        "Taph Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Taph| or |Subspace Tripmine|"
+    },
+    {
+      "name": "Slow the killer with tripwires 10 times",
+      "category": [
+        "Forsaken",
+        "Taph Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Taph| or |Taph Tripwire|"
+    },
+    {
+      "name": "Throw a Tripmine in chase and have it successfully blind the killer",
+      "category": [
+        "Forsaken",
+        "Taph Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Taph| or |Subspace Tripmine|"
+    },
+    {
+      "name": "Place down a tripwire near the killer",
+      "category": [
+        "Forsaken",
+        "Taph Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Taph| or |Taph Tripwire|"
+    },
+    {
+      "name": "Win 3 times as Taph",
+      "category": [
+        "Forsaken",
+        "Taph Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Taph| OR (|Subspace Tripmine| and |Taph Tripwire|)"
+    },
+    {
+      "name": "Get all 3 spray paints down",
+      "category": [
+        "Forsaken",
+        "Veeronica Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Veeronica| or |Vandalism|"
+    },
+    {
+      "name": "Land 15 tricks",
+      "category": [
+        "Forsaken",
+        "Veeronica Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Veeronica| OR (|Vandalism| and |Sk8|)"
+    },
+    {
+      "name": "Phase the killer 5 times",
+      "category": [
+        "Forsaken",
+        "Veeronica Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Veeronica| OR (|Vandalism| and |Sk8|)"
+    },
+    {
+      "name": "Bump the killer 5 times",
+      "category": [
+        "Forsaken",
+        "Veeronica Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Veeronica| OR (|Vandalism| and |Sk8| and |Broadcast|)"
+    },
+    {
+      "name": "Heal yourself to full HP with Battery",
+      "category": [
+        "Forsaken",
+        "Veeronica Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Veeronica| or |Activate Battery|"
+    },
+    {
+      "name": "Win 3 times as Veeronica",
+      "category": [
+        "Forsaken",
+        "Veeronica Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Veeronica| OR (|Vandalism| and |Sk8| and |Broadcast| and |Activate Battery|)"
+    },
+    {
+      "name": "Reroll above 110HP",
+      "category": [
+        "Forsaken",
+        "Chance Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Chance| OR (|Coin Flip| and |Chance Reroll|)"
+    },
+    {
+      "name": "Shoot the killer 5 times",
+      "category": [
+        "Forsaken",
+        "Chance Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Chance| OR (|Coin Flip| and |One Shot|)"
+    },
+    {
+      "name": "Launch the killer via your gun exploding",
+      "category": [
+        "Forsaken",
+        "Chance Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Chance| OR (|Coin Flip| and |One Shot|)"
+    },
+    {
+      "name": "Use Hat Fix to repair a broken gun",
+      "category": [
+        "Forsaken",
+        "Chance Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Chance| OR (|Coin Flip| and |One Shot| and |Hat Fix|)"
+    },
+    {
+      "name": "Win 3 times as Chance",
+      "category": [
+        "Forsaken",
+        "Chance Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Chance| OR (|Coin Flip| and |One Shot| and |Chance Reroll| and |Hat Fix|)"
+    },
+    {
+      "name": "Fool the killer with a clone",
+      "category": [
+        "Forsaken",
+        "007n7 Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|007n7| OR (|Clone| and |Inject|)"
+    },
+    {
+      "name": "Sandbag a teammate with your clone",
+      "category": [
+        "Forsaken",
+        "007n7 Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|007n7| OR (|Clone| and |Inject|)"
+    },
+    {
+      "name": "Have the killer kill your clone",
+      "category": [
+        "Forsaken",
+        "007n7 Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|007n7| OR (|Clone| and |Inject|)"
+    },
+    {
+      "name": "Teleport away from the killer while they're reasonably close",
+      "category": [
+        "Forsaken",
+        "007n7 Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|007n7| or |C00LGUI|"
+    },
+    {
+      "name": "Win 3 times as 007n7",
+      "category": [
+        "Forsaken",
+        "007n7 Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|007n7| OR (|Clone| and |C00LGUI| and |Inject|)"
+    },
+    {
+      "name": "Win 3 times as Builderman",
+      "category": [
+        "Forsaken",
+        "Builderman Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Builderman| OR (|Sentry| and |Dispenser| and |Carry|)"
+    },
+    {
+      "name": "Deal 50 total damage with a Sentry",
+      "category": [
+        "Forsaken",
+        "Builderman Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Builderman| or |Sentry|"
+    },
+    {
+      "name": "Heal 50 health with a dispenser",
+      "category": [
+        "Forsaken",
+        "Builderman Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Builderman| or |Dispenser|"
+    },
+    {
+      "name": "Place down a sentry next to the killer with Carry",
+      "category": [
+        "Forsaken",
+        "Builderman Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Builderman| OR (|Sentry| and |Carry|)"
+    },
+    {
+      "name": "Place down a dispenser 5 times",
+      "category": [
+        "Forsaken",
+        "Builderman Tasks"
+      ],
+      "region": "Forsaken_S",
+      "requires": "|Builderman| or |Dispenser|"
+    },
+    {
+      "name": "Land Behead on 2 people at once",
+      "category": [
+        "Forsaken",
+        "Slasher Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Slasher|"
+    },
+    {
+      "name": "Land Gashing Wound more than once in a match",
+      "category": [
+        "Forsaken",
+        "Slasher Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Slasher|"
+    },
+    {
+      "name": "Punish a sentinel for whiffing",
+      "category": [
+        "Forsaken",
+        "Slasher Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Slasher|"
+    },
+    {
+      "name": "Get 10 kills as Slasher",
+      "category": [
+        "Forsaken",
+        "Slasher Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Slasher|"
+    },
+    {
+      "name": "Win 2 times as Slasher",
+      "category": [
+        "Forsaken",
+        "Slasher Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Slasher|"
+    },
+    {
+      "name": "Hit 2+ people with Entanglement or Mass Infection",
+      "category": [
+        "Forsaken",
+        "1x1x1x1 Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|1x1x1x1|"
+    },
+    {
+      "name": "Land a close-range Mass Infection",
+      "category": [
+        "Forsaken",
+        "1x1x1x1 Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|1x1x1x1|"
+    },
+    {
+      "name": "Kill a survivor with any ranged move",
+      "category": [
+        "Forsaken",
+        "1x1x1x1 Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|1x1x1x1|"
+    },
+    {
+      "name": "Get 10 kills as 1x1x1x1",
+      "category": [
+        "Forsaken",
+        "1x1x1x1 Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|1x1x1x1|"
+    },
+    {
+      "name": "Win 2 times as 1x1x1x1",
+      "category": [
+        "Forsaken",
+        "1x1x1x1 Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|1x1x1x1|"
+    },
+    {
+      "name": "Land Walkspeed Override 5 times",
+      "category": [
+        "Forsaken",
+        "Coolkidd Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Coolkidd|"
+    },
+    {
+      "name": "Hit a survivor with your minions",
+      "category": [
+        "Forsaken",
+        "Coolkidd Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Coolkidd|"
+    },
+    {
+      "name": "Hit 2+ survivors with Corrupt Nature",
+      "category": [
+        "Forsaken",
+        "Coolkidd Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Coolkidd|"
+    },
+    {
+      "name": "Get 10 kills as Coolkidd",
+      "category": [
+        "Forsaken",
+        "Coolkidd Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Coolkidd|"
+    },
+    {
+      "name": "Kill a survivor with damage over time",
+      "category": [
+        "Forsaken",
+        "Coolkidd Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Coolkidd|"
+    },
+    {
+      "name": "Win 2 times as Coolkidd",
+      "category": [
+        "Forsaken",
+        "Coolkidd Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Coolkidd|"
+    },
+    {
+      "name": "Deal more than 30 damage with one Corrupt Energy",
+      "category": [
+        "Forsaken",
+        "John Doe Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|John Doe|"
+    },
+    {
+      "name": "Place 3 Digital Footprints on the map",
+      "category": [
+        "Forsaken",
+        "John Doe Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|John Doe|"
+    },
+    {
+      "name": "Kill a survivor under the effects of a Digital Footprint",
+      "category": [
+        "Forsaken",
+        "John Doe Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|John Doe|"
+    },
+    {
+      "name": "Kill a survivor with Corrupt Energy",
+      "category": [
+        "Forsaken",
+        "John Doe Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|John Doe|"
+    },
+    {
+      "name": "Get 10 kills as John Doe",
+      "category": [
+        "Forsaken",
+        "John Doe Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|John Doe|"
+    },
+    {
+      "name": "Win 2 times as John Doe",
+      "category": [
+        "Forsaken",
+        "John Doe Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|John Doe|"
+    },
+    {
+      "name": "Win a bloodhook struggle",
+      "category": [
+        "Forsaken",
+        "Nosferatu Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Nosferatu|"
+    },
+    {
+      "name": "Trap someone with Cataclysm",
+      "category": [
+        "Forsaken",
+        "Nosferatu Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Nosferatu|"
+    },
+    {
+      "name": "Kill a survivor while invisible",
+      "category": [
+        "Forsaken",
+        "Nosferatu Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Nosferatu|"
+    },
+    {
+      "name": "Land a maximum Ascension",
+      "category": [
+        "Forsaken",
+        "Nosferatu Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Nosferatu|"
+    },
+    {
+      "name": "Get 10 kills as Nosferatu",
+      "category": [
+        "Forsaken",
+        "Nosferatu Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Nosferatu|"
+    },
+    {
+      "name": "Win 2 times as Nosferatu",
+      "category": [
+        "Forsaken",
+        "Nosferatu Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Nosferatu|"
+    },
+    {
+      "name": "Land a fully charged Demonic Pursuit",
+      "category": [
+        "Forsaken",
+        "Guest 666 Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Guest 666|"
+    },
+    {
+      "name": "Close the gap in chase with Infernal Cry speed boost",
+      "category": [
+        "Forsaken",
+        "Guest 666 Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Guest 666|"
+    },
+    {
+      "name": "Affect 5 people with Hemmorrhage",
+      "category": [
+        "Forsaken",
+        "Guest 666 Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Guest 666|"
+    },
+    {
+      "name": "Give the Hemmorrhage effect every way possible once",
+      "category": [
+        "Forsaken",
+        "Guest 666 Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Guest 666|"
+    },
+    {
+      "name": "Enter Blood Rush 5 times",
+      "category": [
+        "Forsaken",
+        "Guest 666 Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Guest 666|"
+    },
+    {
+      "name": "Get 10 kills as Guest 666",
+      "category": [
+        "Forsaken",
+        "Guest 666 Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Guest 666|"
+    },
+    {
+      "name": "Win 2 times as Guest 666",
+      "category": [
+        "Forsaken",
+        "Guest 666 Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Guest 666|"
+    },
+    {
+      "name": "Hit 3 survivors with one Void Rush and successfully slam someone",
+      "category": [
+        "Forsaken",
+        "Noli Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Noli|"
+    },
+    {
+      "name": "Land Nova on 2+ people at once",
+      "category": [
+        "Forsaken",
+        "Noli Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Noli|"
+    },
+    {
+      "name": "Teleport to a generator, then immediately Void Rush slam a survivor",
+      "category": [
+        "Forsaken",
+        "Noli Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Noli|"
+    },
+    {
+      "name": "Kill a survivor with Nova",
+      "category": [
+        "Forsaken",
+        "Noli Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Noli|"
+    },
+    {
+      "name": "Get 10 kills as Noli",
+      "category": [
+        "Forsaken",
+        "Noli Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Noli|"
+    },
+    {
+      "name": "Win 2 times as Noli",
+      "category": [
+        "Forsaken",
+        "Noli Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Noli|"
+    },
+	{
+      "name": "Win 2 times as Azure",
+      "category": [
+        "Forsaken",
+        "Azure Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Azure|"
+    },
+	{
+      "name": "Kill a Survivor ensnared by Stigmatize",
+      "category": [
+        "Forsaken",
+        "Azure Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Azure|"
+    },
+	{
+      "name": "Throw a survivor into a Stigmatize or Seeker Bulb",
+      "category": [
+        "Forsaken",
+        "Azure Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Azure|"
+    },
+	{
+      "name": "Kill 2 survivors as a Golem",
+      "category": [
+        "Forsaken",
+        "Azure Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Azure|"
+    },
+	{
+      "name": "Kill a survivor with Seeker Bulb's damage",
+      "category": [
+        "Forsaken",
+        "Azure Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Azure|"
+    },
+	{
+      "name": "Kill a Survivor with either Unearthing or Blooming",
+      "category": [
+        "Forsaken",
+        "Azure Tasks"
+      ],
+      "region": "Forsaken_K",
+      "requires": "|Azure|"
+    },
+    {
+      "name": "Use a Medkit to heal to full",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Use a Bloxy Cola in chase",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Kill a full lobby as a killer",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "|@Forsaken Killers|"
+    },
+    {
+      "name": "Complete the huge generator in the lobby",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Brandon6875935's Place",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Yorick's Resting Place",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+	{
+      "name": "Win a match as survivor in the randomized game mode",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "|@Forsaken Survivors|"
+    },
+	{
+      "name": "Win a match as killer in the randomized game mode",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "|@Forsaken Killers|"
+    },
+    {
+      "name": "Forsaken Map Survival - Glass Houses",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Horror Hotel",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Planet Voss",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Ultimate Assasin Grounds",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Pirate Bay",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Underground War",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - C00l Carnival",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - The Tempest",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Work at a Pizza Place",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Classic Battlegrounds",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Cake Factory",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Beach House Paradise",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Bloodfell Manor",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Familar Ruins",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Forsaken Map Survival - Natural Disaster Survival",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+	{
+      "name": "Forsaken Map Survival - Roblox HQ",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+	{
+      "name": "Forsaken Map Survival - Reborn Family Abode",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+	{
+      "name": "Glass Houses Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Glass Houses Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Glass Houses|"
+    },
+	{
+      "name": "Glass Houses Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Glass Houses Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Glass Houses|"
+    },
+	{
+      "name": "Glass Houses Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Glass Houses Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Glass Houses|"
+    },
+	{
+      "name": "Glass Houses Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Glass Houses Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Glass Houses|"
+    },
+	{
+      "name": "Glass Houses Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Glass Houses Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Glass Houses|"
+    },
+	{
+      "name": "Glass Houses Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Glass Houses Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Glass Houses|"
+    },
+	{
+      "name": "Glass Houses Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Glass Houses Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Glass Houses|"
+    },
+	{
+      "name": "C00l Carnival Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"C00l Carnival Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|C00l Carnival|"
+    },
+	{
+      "name": "C00l Carnival Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"C00l Carnival Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|C00l Carnival|"
+    },
+	{
+      "name": "C00l Carnival Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"C00l Carnival Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|C00l Carnival|"
+    },
+	{
+      "name": "C00l Carnival Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"C00l Carnival Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|C00l Carnival|"
+    },
+	{
+      "name": "C00l Carnival Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"C00l Carnival Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|C00l Carnival|"
+    },
+	{
+      "name": "C00l Carnival Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"C00l Carnival Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|C00l Carnival|"
+    },
+	{
+      "name": "Brandon6875935's Place Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Brandon6875935's Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Brandon6875935's Place|"
+    },
+	{
+      "name": "Brandon6875935's Place Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Brandon6875935's Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Brandon6875935's Place|"
+    },
+	{
+      "name": "Brandon6875935's Place Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Brandon6875935's Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Brandon6875935's Place|"
+    },
+	{
+      "name": "Brandon6875935's Place Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Brandon6875935's Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Brandon6875935's Place|"
+    },
+	{
+      "name": "Brandon6875935's Place Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Brandon6875935's Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Brandon6875935's Place|"
+    },
+	{
+      "name": "Brandon6875935's Place Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Brandon6875935's Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Brandon6875935's Place|"
+    },
+	{
+      "name": "Brandon6875935's Place Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Brandon6875935's Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Brandon6875935's Place|"
+    },
+	{
+      "name": "Brandon6875935's Place Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Brandon6875935's Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Brandon6875935's Place|"
+    },
+	{
+      "name": "Brandon6875935's Place Gen 9",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Brandon6875935's Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Brandon6875935's Place|"
+    },
+	{
+      "name": "Brandon6875935's Place Gen 10",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Brandon6875935's Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Brandon6875935's Place|"
+    },
+	{
+      "name": "Yorick's Resting Place Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Yorick's Resting Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Yorick's Resting Place|"
+    },
+	{
+      "name": "Yorick's Resting Place Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Yorick's Resting Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Yorick's Resting Place|"
+    },
+	{
+      "name": "Yorick's Resting Place Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Yorick's Resting Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Yorick's Resting Place|"
+    },
+	{
+      "name": "Yorick's Resting Place Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Yorick's Resting Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Yorick's Resting Place|"
+    },
+	{
+      "name": "Yorick's Resting Place Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Yorick's Resting Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Yorick's Resting Place|"
+    },
+	{
+      "name": "Yorick's Resting Place Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Yorick's Resting Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Yorick's Resting Place|"
+    },
+	{
+      "name": "Yorick's Resting Place Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Yorick's Resting Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Yorick's Resting Place|"
+    },
+	{
+      "name": "Yorick's Resting Place Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Yorick's Resting Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Yorick's Resting Place|"
+    },
+	{
+      "name": "Yorick's Resting Place Gen 9",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Yorick's Resting Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Yorick's Resting Place|"
+    },
+	{
+      "name": "Ultimate Assassin Grounds Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Ultimate Assassin Grounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Ultimate Assassin Grounds|"
+    },
+	{
+      "name": "Ultimate Assassin Grounds Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Ultimate Assassin Grounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Ultimate Assassin Grounds|"
+    },
+	{
+      "name": "Ultimate Assassin Grounds Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Ultimate Assassin Grounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Ultimate Assassin Grounds|"
+    },
+	{
+      "name": "Ultimate Assassin Grounds Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Ultimate Assassin Grounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Ultimate Assassin Grounds|"
+    },
+	{
+      "name": "Ultimate Assassin Grounds Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Ultimate Assassin Grounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Ultimate Assassin Grounds|"
+    },
+	{
+      "name": "Ultimate Assassin Grounds Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Ultimate Assassin Grounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Ultimate Assassin Grounds|"
+    },
+	{
+      "name": "Ultimate Assassin Grounds Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Ultimate Assassin Grounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Ultimate Assassin Grounds|"
+    },
+	{
+      "name": "Ultimate Assassin Grounds Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Ultimate Assassin Grounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Ultimate Assassin Grounds|"
+    },
+	{
+      "name": "Planet Voss Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Planet Voss Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Planet Voss|"
+    },
+	{
+      "name": "Planet Voss Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Planet Voss Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Planet Voss|"
+    },
+	{
+      "name": "Planet Voss Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Planet Voss Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Planet Voss|"
+    },
+	{
+      "name": "Planet Voss Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Planet Voss Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Planet Voss|"
+    },
+	{
+      "name": "Planet Voss Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Planet Voss Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Planet Voss|"
+    },
+	{
+      "name": "Planet Voss Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Planet Voss Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Planet Voss|"
+    },
+	{
+      "name": "Planet Voss Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Planet Voss Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Planet Voss|"
+    },
+	{
+      "name": "Planet Voss Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Planet Voss Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Planet Voss|"
+    },
+	{
+      "name": "Planet Voss Gen 9",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Planet Voss Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Planet Voss|"
+    },
+	{
+      "name": "Pirate Bay Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Pirate Bay Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Pirate Bay|"
+    },
+	{
+      "name": "Pirate Bay Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Pirate Bay Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Pirate Bay|"
+    },
+	{
+      "name": "Pirate Bay Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Pirate Bay Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Pirate Bay|"
+    },
+	{
+      "name": "Pirate Bay Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Pirate Bay Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Pirate Bay|"
+    },
+	{
+      "name": "Pirate Bay Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Pirate Bay Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Pirate Bay|"
+    },
+	{
+      "name": "Pirate Bay Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Pirate Bay Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Pirate Bay|"
+    },
+	{
+      "name": "Underground War Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Underground War Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Underground War|"
+    },
+	{
+      "name": "Underground War Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Underground War Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Underground War|"
+    },
+	{
+      "name": "Underground War Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Underground War Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Underground War|"
+    },
+	{
+      "name": "Underground War Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Underground War Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Underground War|"
+    },
+	{
+      "name": "Underground War Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Underground War Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Underground War|"
+    },
+	{
+      "name": "Underground War Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Underground War Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Underground War|"
+    },
+	{
+      "name": "Underground War Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Underground War Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Underground War|"
+    },
+	{
+      "name": "The Tempest Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"The Tempest Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|The Tempest|"
+    },
+	{
+      "name": "The Tempest Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"The Tempest Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|The Tempest|"
+    },
+	{
+      "name": "The Tempest Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"The Tempest Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|The Tempest|"
+    },
+	{
+      "name": "The Tempest Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"The Tempest Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|The Tempest|"
+    },
+	{
+      "name": "The Tempest Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"The Tempest Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|The Tempest|"
+    },
+	{
+      "name": "The Tempest Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"The Tempest Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|The Tempest|"
+    },
+	{
+      "name": "The Tempest Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"The Tempest Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|The Tempest|"
+    },
+	{
+      "name": "The Tempest Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"The Tempest Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|The Tempest|"
+    },
+	{
+      "name": "Work at a Pizza Place Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Work at a Pizza Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Work at a Pizza Place|"
+    },
+	{
+      "name": "Work at a Pizza Place Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Work at a Pizza Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Work at a Pizza Place|"
+    },
+	{
+      "name": "Work at a Pizza Place Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Work at a Pizza Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Work at a Pizza Place|"
+    },
+	{
+      "name": "Work at a Pizza Place Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Work at a Pizza Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Work at a Pizza Place|"
+    },
+	{
+      "name": "Work at a Pizza Place Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Work at a Pizza Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Work at a Pizza Place|"
+    },
+	{
+      "name": "Work at a Pizza Place Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Work at a Pizza Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Work at a Pizza Place|"
+    },
+	{
+      "name": "Work at a Pizza Place Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Work at a Pizza Place Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Work at a Pizza Place|"
+    },
+	{
+      "name": "Classic Battlegrounds Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Classic Battlegrounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Classic Battlegrounds|"
+    },
+	{
+      "name": "Classic Battlegrounds Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Classic Battlegrounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Classic Battlegrounds|"
+    },
+	{
+      "name": "Classic Battlegrounds Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Classic Battlegrounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Classic Battlegrounds|"
+    },
+	{
+      "name": "Classic Battlegrounds Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Classic Battlegrounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Classic Battlegrounds|"
+    },
+	{
+      "name": "Classic Battlegrounds Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Classic Battlegrounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Classic Battlegrounds|"
+    },
+	{
+      "name": "Classic Battlegrounds Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Classic Battlegrounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Classic Battlegrounds|"
+    },
+	{
+      "name": "Classic Battlegrounds Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Classic Battlegrounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Classic Battlegrounds|"
+    },
+	{
+      "name": "Classic Battlegrounds Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Classic Battlegrounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Classic Battlegrounds|"
+    },
+	{
+      "name": "Classic Battlegrounds Gen 9",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Classic Battlegrounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Classic Battlegrounds|"
+    },
+	{
+      "name": "Classic Battlegrounds Gen 10",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Classic Battlegrounds Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Classic Battlegrounds|"
+    },
+	{
+      "name": "Cake Factory Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Cake Factory Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Cake Factory|"
+    },
+	{
+      "name": "Cake Factory Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Cake Factory Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Cake Factory|"
+    },
+	{
+      "name": "Cake Factory Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Cake Factory Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Cake Factory|"
+    },
+	{
+      "name": "Cake Factory Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Cake Factory Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Cake Factory|"
+    },
+	{
+      "name": "Cake Factory Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Cake Factory Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Cake Factory|"
+    },
+	{
+      "name": "Cake Factory Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Cake Factory Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Cake Factory|"
+    },
+	{
+      "name": "Cake Factory Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Cake Factory Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Cake Factory|"
+    },
+	{
+      "name": "Horror Hotel Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Horror Hotel Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Horror Hotel|"
+    },
+	{
+      "name": "Horror Hotel Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Horror Hotel Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Horror Hotel|"
+    },
+	{
+      "name": "Horror Hotel Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Horror Hotel Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Horror Hotel|"
+    },
+	{
+      "name": "Horror Hotel Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Horror Hotel Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Horror Hotel|"
+    },
+	{
+      "name": "Horror Hotel Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Horror Hotel Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Horror Hotel|"
+    },
+	{
+      "name": "Horror Hotel Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Horror Hotel Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Horror Hotel|"
+    },
+	{
+      "name": "Horror Hotel Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Horror Hotel Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Horror Hotel|"
+    },
+	{
+      "name": "Horror Hotel Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Horror Hotel Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Horror Hotel|"
+    },
+	{
+      "name": "Horror Hotel Gen 9",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Horror Hotel Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Horror Hotel|"
+    },
+	{
+      "name": "Beach House Paradise Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Beach House Paradise Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Beach House Paradise|"
+    },
+	{
+      "name": "Beach House Paradise Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Beach House Paradise Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Beach House Paradise|"
+    },
+	{
+      "name": "Beach House Paradise Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Beach House Paradise Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Beach House Paradise|"
+    },
+	{
+      "name": "Beach House Paradise Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Beach House Paradise Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Beach House Paradise|"
+    },
+	{
+      "name": "Beach House Paradise Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Beach House Paradise Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Beach House Paradise|"
+    },
+	{
+      "name": "Beach House Paradise Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Beach House Paradise Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Beach House Paradise|"
+    },
+	{
+      "name": "Beach House Paradise Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Beach House Paradise Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Beach House Paradise|"
+    },
+	{
+      "name": "Beach House Paradise Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Beach House Paradise Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Beach House Paradise|"
+    },
+	{
+      "name": "Beach House Paradise Gen 9",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Beach House Paradise Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Beach House Paradise|"
+    },
+	{
+      "name": "Beach House Paradise Gen 10",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Beach House Paradise Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Beach House Paradise|"
+    },
+	{
+      "name": "Beach House Paradise Gen 11",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Beach House Paradise Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Beach House Paradise|"
+    },
+	{
+      "name": "Blood Fell Manor Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Blood Fell Manor Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Blood Fell Manor|"
+    },
+	{
+      "name": "Blood Fell Manor Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Blood Fell Manor Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Blood Fell Manor|"
+    },
+	{
+      "name": "Blood Fell Manor Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Blood Fell Manor Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Blood Fell Manor|"
+    },
+	{
+      "name": "Blood Fell Manor Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Blood Fell Manor Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Blood Fell Manor|"
+    },
+	{
+      "name": "Blood Fell Manor Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Blood Fell Manor Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Blood Fell Manor|"
+    },
+	{
+      "name": "Blood Fell Manor Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Blood Fell Manor Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Blood Fell Manor|"
+    },
+	{
+      "name": "Blood Fell Manor Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Blood Fell Manor Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Blood Fell Manor|"
+    },
+	{
+      "name": "Blood Fell Manor Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Blood Fell Manor Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Blood Fell Manor|"
+    },
+	{
+      "name": "Blood Fell Manor Gen 9",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Blood Fell Manor Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Blood Fell Manor|"
+    },
+	{
+      "name": "Natural Disaster Island Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Natural Disaster Island Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Natural Disaster Island|"
+    },
+	{
+      "name": "Natural Disaster Island Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Natural Disaster Island Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Natural Disaster Island|"
+    },
+	{
+      "name": "Natural Disaster Island Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Natural Disaster Island Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Natural Disaster Island|"
+    },
+	{
+      "name": "Natural Disaster Island Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Natural Disaster Island Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Natural Disaster Island|"
+    },
+	{
+      "name": "Natural Disaster Island Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Natural Disaster Island Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Natural Disaster Island|"
+    },
+	{
+      "name": "Natural Disaster Island Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Natural Disaster Island Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Natural Disaster Island|"
+    },
+	{
+      "name": "Natural Disaster Island Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Natural Disaster Island Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Natural Disaster Island|"
+    },
+	{
+      "name": "Natural Disaster Island Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Natural Disaster Island Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Natural Disaster Island|"
+    },
+	{
+      "name": "Familiar Ruins Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Familiar Ruins Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Familiar Ruins|"
+    },
+	{
+      "name": "Familiar Ruins Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Familiar Ruins Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Familiar Ruins|"
+    },
+	{
+      "name": "Familiar Ruins Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Familiar Ruins Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Familiar Ruins|"
+    },
+	{
+      "name": "Familiar Ruins Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Familiar Ruins Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Familiar Ruins|"
+    },
+	{
+      "name": "Familiar Ruins Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Familiar Ruins Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Familiar Ruins|"
+    },
+	{
+      "name": "Familiar Ruins Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Familiar Ruins Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Familiar Ruins|"
+    },
+	{
+      "name": "Familiar Ruins Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Familiar Ruins Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Familiar Ruins|"
+    },
+	{
+      "name": "Familiar Ruins Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Familiar Ruins Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Familiar Ruins|"
+    },
+	{
+      "name": "Familiar Ruins Gen 9",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Familiar Ruins Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Familiar Ruins|"
+    },
+	{
+      "name": "Reborn Family Abode Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Reborn Family Abode Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Reborn Family Abode|"
+    },
+	{
+      "name": "Reborn Family Abode Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Reborn Family Abode Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Reborn Family Abode|"
+    },
+	{
+      "name": "Reborn Family Abode Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Reborn Family Abode Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Reborn Family Abode|"
+    },
+	{
+      "name": "Reborn Family Abode Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Reborn Family Abode Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Reborn Family Abode|"
+    },
+	{
+      "name": "Reborn Family Abode Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Reborn Family Abode Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Reborn Family Abode|"
+    },
+	{
+      "name": "Reborn Family Abode Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Reborn Family Abode Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Reborn Family Abode|"
+    },
+	{
+      "name": "Reborn Family Abode Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Reborn Family Abode Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Reborn Family Abode|"
+    },
+	{
+      "name": "Roblox HQ Gen 1",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Roblox HQ Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Roblox HQ|"
+    },
+	{
+      "name": "Roblox HQ Gen 2",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Roblox HQ Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Roblox HQ|"
+    },
+	{
+      "name": "Roblox HQ Gen 3",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Roblox HQ Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Roblox HQ|"
+    },
+	{
+      "name": "Roblox HQ Gen 4",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Roblox HQ Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Roblox HQ|"
+    },
+	{
+      "name": "Roblox HQ Gen 5",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Roblox HQ Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Roblox HQ|"
+    },
+	{
+      "name": "Roblox HQ Gen 6",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Roblox HQ Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Roblox HQ|"
+    },
+	{
+      "name": "Roblox HQ Gen 7",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Roblox HQ Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Roblox HQ|"
+    },
+	{
+      "name": "Roblox HQ Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Roblox HQ Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Roblox HQ|"
+    },
+	{
+      "name": "Roblox HQ Gen 9",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Roblox HQ Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Roblox HQ|"
+    },
+	{
+      "name": "Win a Dead Ringer LMS on either side (Noob Vs Sixer)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "|Noob (Forsaken)| OR |Guest 666| OR (|Bloxy Cola| AND |Slateskin Potion| AND |GhostBurger|)"
+    },
+	{
+      "name": "Win a Plead LMS on either side (007n7 Vs C00lkidd)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "|Coolkidd| OR |007n7| OR (|Clone| AND |C00LGUI| AND |Inject|)"
+    },
+	{
+      "name": "Win a Creation of Hatred LMS on either side (Shedletsky Vs 1x)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "|Shedletsky| OR |1x1x1x1| OR (|Slash| AND |Fried Chicken|)"
+    },
+	{
+      "name": "Win a You and I LMS on either side (John Doe Vs Jane Doe)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "|John Doe| OR |Jane Doe| OR (|Crystal Pitch| AND |Hatchet|)"
+    },
+	{
+      "name": "Win a And The Seraphim Wept LMS on either side (Two Time Vs Azure)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "|Two Time| OR |Azure| OR (|Sacrificial Dagger| AND |Crouch| AND |Pray| AND |Ritual|)"
+    },
+	{
+      "name": "Win a Made just 4 u LMS on either side (118o8 Vs Bluudud)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks",
+        "Forsaken Skin LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "(|007n7| AND |007n7 Skin - 118o8|) OR (|Clone| AND |C00LGUI| AND |Inject| AND |007n7 Skin - 118o8|) OR (|Coolkidd| AND |C00lkidd Skin - bluudud|)"
+    },
+	{
+      "name": "Win a Burnout LMS on either side (Ghoul Two Time Vs Diva 1x1x1x1)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks",
+        "Forsaken Skin LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+	 "requires": "(|Two Time| AND |Two Time Skin - Ghoul|) OR (|Sacrificial Dagger| AND |Crouch| AND |Pray| AND |Ritual| AND |Two Time Skin - Ghoul|) OR (|1x1x1x1| AND |1x1x1x1 Skin - Diva|)"
+    },
+	{
+      "name": "Win a Through Patches of Violet LMS on either side (Heartbroken Shedletsky Vs Hacklord 1x1x1x1)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks",
+        "Forsaken Skin LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "(|Shedletsky| AND |Shedletsky Skin - The Heartbroken|) OR (|Slash| AND |Fried Chicken| AND |Shedletsky Skin - The Heartbroken|) OR (|1x1x1x1| AND |1x1x1x1 Skin - Hacklord|)"
+    },
+	{
+      "name": "Win a Perpetuity LMS on either side (DoD Survivor Vs DoD Killer)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks",
+        "Forsaken Skin LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "(|Noob (Forsaken)| AND |Noob Skin - Taunt|) OR (|Bloxy Cola| AND |Slateskin Potion| AND |GhostBurger| AND |Noob Skin - Taunt|) OR (|Shedletsky| AND |Shedletsky Skin - Hot Dog|) OR (|Slash| AND |Fried Chicken| AND |Shedletsky Skin - Hot Dog|) OR (|Elliot| AND |Elliot Skin - Caretaker|) OR (|Pizza Toss| AND |Rush Hour| AND |Elliot Skin - Caretaker|) OR (|Builderman| AND |Builderman Skin - Carepad|) OR (|Sentry| AND |Dispenser| AND |Carry| AND |Builderman Skin - Carepad|) OR (|Guest 1337| AND |Guest 1337 Skin - Block|) OR (|Guest Block| AND |Charge| AND |Guest Punch| AND |Guest 1337 Skin - Block|) OR (|Two Time| AND |Two Time Skin - Cloak|) OR (|Sacrificial Dagger| AND |Crouch| AND |Pray| AND |Ritual| AND |Two Time Skin - Cloak|) OR (|Taph| AND |Taph Skin - Banana|) OR (|Subspace Tripmine| AND |Taph Tripwire| AND |Taph Skin - Banana|) OR (|Chance| AND |Chance Skin - Revolver|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix| AND |Chance Skin - Revolver|) OR (|Chance| AND |Chance Skin - Loveshot|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix| AND |Chance Skin - Loveshot|) OR (|Slasher| AND |Slasher Skin - Pursuer|) OR (|Noli| AND |Noli Skin - Artful|) OR (|Noli| AND |Noli Skin - Devesto|)"
+    },
+	{
+      "name": "Win a the Way it Ends LMS on either side (SCP Killer Vs Guard Guest 1337)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks",
+        "Forsaken Skin LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "(|Guest 1337| AND |Guest 1337 Skin - Guard|) OR (|Guest Block| AND |Charge| AND |Guest Punch| AND |Guest 1337 Skin - Guard|) OR (|1x1x1x1| AND |1x1x1x1 Skin - The Pestilence|) OR (|Noli| AND |Noli Skin - The Possessed|)"
+    },
+	{
+      "name": "Win a Profitable Passion LMS as a Survivor (Golden Survivor Vs Any Killer)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks",
+        "Forsaken Skin LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "(|Dusekkar| AND |Dusekkar Skin - Golden|) OR (|Plasma Beam| AND |Spawn Protection| AND |Dusekkar Skin - Golden|) OR (|Shedletsky| AND |Shedletsky Skin - Golden|) OR (|Slash| AND |Fried Chicken| AND |Shedletsky Skin - Golden|) OR (|Chance| AND |Chance Skin - Golden|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Chance Skin - Golden|)"
+    },
+	{
+      "name": "Win a Make a Cake LMS as C00lkidd (Elliot Vs P4rtyPwny C00lkidd)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks",
+        "Forsaken Skin LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "|Coolkidd| AND |C00lkidd Skin - P4rtyPwny|"
+    },
+	{
+      "name": "Win a Close to Me LMS on either side (Friend Elliot Vs Annihilation John Doe)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks",
+        "Forsaken Skin LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "(|Elliot| AND |Elliot Skin - Friend|) OR (|Pizza Toss| AND |Rush Hour| AND |Elliot Skin - Friend|) OR (|John Doe| AND |John Doe Skin - Annihilation|)"
+    },
+	{
+      "name": "Win a Low Stock LMS as Slasher (Any Survivor Vs Vanity Slasher)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks",
+        "Forsaken Skin LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "|Slasher| AND |Slasher Skin - Vanity|"
+    },
+	{
+      "name": "Win a Curiosity LMS as John Doe (Any Survivor Vs Gasharpoon John Doe)",
+      "category": [
+        "Forsaken",
+        "Forsaken LMS Tasks",
+        "Forsaken Skin LMS Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": "|John Doe| AND |John Doe Skin - Gasharpoon|"
+    },
+    {
+      "name": "OM Map Survival - Green Hill",
+      "category": [
+        "OM",
+        "OM Misc Tasks",
+        "OM Map Tasks"
+      ],
+      "region": "OM_Misc",
+      "requires": ""
+    },
+    {
+      "name": "OM Map Survival - Angel Island",
+      "category": [
+        "OM",
+        "OM Misc Tasks",
+        "OM Map Tasks"
+      ],
+      "region": "OM_Misc",
+      "requires": ""
+    },
+    {
+      "name": "OM Map Survival - Mystic Cave",
+      "category": [
+        "OM",
+        "OM Misc Tasks",
+        "OM Map Tasks"
+      ],
+      "region": "OM_Misc",
+      "requires": ""
+    },
+    {
+      "name": "OM Map Survival - You Can't Run",
+      "category": [
+        "OM",
+        "OM Misc Tasks",
+        "OM Map Tasks"
+      ],
+      "region": "OM_Misc",
+      "requires": ""
+    },
+    {
+      "name": "OM Map Survival - Hill.GYM",
+      "category": [
+        "OM",
+        "OM Misc Tasks",
+        "OM Map Tasks"
+      ],
+      "region": "OM_Misc",
+      "requires": ""
+    },
+    {
+      "name": "OM Map Survival - Not Perfect",
+      "category": [
+        "OM",
+        "OM Misc Tasks",
+        "OM Map Tasks"
+      ],
+      "region": "OM_Misc",
+      "requires": ""
+    },
+    {
+      "name": "Win 3 times (Pancho)",
+      "category": [
+        "SJ",
+        "Pancho Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Pancho|"
+    },
+    {
+      "name": "Complete 3 individual tasks (Pancho)",
+      "category": [
+        "SJ",
+        "Pancho Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Pancho|"
+    },
+    {
+      "name": "Throw the killer off with Shake 5 times",
+      "category": [
+        "SJ",
+        "Pancho Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Pancho|"
+    },
+    {
+      "name": "Trip the killer with Spill 5 times",
+      "category": [
+        "SJ",
+        "Pancho Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Pancho|"
+    },
+    {
+      "name": "Flee from the killer with Drink 3 times",
+      "category": [
+        "SJ",
+        "Pancho Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Pancho|"
+    },
+    {
+      "name": "Misplace your teammates with Shake",
+      "category": [
+        "SJ",
+        "Pancho Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Pancho|"
+    },
+    {
+      "name": "Win 3 times (Bloxxer)",
+      "category": [
+        "SJ",
+        "Bloxxer Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Bloxxer|"
+    },
+    {
+      "name": "Complete 5 Individual Tasks (Bloxxer)",
+      "category": [
+        "SJ",
+        "Bloxxer Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Bloxxer|"
+    },
+    {
+      "name": "Stun the killer with Rocket 3 times",
+      "category": [
+        "SJ",
+        "Bloxxer Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Bloxxer|"
+    },
+    {
+      "name": "Have the killer break your wall 5 times",
+      "category": [
+        "SJ",
+        "Bloxxer Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Bloxxer|"
+    },
+    {
+      "name": "Slow the killer with Bomb 5 times",
+      "category": [
+        "SJ",
+        "Bloxxer Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Bloxxer|"
+    },
+    {
+      "name": "Place down max walls",
+      "category": [
+        "SJ",
+        "Bloxxer Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Bloxxer|"
+    },
+    {
+      "name": "Win 3 times (MrRobot)",
+      "category": [
+        "SJ",
+        "MrRobot Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|MrRobot|"
+    },
+    {
+      "name": "Place down an Antenna 10 times",
+      "category": [
+        "SJ",
+        "MrRobot Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|MrRobot|"
+    },
+    {
+      "name": "Knock back the killer with Pointer 5 times",
+      "category": [
+        "SJ",
+        "MrRobot Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|MrRobot|"
+    },
+    {
+      "name": "Heal your teammates with Pointer 5 times",
+      "category": [
+        "SJ",
+        "MrRobot Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|MrRobot|"
+    },
+    {
+      "name": "Heal a antenna to 30 HP",
+      "category": [
+        "SJ",
+        "MrRobot Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|MrRobot|"
+    },
+    {
+      "name": "Win 3 times (Betty)",
+      "category": [
+        "SJ",
+        "Betty Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Betty|"
+    },
+    {
+      "name": "Complete 5 Individual Tasks (Betty)",
+      "category": [
+        "SJ",
+        "Betty Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Betty|"
+    },
+    {
+      "name": "Stun the killer 5 times (Betty)",
+      "category": [
+        "SJ",
+        "Betty Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Betty|"
+    },
+    {
+      "name": "Pick up your knife 3 times",
+      "category": [
+        "SJ",
+        "Betty Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Betty|"
+    },
+    {
+      "name": "Hit the killer with Launch 5 times",
+      "category": [
+        "SJ",
+        "Betty Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Betty|"
+    },
+    {
+      "name": "Win 3 times (Calindra)",
+      "category": [
+        "SJ",
+        "Calindra Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Calindra|"
+    },
+    {
+      "name": "Complete 5 individual Tasks (Calindra)",
+      "category": [
+        "SJ",
+        "Calindra Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Calindra|"
+    },
+    {
+      "name": "Plant down max flowers",
+      "category": [
+        "SJ",
+        "Calindra Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Calindra|"
+    },
+    {
+      "name": "Speed up two Flowers with one Sprinkler",
+      "category": [
+        "SJ",
+        "Calindra Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Calindra|"
+    },
+    {
+      "name": "Have yourself or a teammate use a flower 10 times",
+      "category": [
+        "SJ",
+        "Calindra Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Calindra|"
+    },
+    {
+      "name": "Win 3 times (Jimmy)",
+      "category": [
+        "SJ",
+        "Jimmy Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Jimmy|"
+    },
+    {
+      "name": "Complete 5 individual Tasks (Jimmy)",
+      "category": [
+        "SJ",
+        "Jimmy Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Jimmy|"
+    },
+    {
+      "name": "Earn a chocolate 5 times",
+      "category": [
+        "SJ",
+        "Jimmy Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Jimmy|"
+    },
+    {
+      "name": "Stun the killer with Airball 5 times",
+      "category": [
+        "SJ",
+        "Jimmy Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Jimmy|"
+    },
+    {
+      "name": "Score a basket from a decent distance away",
+      "category": [
+        "SJ",
+        "Jimmy Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Jimmy|"
+    },
+    {
+      "name": "Win 3 times (Clockwork)",
+      "category": [
+        "SJ",
+        "Clockwork Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Clockwork|"
+    },
+    {
+      "name": "Complete 5 individual Tasks (Clockwork)",
+      "category": [
+        "SJ",
+        "Clockwork Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Clockwork|"
+    },
+    {
+      "name": "Have you or your teammates pick up 10 teapots",
+      "category": [
+        "SJ",
+        "Clockwork Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Clockwork|"
+    },
+    {
+      "name": "Heal a teammate with Pot Shield 5 times",
+      "category": [
+        "SJ",
+        "Clockwork Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Clockwork|"
+    },
+    {
+      "name": "Slow or trip the killer with Teapot Toss",
+      "category": [
+        "SJ",
+        "Clockwork Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Clockwork|"
+    },
+    {
+      "name": "Win 2 Times (KillerKyle)",
+      "category": [
+        "SJ",
+        "KillerKyle Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|KillerKyle|"
+    },
+    {
+      "name": "Complete 3 Individual Tasks (KillerKyle)",
+      "category": [
+        "SJ",
+        "KillerKyle Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|KillerKyle|"
+    },
+    {
+      "name": "Kill a survivor with Hat Toss",
+      "category": [
+        "SJ",
+        "KillerKyle Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|KillerKyle|"
+    },
+    {
+      "name": "Kill a survivor when exiting Hide",
+      "category": [
+        "SJ",
+        "KillerKyle Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|KillerKyle|"
+    },
+    {
+      "name": "Throw your hat onto a Survivor's head 5 times",
+      "category": [
+        "SJ",
+        "KillerKyle Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|KillerKyle|"
+    },
+    {
+      "name": "Win 2 Times (Fencer)",
+      "category": [
+        "SJ",
+        "Fencer Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Fencer|"
+    },
+    {
+      "name": "Complete 3 Individual Tasks (Fencer)",
+      "category": [
+        "SJ",
+        "Fencer Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Fencer|"
+    },
+    {
+      "name": "Kill a Survivor with each sword",
+      "category": [
+        "SJ",
+        "Fencer Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Fencer|"
+    },
+    {
+      "name": "Kill a Survivor with Spin",
+      "category": [
+        "SJ",
+        "Fencer Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Fencer|"
+    },
+    {
+      "name": "Kill a Survivor while boosted",
+      "category": [
+        "SJ",
+        "Fencer Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Fencer|"
+    },
+    {
+      "name": "Win 2 Times (ClawsGuy)",
+      "category": [
+        "SJ",
+        "ClawsGuy Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|ClawsGuy|"
+    },
+    {
+      "name": "Complete 3 Individual Tasks (ClawsGuy)",
+      "category": [
+        "SJ",
+        "ClawsGuy Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|ClawsGuy|"
+    },
+    {
+      "name": "Kill a Survior with Charge",
+      "category": [
+        "SJ",
+        "ClawsGuy Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|ClawsGuy|"
+    },
+    {
+      "name": "Kill a Survivor while in Rage",
+      "category": [
+        "SJ",
+        "ClawsGuy Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|ClawsGuy|"
+    },
+    {
+      "name": "Kill a Survivor after using Wave",
+      "category": [
+        "SJ",
+        "ClawsGuy Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|ClawsGuy|"
+    },
+    {
+      "name": "Win 2 Times (Frapers)",
+      "category": [
+        "SJ",
+        "Frapers Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Frapers|"
+    },
+    {
+      "name": "Complete 3 Individual Tasks (Frapers)",
+      "category": [
+        "SJ",
+        "Frapers Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Frapers|"
+    },
+    {
+      "name": "Kill a Survivor through the wall",
+      "category": [
+        "SJ",
+        "Frapers Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Frapers|"
+    },
+    {
+      "name": "Kill a Survivor from the Tripmine shooting",
+      "category": [
+        "SJ",
+        "Frapers Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Frapers|"
+    },
+    {
+      "name": "Win 2 Times (Stalker)",
+      "category": [
+        "SJ",
+        "Stalker Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Stalker|"
+    },
+    {
+      "name": "Complete 3 Individual Tasks (Stalker)",
+      "category": [
+        "SJ",
+        "Stalker Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Stalker|"
+    },
+    {
+      "name": "Kill a Linked Survivor",
+      "category": [
+        "SJ",
+        "Stalker Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Stalker|"
+    },
+    {
+      "name": "Successfully use Distortion 6 times",
+      "category": [
+        "SJ",
+        "Stalker Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|Stalker|"
+    },
+    {
+      "name": "Win 3 times (Sonic)",
+      "region": "OM_S",
+      "category": [
+        "Sonic Tasks",
+        "OM"
+      ],
+      "requires": "|Sonic| OR (|Dropdash| AND |Peelout|)"
+    },
+    {
+      "name": "Stun the EXE 10 times (Sonic)",
+      "region": "OM_S",
+      "category": [
+        "Sonic Tasks",
+        "OM"
+      ],
+      "requires": "|Sonic| OR |Dropdash|"
+    },
+    {
+      "name": "Save a teammate that's in chase 3 times",
+      "region": "OM_S",
+      "category": [
+        "Sonic Tasks",
+        "OM"
+      ],
+      "requires": "|Sonic| OR |Peelout|"
+    },
+    {
+      "name": "Knock the EXE off the edge of an elevated surface",
+      "region": "OM_S",
+      "category": [
+        "Sonic Tasks",
+        "OM"
+      ],
+      "requires": "|Sonic| OR |Dropdash|"
+    },
+    {
+      "name": "Peelout with a cream actively healing ",
+      "region": "OM_S",
+      "category": [
+        "Sonic Tasks",
+        "OM"
+      ],
+      "requires": "|Sonic| OR |Peelout|"
+    },
+    {
+      "name": "Win 3 times (Amy)",
+      "region": "OM_S",
+      "category": [
+        "Amy Tasks",
+        "OM"
+      ],
+      "requires": "|Amy| OR (|Hammer| AND |Hammer Throw| AND |Amy Reroll|"
+    },
+    {
+      "name": "Stun the EXE with hammer 5 times",
+      "region": "OM_S",
+      "category": [
+        "Amy Tasks",
+        "OM"
+      ],
+      "requires": "|Amy| OR |Hammer|"
+    },
+    {
+      "name": "Stun the EXE with hammer throw 3 times",
+      "region": "OM_S",
+      "category": [
+        "Amy Tasks",
+        "OM"
+      ],
+      "requires": "|Amy| OR |Hammer Throw|"
+    },
+    {
+      "name": "Reroll perfect cards (Blaze and Shadow)",
+      "region": "OM_S",
+      "category": [
+        "Amy Tasks",
+        "OM"
+      ],
+      "requires": "|Amy| OR |Amy Reroll|"
+    },
+    {
+      "name": "Reroll the worst cards (Cream and Knuckles/Tails)",
+      "region": "OM_S",
+      "category": [
+        "Amy Tasks",
+        "OM"
+      ],
+      "requires": "|Amy| OR |Amy Reroll|"
+    },
+    {
+      "name": "Hit a hammer throw while having Cream card",
+      "region": "OM_S",
+      "category": [
+        "Amy Tasks",
+        "OM"
+      ],
+      "requires": "|Amy| OR (|Hammer Throw| AND |Amy Reroll|"
+    },
+    {
+      "name": "Heal a teammate to 75 with Blaze card",
+      "region": "OM_S",
+      "category": [
+        "Amy Tasks",
+        "OM"
+      ],
+      "requires": "|Amy| OR |Amy Reroll|"
+    },
+    {
+      "name": "Inflict max stun with Knuckles card and Shadow card",
+      "region": "OM_S",
+      "category": [
+        "Amy Tasks",
+        "OM"
+      ],
+      "requires": "|Amy| OR ((|Hammer| OR |Hammer Throw|) AND |Amy Reroll|)"
+    },
+    {
+      "name": "Win 3 times (Knuckles)",
+      "region": "OM_S",
+      "category": [
+        "Knuckles Tasks",
+        "OM"
+      ],
+      "requires": "|Knuckles| OR (|Knuckles Punch| AND |Counter|)"
+    },
+    {
+      "name": "Stun the EXE with punch 10 times",
+      "region": "OM_S",
+      "category": [
+        "Knuckles Tasks",
+        "OM"
+      ],
+      "requires": "|Knuckles| Or |Knuckles Punch|"
+    },
+    {
+      "name": "Stun the EXE with counter 5 times",
+      "region": "OM_S",
+      "category": [
+        "Knuckles Tasks",
+        "OM"
+      ],
+      "requires": "|Knuckles| Or |Counter|"
+    },
+    {
+      "name": "Stun the EXE with a max punch",
+      "region": "OM_S",
+      "category": [
+        "Knuckles Tasks",
+        "OM"
+      ],
+      "requires": "|Knuckles| Or |Knuckles Punch|"
+    },
+    {
+      "name": "Stun the EXE with a max counter",
+      "region": "OM_S",
+      "category": [
+        "Knuckles Tasks",
+        "OM"
+      ],
+      "requires": "|Knuckles| Or |Counter|"
+    },
+    {
+      "name": "Stun the EXE with a downslam",
+      "region": "OM_S",
+      "category": [
+        "Knuckles Tasks",
+        "OM"
+      ],
+      "requires": "|Knuckles| Or |Knuckles Punch|"
+    },
+    {
+      "name": "Block a grab move",
+      "region": "OM_S",
+      "category": [
+        "Knuckles Tasks",
+        "OM"
+      ],
+      "requires": "|Knuckles| Or |Counter|"
+    },
+    {
+      "name": "Win 3 times (Cream)",
+      "region": "OM_S",
+      "category": [
+        "Cream Tasks",
+        "OM"
+      ],
+      "requires": "|Cream| OR (|Heal| AND |Cream Dash|)"
+    },
+    {
+      "name": "Heal a teammate to full 5 times (Cream)",
+      "region": "OM_S",
+      "category": [
+        "Cream Tasks",
+        "OM"
+      ],
+      "requires": "|Cream| OR |Heal|"
+    },
+    {
+      "name": "Lose Cheese",
+      "region": "OM_S",
+      "category": [
+        "Cream Tasks",
+        "OM"
+      ],
+      "requires": "|Cream| OR |Heal| OR |Cream Dash|"
+    },
+    {
+      "name": "Bump the EXE with dash",
+      "region": "OM_S",
+      "category": [
+        "Cream Tasks",
+        "OM"
+      ],
+      "requires": "|Cream| OR |Cream Dash|"
+    },
+    {
+      "name": "Glide against a wall and bump off it",
+      "region": "OM_S",
+      "category": [
+        "Cream Tasks",
+        "OM"
+      ],
+      "requires": "|Cream| OR |Heal| OR |Cream Dash|"
+    },
+    {
+      "name": "Use Heal startup to dodge an attack",
+      "region": "OM_S",
+      "category": [
+        "Cream Tasks",
+        "OM"
+      ],
+      "requires": "|Cream| OR |Heal|"
+    },
+    {
+      "name": "Win 3 times (Metal Sonic)",
+      "region": "OM_S",
+      "category": [
+        "Metal Sonic Tasks",
+        "OM"
+      ],
+      "requires": "|Metal Sonic| OR (|Destructive Charge| AND |Self Repair|)"
+    },
+    {
+      "name": "Stun the EXE with you vengeful demise (Metal Sonic)",
+      "region": "OM_S",
+      "category": [
+        "Metal Sonic Tasks",
+        "OM"
+      ],
+      "requires": "|Metal Sonic| OR |Destructive Charge| OR |Self Repair|"
+    },
+    {
+      "name": "Stun the EXE with charge 10 times",
+      "region": "OM_S",
+      "category": [
+        "Metal Sonic Tasks",
+        "OM"
+      ],
+      "requires": "|Metal Sonic| OR (|Destructive Charge| AND |Self Repair|)"
+    },
+    {
+      "name": "Bait a block with charge",
+      "region": "OM_S",
+      "category": [
+        "Metal Sonic Tasks",
+        "OM"
+      ],
+      "requires": "|Metal Sonic| OR |Destructive Charge| "
+    },
+    {
+      "name": "Heal to 150 or more hp with self repair 3 times",
+      "region": "OM_S",
+      "category": [
+        "Metal Sonic Tasks",
+        "OM"
+      ],
+      "requires": "|Metal Sonic| OR |Self Repair|"
+    },
+    {
+      "name": "Heal to 150 or more with self repair with an eggman or tails near",
+      "region": "OM_S",
+      "category": [
+        "Metal Sonic Tasks",
+        "OM"
+      ],
+      "requires": "|Metal Sonic| OR |Self Repair|"
+    },
+    {
+      "name": "Win 3 times (Tails)",
+      "region": "OM_S",
+      "category": [
+        "Tails Tasks",
+        "OM"
+      ],
+      "requires": "|Tails| OR (|Glide| AND |Laser Cannon|)"
+    },
+    {
+      "name": "Stun the EXE with laser cannon 5 times",
+      "region": "OM_S",
+      "category": [
+        "Tails Tasks",
+        "OM"
+      ],
+      "requires": "|Tails| OR |Laser Cannon|"
+    },
+    {
+      "name": "Stun the EXE with burst mode 5 times",
+      "region": "OM_S",
+      "category": [
+        "Tails Tasks",
+        "OM"
+      ],
+      "requires": "|Tails| OR (|Laser Cannon| AND |Switch|)"
+    },
+    {
+      "name": "Glide to a vantage point",
+      "region": "OM_S",
+      "category": [
+        "Tails Tasks",
+        "OM"
+      ],
+      "requires": "|Tails| OR |Glide|"
+    },
+    {
+      "name": "Stun the EXE during their I-frames",
+      "region": "OM_S",
+      "category": [
+        "Tails Tasks",
+        "OM"
+      ],
+      "requires": "|Tails| OR (|Laser Cannon| AND |Switch|)"
+    },
+    {
+      "name": "Stun the EXE while on sonic's peelout",
+      "region": "OM_S",
+      "category": [
+        "Tails Tasks",
+        "OM"
+      ],
+      "requires": "|Tails| OR |Laser Cannon|"
+    },
+    {
+      "name": "Win 3 times (Eggman)",
+      "region": "OM_S",
+      "category": [
+        "Eggman Tasks",
+        "OM"
+      ],
+      "requires": "|Eggman| OR (|Jetpack Boost| AND |Energy Shield|)"
+    },
+    {
+      "name": "Help a metal sonic heal",
+      "region": "OM_S",
+      "category": [
+        "Eggman Tasks",
+        "OM"
+      ],
+      "requires": "|Eggman| OR |Jetpack Boost| OR |Energy Shield|"
+    },
+    {
+      "name": "Stun the EXE with barrier 10 times",
+      "region": "OM_S",
+      "category": [
+        "Eggman Tasks",
+        "OM"
+      ],
+      "requires": "|Eggman| OR |Energy Shield|"
+    },
+    {
+      "name": "Break the EXE's ankles with double jump",
+      "region": "OM_S",
+      "category": [
+        "Eggman Tasks",
+        "OM"
+      ],
+      "requires": "|Eggman| OR |Jetpack Boost| OR |Energy Shield|"
+    },
+    {
+      "name": "End a chase with jetpack boost",
+      "region": "OM_S",
+      "category": [
+        "Eggman Tasks",
+        "OM"
+      ],
+      "requires": "|Eggman| OR |Jetpack Boost|"
+    },
+    {
+      "name": "Win 3 times (Blaze)",
+      "region": "OM_S",
+      "category": [
+        "Blaze Tasks",
+        "OM"
+      ],
+      "requires": "|Blaze| OR (|Roundhouse Kick/Sol Dash/Sol Boost| AND |Burning Javelin/Sol Flame|)"
+    },
+    {
+      "name": "Stun the EXE with roundhouse kick 5 times",
+      "region": "OM_S",
+      "category": [
+        "Blaze Tasks",
+        "OM"
+      ],
+      "requires": "|Blaze| OR |Roundhouse Kick/Sol Dash/Sol Boost|"
+    },
+    {
+      "name": "Stun the EXE with sol boost 5 times",
+      "region": "OM_S",
+      "category": [
+        "Blaze Tasks",
+        "OM"
+      ],
+      "requires": "|Blaze| OR |Roundhouse Kick/Sol Dash/Sol Boost|"
+    },
+    {
+      "name": "Reposition the EXE with burning javelin 5 times",
+      "region": "OM_S",
+      "category": [
+        "Blaze Tasks",
+        "OM"
+      ],
+      "requires": "|Blaze| OR |Burning Javelin/Sol Flame|"
+    },
+    {
+      "name": "Hold back the EXE with Sol Flame 3 times",
+      "region": "OM_S",
+      "category": [
+        "Blaze Tasks",
+        "OM"
+      ],
+      "requires": "|Blaze| OR |Burning Javelin/Sol Flame|"
+    },
+    {
+      "name": "Set the EXE on fire with Roundhouse Kick 3 times",
+      "region": "OM_S",
+      "category": [
+        "Blaze Tasks",
+        "OM"
+      ],
+      "requires": "|Blaze| OR |Roundhouse Kick/Sol Dash/Sol Boost|"
+    },
+    {
+      "name": "Win 3 times (Silver)",
+      "region": "OM_S",
+      "category": [
+        "Silver Tasks",
+        "OM"
+      ],
+      "requires": "|Silver| OR (|Suspension| AND |Rock Throw| AND |Time Reversal|)"
+    },
+    {
+      "name": "Slow the EXE with rock throw 3 times",
+      "region": "OM_S",
+      "category": [
+        "Silver Tasks",
+        "OM"
+      ],
+      "requires": "|Silver| OR |Rock Throw|"
+    },
+    {
+      "name": "Stun the EXE with rock throw",
+      "region": "OM_S",
+      "category": [
+        "Silver Tasks",
+        "OM"
+      ],
+      "requires": "|Silver| OR |Rock Throw|"
+    },
+    {
+      "name": "Throw the EXE with suspension 10 times",
+      "region": "OM_S",
+      "category": [
+        "Silver Tasks",
+        "OM"
+      ],
+      "requires": "|Silver| OR |Suspension|"
+    },
+    {
+      "name": "Hold the EXE back with suspension 5 times",
+      "region": "OM_S",
+      "category": [
+        "Silver Tasks",
+        "OM"
+      ],
+      "requires": "|Silver| OR |Suspension|"
+    },
+    {
+      "name": "Dodge the EXE with time reversal",
+      "region": "OM_S",
+      "category": [
+        "Silver Tasks",
+        "OM"
+      ],
+      "requires": "|Silver| Or |Time Reversal|"
+    },
+    {
+      "name": "Kill 10 survivors (2011x)",
+      "region": "OM_K",
+      "category": [
+        "2011x Tasks",
+        "OM"
+      ],
+      "requires": "|2011x|"
+    },
+    {
+      "name": "Win 2 times (2011x)",
+      "region": "OM_K",
+      "category": [
+        "2011x Tasks",
+        "OM"
+      ],
+      "requires": "|2011x|"
+    },
+    {
+      "name": "Get stunned (2011x)",
+      "region": "OM_K",
+      "category": [
+        "2011x Tasks",
+        "OM"
+      ],
+      "requires": "|2011x|"
+    },
+    {
+      "name": "Invis tech next to survivors",
+      "region": "OM_K",
+      "category": [
+        "2011x Tasks",
+        "OM"
+      ],
+      "requires": "|2011x|"
+    },
+    {
+      "name": "Kill a survivor with grab (2011x)",
+      "region": "OM_K",
+      "category": [
+        "2011x Tasks",
+        "OM"
+      ],
+      "requires": "|2011x|"
+    },
+    {
+      "name": "Enter rage mode",
+      "region": "OM_K",
+      "category": [
+        "2011x Tasks",
+        "OM"
+      ],
+      "requires": "|2011x|"
+    },
+    {
+      "name": "Hit someone with god's trickery",
+      "region": "OM_K",
+      "category": [
+        "2011x Tasks",
+        "OM"
+      ],
+      "requires": "|2011x|"
+    },
+    {
+      "name": "Kill 10 survivors (Kolossos)",
+      "region": "OM_K",
+      "category": [
+        "Kolossos Tasks",
+        "OM"
+      ],
+      "requires": "|Kolossos|"
+    },
+    {
+      "name": "Win 2 times (Kolossos)",
+      "region": "OM_K",
+      "category": [
+        "Kolossos Tasks",
+        "OM"
+      ],
+      "requires": "|Kolossos|"
+    },
+    {
+      "name": "Kill a survivor with grab (Kolossos)",
+      "region": "OM_K",
+      "category": [
+        "Kolossos Tasks",
+        "OM"
+      ],
+      "requires": "|Kolossos|"
+    },
+    {
+      "name": "Counter a survivor",
+      "region": "OM_K",
+      "category": [
+        "Kolossos Tasks",
+        "OM"
+      ],
+      "requires": "|Kolossos|"
+    },
+    {
+      "name": "Impale three survivors on one charge",
+      "region": "OM_K",
+      "category": [
+        "Kolossos Tasks",
+        "OM"
+      ],
+      "requires": "|Kolossos|"
+    },
+    {
+      "name": "Climb up to a survivor",
+      "region": "OM_K",
+      "category": [
+        "Kolossos Tasks",
+        "OM"
+      ],
+      "requires": "|Kolossos|"
+    },
+    {
+      "name": "Kill 10 survivors (Tripwire)",
+      "region": "OM_K",
+      "category": [
+        "Tripwire Tasks",
+        "OM"
+      ],
+      "requires": "|Tripwire|"
+    },
+    {
+      "name": "Win 2 times (Tripwire)",
+      "region": "OM_K",
+      "category": [
+        "Tripwire Tasks",
+        "OM"
+      ],
+      "requires": "|Tripwire|"
+    },
+    {
+      "name": "Kill a survivor while gliding",
+      "region": "OM_K",
+      "category": [
+        "Tripwire Tasks",
+        "OM"
+      ],
+      "requires": "|Tripwire|"
+    },
+    {
+      "name": "Kill a survivor with brighter day",
+      "region": "OM_K",
+      "category": [
+        "Tripwire Tasks",
+        "OM"
+      ],
+      "requires": "|Tripwire|"
+    },
+    {
+      "name": "Kill a survivor with Reachout",
+      "region": "OM_K",
+      "category": [
+        "Tripwire Tasks",
+        "OM"
+      ],
+      "requires": "|Tripwire|"
+    },
+    {
+      "name": "Kill a survivor with a landmine",
+      "region": "OM_K",
+      "category": [
+        "Tripwire Tasks",
+        "OM"
+      ],
+      "requires": "|Tripwire|"
+    },
+    {
+      "name": "Grab three survivors at once with reachout",
+      "region": "OM_K",
+      "category": [
+        "Tripwire Tasks",
+        "OM"
+      ],
+      "requires": "|Tripwire|"
+    },
+    {
+      "name": "Kill 10 survivors (Fleetway)",
+      "region": "OM_K",
+      "category": [
+        "Fleetway Tasks",
+        "OM"
+      ],
+      "requires": "|Fleetway|"
+    },
+    {
+      "name": "Win 2 times (Fleetway)",
+      "region": "OM_K",
+      "category": [
+        "Fleetway Tasks",
+        "OM"
+      ],
+      "requires": "|Fleetway|"
+    },
+    {
+      "name": "Kill a survivor with Chaos Dash",
+      "region": "OM_K",
+      "category": [
+        "Fleetway Tasks",
+        "OM"
+      ],
+      "requires": "|Fleetway|"
+    },
+    {
+      "name": "Kill a survivor with Laser of Destruction",
+      "region": "OM_K",
+      "category": [
+        "Fleetway Tasks",
+        "OM"
+      ],
+      "requires": "|Fleetway|"
+    },
+    {
+      "name": "Hit a survivor with fateful drain",
+      "region": "OM_K",
+      "category": [
+        "Fleetway Tasks",
+        "OM"
+      ],
+      "requires": "|Fleetway|"
+    },
+    {
+      "name": "Burst out of a stun",
+      "region": "OM_K",
+      "category": [
+        "Fleetway Tasks",
+        "OM"
+      ],
+      "requires": "|Fleetway|"
+    },
+    {
+      "name": "Die (Fleetway)",
+      "region": "OM_K",
+      "category": [
+        "Fleetway Tasks",
+        "OM"
+      ],
+      "requires": "|Fleetway|"
+    },
+	{
+      "name": "Win 2 times (Dante)",
+      "region": "PS_S",
+      "category": [
+        "Dante Tasks",
+        "PS"
+      ],
+      "requires": "|Dante|"
+    },
+	{
+      "name": "Stun the Terminator 10 times (Dante)",
+      "region": "PS_S",
+      "category": [
+        "Dante Tasks",
+        "PS"
+      ],
+      "requires": "|Dante|"
+    },
+	{
+      "name": "Stun the Terminator with Quick Swing 5 times",
+      "region": "PS_S",
+      "category": [
+        "Dante Tasks",
+        "PS"
+      ],
+      "requires": "|Dante|"
+    },
+	{
+      "name": "Stun the Terminator with Wingbeat 5 times",
+      "region": "PS_S",
+      "category": [
+        "Dante Tasks",
+        "PS"
+      ],
+      "requires": "|Dante|"
+    },
+	{
+      "name": "Use Wingbeat for movement around the map",
+      "region": "PS_S",
+      "category": [
+        "Dante Tasks",
+        "PS"
+      ],
+      "requires": "|Dante|"
+    },
+	{
+      "name": "Stun the Terminator to help a teammate in chase",
+      "region": "PS_S",
+      "category": [
+        "Dante Tasks",
+        "PS"
+      ],
+      "requires": "|Dante|"
+    },
+	{
+      "name": "Snipe the Terminator 5 times",
+      "region": "PS_S",
+      "category": [
+        "Mikaela Tasks",
+        "PS"
+      ],
+      "requires": "|Mikaela|"
+    },
+	{
+      "name": "Snipe the Terminator in first-person after doing a 360",
+      "region": "PS_S",
+      "category": [
+        "Mikaela Tasks",
+        "PS"
+      ],
+      "requires": "|Mikaela|"
+    },
+	{
+      "name": "Win 2 times (Mikaela)",
+      "region": "PS_S",
+      "category": [
+        "Mikaela Tasks",
+        "PS"
+      ],
+      "requires": "|Mikaela|"
+    },
+	{
+      "name": "Escape the Terminator using Smokebomb",
+      "region": "PS_S",
+      "category": [
+        "Mikaela Tasks",
+        "PS"
+      ],
+      "requires": "|Mikaela|"
+    },
+	{
+      "name": "Snipe the Terminator closeup after drinking a Mountain Dew",
+      "region": "PS_S",
+      "category": [
+        "Mikaela Tasks",
+        "PS"
+      ],
+      "requires": "|Mikaela|"
+    },
+	{
+      "name": "Slide away from the Terminator",
+      "region": "PS_S",
+      "category": [
+        "Nyan Tasks",
+        "PS"
+      ],
+      "requires": "|Nyan|"
+    },
+	{
+      "name": "Win 2 times (Nyan)",
+      "region": "PS_S",
+      "category": [
+        "Nyan Tasks",
+        "PS"
+      ],
+      "requires": "|Nyan|"
+    },
+	{
+      "name": "Heal a teammate to full with Tartshare",
+      "region": "PS_S",
+      "category": [
+        "Nyan Tasks",
+        "PS"
+      ],
+      "requires": "|Nyan|"
+    },
+	{
+      "name": "Help a teammate in chase with Tartshare's speed boost",
+      "region": "PS_S",
+      "category": [
+        "Nyan Tasks",
+        "PS"
+      ],
+      "requires": "|Nyan|"
+    },
+	{
+      "name": "Stun the Terminator with Knife three times",
+      "region": "PS_S",
+      "category": [
+        "Fukatsuki Tasks",
+        "PS"
+      ],
+      "requires": "|Fukatsuki|"
+    },
+	{
+      "name": "Give 5 teammates Jump Boost with Frog",
+      "region": "PS_S",
+      "category": [
+        "Fukatsuki Tasks",
+        "PS"
+      ],
+      "requires": "|Fukatsuki|"
+    },
+	{
+      "name": "Help a teammate in chase with Bunny",
+      "region": "PS_S",
+      "category": [
+        "Fukatsuki Tasks",
+        "PS"
+      ],
+      "requires": "|Fukatsuki|"
+    },
+	{
+      "name": "Heal a teammate to 75 HP with Statue",
+      "region": "PS_S",
+      "category": [
+        "Fukatsuki Tasks",
+        "PS"
+      ],
+      "requires": "|Fukatsuki|"
+    },
+	{
+      "name": "Lower 3 teammate's cooldowns with Lucky Cat",
+      "region": "PS_S",
+      "category": [
+        "Fukatsuki Tasks",
+        "PS"
+      ],
+      "requires": "|Fukatsuki|"
+    },
+	{
+      "name": "Win 2 times (Crafter)",
+      "region": "PS_S",
+      "category": [
+        "Crafter Tasks",
+        "PS"
+      ],
+      "requires": "|Crafter|"
+    },
+	{
+      "name": "Upgrade all the way to diamond tools",
+      "region": "PS_S",
+      "category": [
+        "Crafter Tasks",
+        "PS"
+      ],
+      "requires": "|Crafter|"
+    },
+	{
+      "name": "Stun the Terminator with Sword 5 times",
+      "region": "PS_S",
+      "category": [
+        "Crafter Tasks",
+        "PS"
+      ],
+      "requires": "|Crafter|"
+    },
+	{
+      "name": "Send the Terminator away with a minecart",
+      "region": "PS_S",
+      "category": [
+        "Crafter Tasks",
+        "PS"
+      ],
+      "requires": "|Crafter|"
+    },
+	{
+      "name": "Block the Terminator with a wall",
+      "region": "PS_S",
+      "category": [
+        "Crafter Tasks",
+        "PS"
+      ],
+      "requires": "|Crafter|"
+    },
+	{
+      "name": "Win 2 times (Vinnie)",
+      "region": "PS_S",
+      "category": [
+        "Vinnie Tasks",
+        "PS"
+      ],
+      "requires": "|Vinnie|"
+    },
+	{
+      "name": "Stun the Terminator with Popup Block",
+      "region": "PS_S",
+      "category": [
+        "Vinnie Tasks",
+        "PS"
+      ],
+      "requires": "|Vinnie|"
+    },
+	{
+      "name": "Stun the Terminator with a fully powered up Serpent Crash",
+      "region": "PS_S",
+      "category": [
+        "Vinnie Tasks",
+        "PS"
+      ],
+      "requires": "|Vinnie|"
+    },
+	{
+      "name": "Stun the Terminator while a teammate is in chase",
+      "region": "PS_S",
+      "category": [
+        "Vinnie Tasks",
+        "PS"
+      ],
+      "requires": "|Vinnie|"
+    },
+	{
+      "name": "Block a Dotx's spindash",
+      "region": "PS_S",
+      "category": [
+        "Vinnie Tasks",
+        "PS"
+      ],
+      "requires": "|Vinnie|"
+    },
+	{
+      "name": "Win 2 times (Tac9)",
+      "region": "PS_S",
+      "category": [
+        "Tac9 Tasks",
+        "PS"
+      ],
+      "requires": "|Tac9|"
+    },
+	{
+      "name": "Extend a stun via Skullbuster's effect",
+      "region": "PS_S",
+      "category": [
+        "Tac9 Tasks",
+        "PS"
+      ],
+      "requires": "|Tac9|"
+    },
+	{
+      "name": "Dropkick the Terminator 5 times (Tac9)",
+      "region": "PS_S",
+      "category": [
+        "Tac9 Tasks",
+        "PS"
+      ],
+      "requires": "|Tac9|"
+    },
+	{
+      "name": "Divekick the Terminator",
+      "region": "PS_S",
+      "category": [
+        "Tac9 Tasks",
+        "PS"
+      ],
+      "requires": "|Tac9|"
+    },
+	{
+      "name": "Utilize Walljump in chase 5 times",
+      "region": "PS_S",
+      "category": [
+        "Tac9 Tasks",
+        "PS"
+      ],
+      "requires": "|Tac9|"
+    },
+	{
+      "name": "Win 2 times (Roflpix)",
+      "region": "PS_S",
+      "category": [
+        "Roflpix Tasks",
+        "PS"
+      ],
+      "requires": "|Roflpix|"
+    },
+	{
+      "name": "Screenshot 5 Fuel with one screenshot",
+      "region": "PS_S",
+      "category": [
+        "Roflpix Tasks",
+        "PS"
+      ],
+      "requires": "|Roflpix|"
+    },
+	{
+      "name": "Screenshot the Terminator 5 times",
+      "region": "PS_S",
+      "category": [
+        "Roflpix Tasks",
+        "PS"
+      ],
+      "requires": "|Roflpix|"
+    },
+	{
+      "name": "Utilize Movement Opportunity in Chase",
+      "region": "PS_S",
+      "category": [
+        "Roflpix Tasks",
+        "PS"
+      ],
+      "requires": "|Roflpix|"
+    },
+	{
+      "name": "Fuel a Hyperlink Generator with 10 Pieces of Fuel",
+      "region": "PS_S",
+      "category": [
+        "Roflpix Tasks",
+        "PS"
+      ],
+      "requires": "|Roflpix|"
+    },
+	{
+      "name": "Survive.",
+      "region": "PS_S",
+      "category": [
+        "The Kit Tasks",
+		"Kit",
+        "PS"
+      ],
+      "requires": "|The Kit|"
+    },
+	{
+      "name": "Utilize Kit's double jump to dodge the Terminator off an edge",
+      "region": "PS_S",
+      "category": [
+        "The Kit Tasks",
+		"Kit",
+        "PS"
+      ],
+      "requires": "|The Kit|"
+    },
+	{
+      "name": "Hit the Terminator with Pistol 30 times",
+      "region": "PS_S",
+      "category": [
+        "The Kit Tasks",
+		"Kit",
+        "PS"
+      ],
+      "requires": "|The Kit|"
+    },
+	{
+      "name": "Stun the Terminator 3 times with Charge Up",
+      "region": "PS_S",
+      "category": [
+        "The Kit Tasks",
+		"Kit",
+        "PS"
+      ],
+      "requires": "|The Kit|"
+    },
+	{
+      "name": "Ask for heals",
+      "region": "PS_S",
+      "category": [
+        "The Kit Tasks",
+		"Kit",
+        "PS"
+      ],
+      "requires": "|The Kit|"
+    },
+	{
+      "name": "Win (Partypwny)",
+      "region": "PS_K",
+      "category": [
+        "Partypwny Tasks",
+        "PS"
+      ],
+      "requires": "|Partypwny|"
+    },
+	{
+      "name": "Kill 5 Users (Partypwny)",
+      "region": "PS_K",
+      "category": [
+        "Partypwny Tasks",
+        "PS"
+      ],
+      "requires": "|Partypwny|"
+    },
+	{
+      "name": "Kill a User with Party Hard",
+      "region": "PS_K",
+      "category": [
+        "Partypwny Tasks",
+        "PS"
+      ],
+      "requires": "|Partypwny|"
+    },
+	{
+      "name": "Cakeslice a User after using Kick",
+      "region": "PS_K",
+      "category": [
+        "Partypwny Tasks",
+        "PS"
+      ],
+      "requires": "|Partypwny|"
+    },
+	{
+      "name": "Counter a Stun 3 times",
+      "region": "PS_K",
+      "category": [
+        "DotX Tasks",
+        "PS"
+      ],
+      "requires": "|DotX|"
+    },
+	{
+      "name": "Kill a User with Here I Come",
+      "region": "PS_K",
+      "category": [
+        "DotX Tasks",
+        "PS"
+      ],
+      "requires": "|DotX|"
+    },
+	{
+      "name": "Win (DotX)",
+      "region": "PS_K",
+      "category": [
+        "DotX Tasks",
+        "PS"
+      ],
+      "requires": "|DotX|"
+    },
+	{
+      "name": "Kill 5 Users (DotX)",
+      "region": "PS_K",
+      "category": [
+        "DotX Tasks",
+        "PS"
+      ],
+      "requires": "|DotX|"
+    },
+	{
+      "name": "Win (Blankstare)",
+      "region": "PS_K",
+      "category": [
+        "Blankstare Tasks",
+        "PS"
+      ],
+      "requires": "|Blankstare|"
+    },
+	{
+      "name": "Kill 5 Users (Blankstare)",
+      "region": "PS_K",
+      "category": [
+        "Blankstare Tasks",
+        "PS"
+      ],
+      "requires": "|Blankstare|"
+    },
+	{
+      "name": "Kill a User with Siphon",
+      "region": "PS_K",
+      "category": [
+        "Blankstare Tasks",
+        "PS"
+      ],
+      "requires": "|Blankstare|"
+    },
+	{
+      "name": "Enter Demon Form with at least two totems",
+      "region": "PS_K",
+      "category": [
+        "Blankstare Tasks",
+        "PS"
+      ],
+      "requires": "|Blankstare|"
+    },
+	{
+      "name": "Kill a User with Siphon or Transmute in Demon Form",
+      "region": "PS_K",
+      "category": [
+        "Blankstare Tasks",
+        "PS"
+      ],
+      "requires": "|Blankstare|"
+    },
+	{
+      "name": "Win (Sweep)",
+      "region": "PS_K",
+      "category": [
+        "Sweep Tasks",
+        "PS"
+      ],
+      "requires": "|Sweep|"
+    },
+	{
+      "name": "Kill a User with a Mine",
+      "region": "PS_K",
+      "category": [
+        "Sweep Tasks",
+        "PS"
+      ],
+      "requires": "|Sweep|"
+    },
+	{
+      "name": "Detonate a Mine on a User 5 times",
+      "region": "PS_K",
+      "category": [
+        "Sweep Tasks",
+        "PS"
+      ],
+      "requires": "|Sweep|"
+    },
+	{
+      "name": "Kill 5 Users (Sweep)",
+      "region": "PS_K",
+      "category": [
+        "Sweep Tasks",
+        "PS"
+      ],
+      "requires": "|Sweep|"
+    },
+	{
+      "name": "Win (Captain Limewire)",
+      "region": "PS_K",
+      "category": [
+        "Captain Limewire Tasks",
+        "PS"
+      ],
+      "requires": "|Captain Limewire|"
+    },
+	{
+      "name": "Kill 5 Users (Captain Limewire)",
+      "region": "PS_K",
+      "category": [
+        "Captain Limewire Tasks",
+        "PS"
+      ],
+      "requires": "|Captain Limewire|"
+    },
+	{
+      "name": "Shoot a User with Limelock 5 times",
+      "region": "PS_K",
+      "category": [
+        "Captain Limewire Tasks",
+        "PS"
+      ],
+      "requires": "|Captain Limewire|"
+    },
+	{
+      "name": "Hook a User 5 times",
+      "region": "PS_K",
+      "category": [
+        "Captain Limewire Tasks",
+        "PS"
+      ],
+      "requires": "|Captain Limewire|"
+    },
+	{
+      "name": "Kill a User with a Suplex",
+      "region": "PS_K",
+      "category": [
+        "Captain Limewire Tasks",
+        "PS"
+      ],
+      "requires": "|Captain Limewire|"
+    },
+	{
+      "name": "Deal Damage with Torrential Leap",
+      "region": "PS_K",
+      "category": [
+        "Captain Limewire Tasks",
+        "PS"
+      ],
+      "requires": "|Captain Limewire|"
+    },
+	{
+      "name": "Win (Jack Noir)",
+      "region": "PS_K",
+      "category": [
+        "Jack Noir Tasks",
+        "PS"
+      ],
+      "requires": "|Jack Noir|"
+    },
+	{
+      "name": "Kill 5 Users (Jack Noir)",
+      "region": "PS_K",
+      "category": [
+        "Jack Noir Tasks",
+        "PS"
+      ],
+      "requires": "|Jack Noir|"
+    },
+	{
+      "name": "Land a 3-hit Combo with Slash",
+      "region": "PS_K",
+      "category": [
+        "Jack Noir Tasks",
+        "PS"
+      ],
+      "requires": "|Jack Noir|"
+    },
+	{
+      "name": "Hit 2 or more Users with one Behead",
+      "region": "PS_K",
+      "category": [
+        "Jack Noir Tasks",
+        "PS"
+      ],
+      "requires": "|Jack Noir|"
+    },
+	{
+      "name": "Drag a User back with Eldritch Tentacles 5 times",
+      "region": "PS_K",
+      "category": [
+        "Jack Noir Tasks",
+        "PS"
+      ],
+      "requires": "|Jack Noir|"
+    },
+	{
+      "name": "Activate The Red Miles",
+      "region": "PS_K",
+      "category": [
+        "Jack Noir Tasks",
+        "PS"
+      ],
+      "requires": "|Jack Noir|"
+    },
+	{
+      "name": "Play a round of IWBTU",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Play a round of Super BLOCKBOY World",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Play a round of Versus",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Win a round on Lost Mall",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Win a round on Minefield",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Win a round on Pursuit Cart",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Win a round on Silent Pwnyville",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Win a round on Nexus",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Win a round on New World",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Win a round on Hide N Seek",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Win a round on Restort Harena",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Escape on each map",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Survive as a User long enough that time ends",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+        "PS"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Blind a User as Zombie Nyan",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+		"Nyan Tasks",
+        "PS"
+      ],
+      "requires": "|Nyan|"
+    },
+	{
+      "name": "Jump a User with Leap as Zombie Dante",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+		"Dante Tasks",
+        "PS"
+      ],
+      "requires": "|Dante|"
+    },
+	{
+      "name": "Damage a User with Acrid Dew as Zombie Mikaela",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+		"Mikaela Tasks",
+        "PS"
+      ],
+      "requires": "|Mikaela|"
+    },
+	{
+      "name": "Charge a User as Zombie Vinnie",
+      "region": "PS_Misc",
+      "category": [
+        "PSMisc",
+		"Vinnie Tasks",
+        "PS"
+      ],
+      "requires": "|Vinnie|"
+    },
+	{
+      "name": "Larry What the Flip",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "LAST MAN STANDING",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Oneshot Reference",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "BACKSTABBER",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": "|Shotgun Liscense| OR |Rocket Registration| OR |Charge (F Ability)|"
+    },
+	{
+      "name": "You can't fool me!",
+      "region": "BIAST_K",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "I LOVE GUBBYHEXA",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "SELFISH",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "ONE FOR ALL",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": "|Heavy Artifacts| OR |Scroll Carrying|"
+    },
+	{
+      "name": "Employee of the Month",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": "|Heavy Artifacts| AND |Scroll Carrying|"
+    },
+	{
+      "name": "THE STRONGEST",
+      "region": "BIAST_K",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Kill the Entity in the Shotgun LMS",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": "|Shotgun Liscense|"
+    },
+	{
+      "name": "Win Ashle's Secret LMS as Ashle",
+      "region": "BIAST_K",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": "|Ashle|"
+    },
+	{
+      "name": "Win Ashle's Secret LMS as the contractee",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Play a match with the Meow setting on",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Badges Tasks",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Utilize a Medkit to heal to full",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Item/Move Tasks",
+        "BIAST"
+      ],
+      "requires": "|Medkits|"
+    },
+	{
+      "name": "Stun the entity with Shotgun 5 times",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Item/Move Tasks",
+        "BIAST"
+      ],
+      "requires": "|Shotgun Liscense|"
+    },
+	{
+      "name": "Have the entity trip on a banana peel",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Item/Move Tasks",
+        "BIAST"
+      ],
+      "requires": "|Banana Peels|"
+    },
+	{
+      "name": "Stun an already dead entity",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Item/Move Tasks",
+        "BIAST"
+      ],
+      "requires": "|Shotgun Liscense| OR |Charge (F Ability)| OR |Rocket Registration|"
+    },
+	{
+      "name": "Shoot the entity with a rocket 5 times",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Item/Move Tasks",
+        "BIAST"
+      ],
+      "requires": "|Rocket Registration|"
+    },
+	{
+      "name": "Charge the entity 5 times",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Item/Move Tasks",
+        "BIAST"
+      ],
+      "requires": "|Charge (F Ability)|"
+    },
+	{
+      "name": "Have an entity or contractee set off your tripmine",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Item/Move Tasks",
+        "BIAST"
+      ],
+      "requires": "|Gifted Subspace Tripmine|"
+    },
+	{
+      "name": "Explode an Entity with a bomb 5 times",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Item/Move Tasks",
+        "BIAST"
+      ],
+      "requires": "|Bomb Liscense|"
+    },
+	{
+      "name": "Win as Slacker",
+      "region": "BIAST_K",
+      "category": [
+		"Slacker Tasks",
+        "BIAST"
+      ],
+      "requires": "|Slacker|"
+    },
+	{
+      "name": "Win as Wonderful/Atrocity/Mimic",
+      "region": "BIAST_K",
+      "category": [
+		"Slacker Tasks",
+        "BIAST"
+      ],
+      "requires": "|Slacker| AND (|Slacker Skin - Wonderful| OR |Slacker Skin - Atrocity| OR |Slacker Skin - Mimic|)"
+    },
+	{
+      "name": "Kill a contractee with Juvenile Burden as the finisher",
+      "region": "BIAST_K",
+      "category": [
+		"Slacker Tasks",
+        "BIAST"
+      ],
+      "requires": "|Slacker|"
+    },
+	{
+      "name": "Kill a contractee by m1ing out of Shroud",
+      "region": "BIAST_K",
+      "category": [
+		"Slacker Tasks",
+        "BIAST"
+      ],
+      "requires": "|Slacker|"
+    },
+	{
+      "name": "Win as Trapper",
+      "region": "BIAST_K",
+      "category": [
+		"Trapper Tasks",
+        "BIAST"
+      ],
+      "requires": "|Trapper|"
+    },
+	{
+      "name": "Win as Mouth/Corroded/Charlie",
+      "region": "BIAST_K",
+      "category": [
+		"Trapper Tasks",
+        "BIAST"
+      ],
+      "requires": "|Trapper| AND (|Trapper Skin - Mouth| OR |Trapper Skin - Corroded| OR |Trapper Skin - Charlie|)"
+    },
+	{
+      "name": "Kill a contractee while they're stuck in a trap",
+      "region": "BIAST_K",
+      "category": [
+		"Trapper Tasks",
+        "BIAST"
+      ],
+      "requires": "|Trapper|"
+    },
+	{
+      "name": "Kill a contractee slowed by a tripwire",
+      "region": "BIAST_K",
+      "category": [
+		"Trapper Tasks",
+        "BIAST"
+      ],
+      "requires": "|Trapper|"
+    },
+	{
+      "name": "Win as CubedHexa22",
+      "region": "BIAST_K",
+      "category": [
+		"CubedHexa22 Tasks",
+        "BIAST"
+      ],
+      "requires": "|CubedHexa22|"
+    },
+	{
+      "name": "Win as Dylan Matthew/Token/ULTRAKILLER",
+      "region": "BIAST_K",
+      "category": [
+		"CubedHexa22 Tasks",
+        "BIAST"
+      ],
+      "requires": "|CubedHexa22| AND (|CubedHexa22 Skin - Dylan Matthew| OR |CubedHexa22 Skin - Token| OR |CubedHexa22 Skin - ULTRAKILLER|)"
+    },
+	{
+      "name": "Kill someone by grappling them over a death plane",
+      "region": "BIAST_K",
+      "category": [
+		"CubedHexa22 Tasks",
+        "BIAST"
+      ],
+      "requires": "|CubedHexa22|"
+    },
+	{
+      "name": "Witness a contractee die via a tripmine",
+      "region": "BIAST_K",
+      "category": [
+		"CubedHexa22 Tasks",
+        "BIAST"
+      ],
+      "requires": "|CubedHexa22|"
+    },
+	{
+      "name": "Win as Observer",
+      "region": "BIAST_K",
+      "category": [
+		"Observer Tasks",
+        "BIAST"
+      ],
+      "requires": "|Observer|"
+    },
+	{
+      "name": "Win as Queen/NOLI/Revengeseeker",
+      "region": "BIAST_K",
+      "category": [
+		"Observer Tasks",
+        "BIAST"
+      ],
+      "requires": "|Observer| AND (|Observer Skin - Queen| OR |Observer Skin - NOLI| OR |Observer Skin - Revengeseeker|)"
+    },
+	{
+      "name": "Coldstalk a player",
+      "region": "BIAST_K",
+      "category": [
+		"Observer Tasks",
+        "BIAST"
+      ],
+      "requires": "|Observer|"
+    },
+	{
+      "name": "Kill a Contractee while Observation Eye is active",
+      "region": "BIAST_K",
+      "category": [
+		"Observer Tasks",
+        "BIAST"
+      ],
+      "requires": "|Observer|"
+    },
+	{
+      "name": "Win as Ashle",
+      "region": "BIAST_K",
+      "category": [
+		"Ashle Tasks",
+        "BIAST"
+      ],
+      "requires": "|Ashle|"
+    },
+	{
+      "name": "Win as Hitman/Krystal Dance/Priceless",
+      "region": "BIAST_K",
+      "category": [
+		"Ashle Tasks",
+        "BIAST"
+      ],
+      "requires": "|Ashle| AND (|Ashle Skin - Hitman| OR |Ashle Skin - Krystal Dance| OR |Ashle Skin - Priceless|)"
+    },
+	{
+      "name": "Parry an incoming attack with m1",
+      "region": "BIAST_K",
+      "category": [
+		"Ashle Tasks",
+        "BIAST"
+      ],
+      "requires": "|Ashle|"
+    },
+	{
+      "name": "Kill a Contractee",
+      "region": "BIAST_K",
+      "category": [
+		"Ashle Tasks",
+        "BIAST"
+      ],
+      "requires": "|Ashle|"
+    },
+	{
+      "name": "Win as Jeff the Killer",
+      "region": "BIAST_K",
+      "category": [
+		"Jeff the Killer Tasks",
+		"Jeff the Killer",
+        "BIAST"
+      ],
+      "requires": "|Jeff the Killer|"
+    },
+	{
+      "name": "Win as Jeff the Killer... Again",
+      "region": "BIAST_K",
+      "category": [
+		"Jeff the Killer Tasks",
+		"Jeff the Killer",
+        "BIAST"
+      ],
+      "requires": "|Jeff the Killer|"
+    },
+	{
+      "name": "Hit a contractee with knife throw",
+      "region": "BIAST_K",
+      "category": [
+		"Jeff the Killer Tasks",
+		"Jeff the Killer",
+        "BIAST"
+      ],
+      "requires": "|Jeff the Killer|"
+    },
+	{
+      "name": "Tearpo Inc. - Activate a Flare Stack",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Tearpo Inc.",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Tearpo Inc. - Get crushed by falling rubble",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Tearpo Inc.",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Terpo Inc. - Fall into an Elevator Shaft",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Tearpo Inc.",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Teapot Harbor - Charge an Entity or Contractee into the waters",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Teapot Harbor",
+        "BIAST"
+      ],
+      "requires": "|Charge (F Ability)|"
+    },
+	{
+      "name": "Dustspire - Cross the sweeper bridge, grab the artifact, and go back without taking damage",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Dustspire",
+        "BIAST"
+      ],
+      "requires": "|Heavy Artifacts| OR |Scroll Carrying|"
+    },
+	{
+      "name": "Dustspire - Land the ragdoll shortcut from the middle spire to the lower bridge",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Dustspire",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Dustspire - Be the one to turn the Valve",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Dustspire",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Iron Cafe Revisit - Click on the DJ Table in the basement",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Iron Cafe Revisit",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Cafe2 - Break every glass pane in the Cafe",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Cafe2",
+        "BIAST"
+      ],
+      "requires": "|Charge (F Ability)|"
+    },
+	{
+      "name": "Cafe2 - Free the Jailed Artifact",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Cafe2",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Cafe2 - Feed the Drakobloxxer",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Cafe2",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Box Factory - Deliver a bot to a bot spot at three different spots",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Box Factory",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Box Factory - Successfully ride an elevator from one side",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Box Factory",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Box Factory - Hit the entity with an exploding barrel",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Box Factory",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Winter Stronghold - Destroy 5 killbots with snowballs",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Winter Stronghold",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Winter Stronghold - Win a round without being damaged by a killbot",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Winter Stronghold",
+        "BIAST"
+      ],
+      "requires": "|Crouch (C Ability)|"
+    },
+	{
+      "name": "Winter Stronghold - Win a round without crouching",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Winter Stronghold",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Push an Adversary 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Noob (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Noob (JOMA)|"
+    },
+	{
+      "name": "Heal yourself to full with sandwich",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Noob (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Noob (JOMA)|"
+    },
+	{
+      "name": "Throw a rock at an Adversary 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Noob (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Noob (JOMA)|"
+    },
+	{
+      "name": "Push an Adversary or Abberant off an edge",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Noob (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Noob (JOMA)|"
+    },
+	{
+      "name": "Throw a pie at an Adversary or Abberant 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Jester Tasks",
+        "JOMA"
+      ],
+      "requires": "|Jester|"
+    },
+	{
+      "name": "Land a successful Taunt at least 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Jester Tasks",
+        "JOMA"
+      ],
+      "requires": "|Jester|"
+    },
+	{
+      "name": "Have an Adversary experience the joy of conffeti 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Jester Tasks",
+        "JOMA"
+      ],
+      "requires": "|Jester|"
+    },
+	{
+      "name": "Balance 3 pies in your inventory at once",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Jester Tasks",
+        "JOMA"
+      ],
+      "requires": "|Jester|"
+    },
+	{
+      "name": "Inject at least 10 fellow Survivors",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Doctor Tasks",
+        "JOMA"
+      ],
+      "requires": "|Doctor|"
+    },
+	{
+      "name": "Wound an Adversary or Abberant 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Doctor Tasks",
+        "JOMA"
+      ],
+      "requires": "|Doctor|"
+    },
+	{
+      "name": "Heal either yourself or a Survivor with Medkit 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Doctor Tasks",
+        "JOMA"
+      ],
+      "requires": "|Doctor|"
+    },
+	{
+      "name": "Inject a Survivor in chase or on the frontlines 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Doctor Tasks",
+        "JOMA"
+      ],
+      "requires": "|Doctor|"
+    },
+	{
+      "name": "Bash an Adversary out of Shield 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Shielder Tasks",
+        "JOMA"
+      ],
+      "requires": "|Shielder|"
+    },
+	{
+      "name": "Have your Shield get broken by an Adversary or Abberant",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Shielder Tasks",
+        "JOMA"
+      ],
+      "requires": "|Shielder|"
+    },
+	{
+      "name": "Charge into an Adversary or Abberant 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Shielder Tasks",
+        "JOMA"
+      ],
+      "requires": "|Shielder|"
+    },
+	{
+      "name": "Rally 10 fellow Survivors",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Shielder Tasks",
+        "JOMA"
+      ],
+      "requires": "|Shielder|"
+    },
+	{
+      "name": "Slash an Adversary or Abberant 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Knight Tasks",
+        "JOMA"
+      ],
+      "requires": "|Knight|"
+    },
+	{
+      "name": "Hit 2 or more Adversaries with one Cleave",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Knight Tasks",
+        "JOMA"
+      ],
+      "requires": "|Knight|"
+    },
+	{
+      "name": "Parry an Adversary or Abberant 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Knight Tasks",
+        "JOMA"
+      ],
+      "requires": "|Knight|"
+    },
+	{
+      "name": "Land each move while under the effects of Braveheart",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Knight Tasks",
+        "JOMA"
+      ],
+      "requires": "|Knight|"
+    },
+	{
+      "name": "Shoot an Adversary or Abberant 20 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sherrif Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sherrif|"
+    },
+	{
+      "name": "Unload a full cylinder with Fire and land at least 5 shots",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sherrif Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sherrif|"
+    },
+	{
+      "name": "Lasso a fellow Survivor or an Adversary 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sherrif Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sherrif|"
+    },
+	{
+      "name": "Shoot an Adversary or Abberant with Wondershot 3 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sherrif Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sherrif|"
+    },
+	{
+      "name": "Finish the whole 2:23 second song as Vocalist",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Vocalist Tasks",
+        "JOMA"
+      ],
+      "requires": "|Vocalist|"
+    },
+	{
+      "name": "Place down both of your Speakers",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Vocalist Tasks",
+        "JOMA"
+      ],
+      "requires": "|Vocalist|"
+    },
+	{
+      "name": "Rupture an Adversary or Abberant 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Vocalist Tasks",
+        "JOMA"
+      ],
+      "requires": "|Vocalist|"
+    },
+	{
+      "name": "Land a combo of 50 while Playing",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Vocalist Tasks",
+        "JOMA"
+      ],
+      "requires": "|Vocalist|"
+    },
+	{
+      "name": "Hit an Adversary or Abberant with Fireaxe 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Firefighter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Firefighter|"
+    },
+	{
+      "name": "Throw a Molotov at an Adversary 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Firefighter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Firefighter|"
+    },
+	{
+      "name": "Burn an Adversary for roughly 50 collective seconds",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Firefighter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Firefighter|"
+    },
+	{
+      "name": "Use 50% of your fuel in one Flamethrower usage",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Firefighter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Firefighter|"
+    },
+	{
+      "name": "Hit an Adversary with every variant of Kick",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Guest (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Guest (JOMA)|"
+    },
+	{
+      "name": "Kick/Sweep an Adversary 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Guest (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Guest (JOMA)|"
+    },
+	{
+      "name": "Dodgeroll out of the way of an attack",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Guest (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Guest (JOMA)|"
+    },
+	{
+      "name": "Carry a fellow Survivor to safety from an Adversary",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Guest (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Guest (JOMA)|"
+    },
+	{
+      "name": "Dropkick an Adversary or Abberant",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Guest (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Guest (JOMA)|"
+    },
+	{
+      "name": "Beatdown an Adversary",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Brawler Tasks",
+        "JOMA"
+      ],
+      "requires": "|Brawler|"
+    },
+	{
+      "name": "Punch an Adversary or Abberant 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Brawler Tasks",
+        "JOMA"
+      ],
+      "requires": "|Brawler|"
+    },
+	{
+      "name": "Dodge 5 attacks from an Adversary (Not an Abberant)",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Brawler Tasks",
+        "JOMA"
+      ],
+      "requires": "|Brawler|"
+    },
+	{
+      "name": "Land a fully worked-out Punch",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Brawler Tasks",
+        "JOMA"
+      ],
+      "requires": "|Brawler|"
+    },
+	{
+      "name": "Shoot an Adversary 20 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sniper Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sniper|"
+    },
+	{
+      "name": "Headshot an Adversary",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sniper Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sniper|"
+    },
+	{
+      "name": "Throw Teargas at an Adversary 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sniper Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sniper|"
+    },
+	{
+      "name": "Land both parts of Retreat 3 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sniper Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sniper|"
+    }
+  ]
+}
