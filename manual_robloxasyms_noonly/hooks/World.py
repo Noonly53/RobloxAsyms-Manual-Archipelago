@@ -3,7 +3,7 @@ from typing import Any
 from worlds.AutoWorld import World
 from BaseClasses import MultiWorld, CollectionState, Item, ItemClassification
 from Options import OptionError
-import random
+import re
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
 from ..Items import ManualItem
@@ -159,13 +159,15 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             locationNamesToRemove.append(location["name"])
     
     #Editing Gen amount DOESN'T WORK YET, MAKE THIS WORK NOONLY
-    genAmount = get_option_value(multiworld, player, "Gensanity_Amount")
-    fullGenAmount = [str(genAmount), str(genAmount + 1), str(genAmount + 2)]
-    
-    for location in location_table:
-        should_remove = False
-        for number in fullGenAmount:
-            if number in location["name"] and location["category"] == "Forsaken Gensanity Tasks":
+    # I made it work - StudMuffin
+    if get_option_value(multiworld, player, "Gensanity"):
+        genAmount = get_option_value(multiworld, player, "Gensanity_Amount")
+        
+        for location in location_table:
+            if "Forsaken Gensanity Tasks" not in location.get("category", []):
+                continue
+            match = re.search(r"Gen (\d+)$", location["name"])
+            if match and int(match.group(1)) > genAmount:
                 locationNamesToRemove.append(location["name"])
     
     for region in multiworld.regions:
@@ -343,10 +345,14 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
 
     move_sanity = is_option_enabled(multiworld, player, "Move_Sanity")
     Surv_Map = Surv_Map + (Move_Map if move_sanity else Char_Map)
+    pool_names = {i.name for i in item_pool}
+    #never_pick = get_option_value(multiworld, player, "Exclude_Starting_Characters")'''
+    never_pick = {""} # Remove this and uncomment the other once the option exists
 
     def pick_unique(pool: list, count: int) -> list:
         # Pick up to `count` unique names from pool, without mutating pool or crashing on oversized counts.
-        count = max(0, min(count, len(pool)))
+        available = [name for name in pool if name in pool_names and name not in never_pick]
+        count = max(0, min(count, len(available)))
         return world.random.sample(pool, count)
 
     override_survivors = get_option_value(multiworld, player, "Override_Starting_Survivors")
@@ -418,7 +424,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         startingItems.extend(pick_unique(Kill_Map, 1))
 
     else:
-        # Auto-balance off, but one override was set and the other wasn't — default the unset one
+        # Auto-balance off, but one override was set and the other wasn't - default the unset one
         if override_survivors == -1:
             startingItems.extend(pick_unique(Surv_Map, 2))
         if override_killers == -1:

@@ -416,8 +416,8 @@ def before_option_groups_created(groups: dict[str, list[Type[Option[Any]]]]) -> 
     groups['Scream Jam'] = [PlayingSJ]
     groups['Pursuitcore'] = [PlayingPS, TheKit, PSMisc]
     groups['Break in and Steal Thingz'] = [PlayingBIAST, BIASTVIP, BIASTMap]
-    groups['Character Exclusion'] = [ForsakenExclude, DoDExclude, OMExclude, SJExclude, PSExclude, BIASTExclude]
     groups['Just one more Asym'] = [PlayingJOMA, JOMAExclude]
+    groups['Character Exclusion'] = [ForsakenExclude, DoDExclude, OMExclude, SJExclude, PSExclude, BIASTExclude]
     return groups
 
 def after_option_groups_created(groups: list[OptionGroup]) -> list[OptionGroup]:
