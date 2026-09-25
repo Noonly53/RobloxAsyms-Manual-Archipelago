@@ -37,6 +37,13 @@ class WintokenAmount(Range):
     range_end = 40
     default = 15
 
+class WintokenExtra(Range):
+    """How many extra wintokens are included when generated"""
+    display_name = "Extra Wintokens"
+    range_start = 0
+    range_end = 10
+    default = 5
+
 class SurvivorsNeeded(Range):
     """The amount of Survivors needed to win the game. Leads to faster or slower completion
     Only contributes to the goal if your goal is: Win (Collect Specified amount of Survivors) OR: Win (Collect Specified amount of Survivors and Killers)
@@ -84,16 +91,27 @@ class ForsakenGens(Toggle):
     """Adds Maps as Items and Generator Spawns as locations. Highly recommend using the Poptracker for this. You do not need maps to play on them (Unless you want to do that)"""
     display_name = "Forsaken Gensanity"
     
-class KillerDoors(Toggle):
-    """Adds an item that dictates how many times you may use a killer door in each killer round"""
-    display_name = "Include Killer Doors"
+class GensanityAmount(Range):
+    """How many gen spawns should be included as a check for each map"""
+    display_name = "Gens per Map"
+    default = 5
+    range_start = 1
+    range_end = 11
     
-class KillerDoorsAmount(Range):
-    """Determines the amount of Killer Door items that are included with the last option enabled"""
-    display_name = "Killer Door Amount"
-    default = 10
-    range_start = 5
-    range_end = 30
+class SkinFiller(Toggle):
+    """Decide if you want the filler (Any check that doesn't hold a progressive or useful item) to be a skin from any enabled game.
+    If off: Filler will just be a basic: 'Nothing!'"""
+    display_name = "Skins as Filler"
+    default = 1
+    
+class StartingSkins(OptionSet):
+    """Choose skins you'd like to start with (Can just ignore if skins are turned off)
+    Must follow the template: [Character name] Skin - [Skin Name]
+    Example: Noob Skin - Inverted"""
+    display_name = "Starting Skins"
+    valid_keys = frozenset([
+    ])
+    default = frozenset([])
     
 class ForsakenMisc(Toggle):
     """Include many random extra tasks that may take longer to complete. Includes winning on each map"""
@@ -248,7 +266,7 @@ class PSMisc(Toggle):
     display_name = "Include Pursuitcore Misc Tasks"
 
 class PSExclude(OptionSet):
-    """Exclude chosen characters in PursuitCore"""
+    """Exclude chosen characters in Pursuitcore"""
     display_name = "Pursuitcore Characters Excluded"
     valid_keys = frozenset([
         "dante",
@@ -264,7 +282,7 @@ class PSExclude(OptionSet):
         "dotx",
         "blankstare",
         "sweep",
-        "captain lime",
+        "captain limewire",
         "jack noir"
     ])
     default = frozenset([])
@@ -293,17 +311,57 @@ class BIASTExclude(OptionSet):
         "ashle"
     ])
     default = frozenset([])
+    
+class PlayingJOMA(Toggle):
+    """Enables Just one more Asym in generation"""
+    display_name = "Playing Just one more Asym"
+  
+class JOMAExclude(OptionSet):
+    """Exclude chosen Survivors or Killers in Just one more Asym"""
+    display_name = "Just one more Asym Characters Excluded"
+    valid_keys = frozenset([
+        "noob (joma)",
+        "doctor",
+        "jester",
+        "assistant",
+        "brawler",
+        "firefighter",
+        "shielder",
+        "knight",
+        "maniac",
+        "wrecker",
+        "guest (joma)",
+        "hemomancer",
+        "sniper",
+        "vocalist",
+        "sherrif",
+        "spotter",
+        "dullahan",
+        "anarchist",
+        "executioner",
+        "firework",
+        "chronos",
+        "hunter",
+        "chaser",
+        "sin",
+        "apprentice",
+        "flarereaver",
+        "custodian"
+    ])
+    default = frozenset([])
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
     options["Move_Sanity"] = MoveSanity
     options["Wintoken_Amount"] = WintokenAmount
+    options["Wintoken_Extra"] = WintokenExtra
     options["Survivors_Needed"] = SurvivorsNeeded
     options["Killers_Needed"] = KillersNeeded
-    options["Include_Killer_Doors"] = KillerDoors
-    options["Killer_Door_Amount"] = KillerDoorsAmount
+    options["Skins_as_Filler"] = SkinFiller
+    options["Starting_Skins"] = StartingSkins
     options["Playing_Forsaken"] = PlayingForsaken
     options["Gensanity"] = ForsakenGens
+    options["Gensanity_Amount"] = GensanityAmount
     options["Include_Forsaken_Misc_Tasks"] = ForsakenMisc
     options["Include_Forsaken_LMS_Tasks"] = ForsakenLMS
     options["Include_Forsaken_Skin_LMS_Tasks"] = ForsakenSkinLMS
@@ -328,6 +386,8 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["Include_Early_Access_Killer"] = BIASTVIP
     options["Include_Map_Tasks"] = BIASTMap
     options["BIAST_Exclude"] = BIASTExclude
+    options["Playing_Just_One_More_Asym"] = PlayingJOMA
+    options["JOMA_Exclude"] = JOMAExclude
     
     #Options Added By StudMuffin, put a # in front of these if you need to push an update and it breaks these, and someone isnt able to fix them.
     options["Auto_Balance_Starting_Amount"] = AutoBalanceStartingCharacterAmount
@@ -344,20 +404,20 @@ def after_options_defined(options: Type[PerGameCommonOptions]):
     #  Here's an example on how to add your aliases to the generated goal
     # options.type_hints['goal'].aliases.update({"example": 0, "second_alias": 1})
     # options.type_hints['goal'].options.update({"example": 0, "second_alias": 1})  #for an alias to be valid it must also be in options
-
     pass
 
 # Use this Hook if you want to add your Option to an Option group (existing or not)
 def before_option_groups_created(groups: dict[str, list[Type[Option[Any]]]]) -> dict[str, list[Type[Option[Any]]]]:
     # Uses the format groups['GroupName'] = [TotalCharactersToWinWith]
-    groups['Global Things'] = [MoveSanity, WintokenAmount, SurvivorsNeeded, KillersNeeded, KillerDoors, KillerDoorsAmount, AutoBalanceStartingCharacterAmount, OverRideKillerStartingAmount, OverRideSurvivorStartingAmount]
-    groups['Forsaken'] = [PlayingForsaken, ForsakenGens, ForsakenMisc, ForsakenLMS, ForsakenSkinLMS, Trickstabs, ReactBlocks]
+    groups['Global Things'] = [MoveSanity, WintokenAmount, WintokenExtra, SurvivorsNeeded, KillersNeeded, SkinFiller, StartingSkins, AutoBalanceStartingCharacterAmount, OverRideKillerStartingAmount, OverRideSurvivorStartingAmount]
+    groups['Forsaken'] = [PlayingForsaken, ForsakenGens, GensanityAmount, ForsakenMisc, ForsakenLMS, ForsakenSkinLMS, Trickstabs, ReactBlocks]
     groups['Die of Death'] = [PlayingDoD, DoDMisc, DoDLMS, DoDSynergies]
     groups['Outcome Memories'] = [PlayingOM, OMMap]
     groups['Scream Jam'] = [PlayingSJ]
     groups['Pursuitcore'] = [PlayingPS, TheKit, PSMisc]
     groups['Break in and Steal Thingz'] = [PlayingBIAST, BIASTVIP, BIASTMap]
     groups['Character Exclusion'] = [ForsakenExclude, DoDExclude, OMExclude, SJExclude, PSExclude, BIASTExclude]
+    groups['Just one more Asym'] = [PlayingJOMA, JOMAExclude]
     return groups
 
 def after_option_groups_created(groups: list[OptionGroup]) -> list[OptionGroup]:

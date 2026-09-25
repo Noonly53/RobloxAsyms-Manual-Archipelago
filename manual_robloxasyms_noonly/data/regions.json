@@ -7,7 +7,8 @@
       "OM_K",
       "SJ_K",
 	  "PS_K",
-	  "BIAST_K"
+	  "BIAST_K",
+	  "JOMA_K"
     ],
     "requires": "",
     "starting": true
@@ -24,7 +25,8 @@
       "SJ_S",
 	  "PS_S",
 	  "PS_Misc",
-	  "BIAST_Contractee"
+	  "BIAST_Contractee",
+	  "JOMA_Survivor"
     ],
     "requires": "",
     "starting": true
@@ -39,7 +41,7 @@
   },
   "Forsaken_K": {
     "connects_to": [],
-    "requires": "|Noob| OR |Shedletsky| OR |007n7| OR |Veeronica| OR |Guest 1337| OR |Taph| OR |Dusekkar| OR |Jane Doe| OR |Two Time| OR |Chance| OR |Elliot| OR |Builderman| OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix|) OR (|Vandalism| AND |Sk8| AND |Broadcast| AND |Activate Battery|) OR (|Subspace Tripmine| AND |Taph Tripwire|) OR (|Plasma Beam| AND |Spawn Protection|) OR (|Guest Block| AND |Charge| AND |Guest Punch|) OR (|Sacrificial Dagger| AND |Crouch| AND |Pray| AND |Ritual|) OR (|Crystal Pitch| AND |Hatchet|) OR (|Slash| AND |Fried Chicken|) OR (|Bloxy Cola| AND |Slateskin Potion| AND |GhostBurger|) OR (|Sentry| AND |Dispenser| AND |Carry|) OR (|Clone| AND |C00LGUI| AND |Inject|) AND {YamlEnabled(Playing_Forsaken)}"
+    "requires": "|Noob (Forsaken)| OR |Shedletsky| OR |007n7| OR |Veeronica| OR |Guest 1337| OR |Taph| OR |Dusekkar| OR |Jane Doe| OR |Two Time| OR |Chance| OR |Elliot| OR |Builderman| OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix|) OR (|Vandalism| AND |Sk8| AND |Broadcast| AND |Activate Battery|) OR (|Subspace Tripmine| AND |Taph Tripwire|) OR (|Plasma Beam| AND |Spawn Protection|) OR (|Guest Block| AND |Charge| AND |Guest Punch|) OR (|Sacrificial Dagger| AND |Crouch| AND |Pray| AND |Ritual|) OR (|Crystal Pitch| AND |Hatchet|) OR (|Slash| AND |Fried Chicken|) OR (|Bloxy Cola| AND |Slateskin Potion| AND |GhostBurger|) OR (|Sentry| AND |Dispenser| AND |Carry|) OR (|Clone| AND |C00LGUI| AND |Inject|) AND {YamlEnabled(Playing_Forsaken)}"
   },
   "DoD_S": {
     "connects_to": [],
@@ -47,7 +49,7 @@
   },
   "Forsaken_Gens": {
     "connects_to": [],
-    "requires": "|Noob| OR |Shedletsky| OR |007n7| OR |Veeronica| OR |Guest 1337| OR |Taph| OR |Dusekkar| OR |Jane Doe| OR |Two Time| OR |Chance| OR |Elliot| OR |Builderman| OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix|) OR (|Vandalism| AND |Sk8| AND |Broadcast| AND |Activate Battery|) OR (|Subspace Tripmine| AND |Taph Tripwire|) OR (|Plasma Beam| AND |Spawn Protection|) OR (|Guest Block| AND |Charge| AND |Guest Punch|) OR (|Sacrificial Dagger| AND |Crouch| AND |Pray| AND |Ritual|) OR (|Crystal Pitch| AND |Hatchet|) OR (|Slash| AND |Fried Chicken|) OR (|Bloxy Cola| AND |Slateskin Potion| AND |GhostBurger|) OR (|Sentry| AND |Dispenser| AND |Carry|) OR (|Clone| AND |C00LGUI| AND |Inject|) AND {YamlEnabled(Playing_Forsaken)}"
+    "requires": "|Noob (Forsaken)| OR |Shedletsky| OR |007n7| OR |Veeronica| OR |Guest 1337| OR |Taph| OR |Dusekkar| OR |Jane Doe| OR |Two Time| OR |Chance| OR |Elliot| OR |Builderman| OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix|) OR (|Vandalism| AND |Sk8| AND |Broadcast| AND |Activate Battery|) OR (|Subspace Tripmine| AND |Taph Tripwire|) OR (|Plasma Beam| AND |Spawn Protection|) OR (|Guest Block| AND |Charge| AND |Guest Punch|) OR (|Sacrificial Dagger| AND |Crouch| AND |Pray| AND |Ritual|) OR (|Crystal Pitch| AND |Hatchet|) OR (|Slash| AND |Fried Chicken|) OR (|Bloxy Cola| AND |Slateskin Potion| AND |GhostBurger|) OR (|Sentry| AND |Dispenser| AND |Carry|) OR (|Clone| AND |C00LGUI| AND |Inject|) AND {YamlEnabled(Playing_Forsaken)}"
   },
   "DoD_Misc": {
     "connects_to": [],
@@ -96,5 +98,13 @@
   "BIAST_K": {
     "connects_to": [],
     "requires": "|@BIAST Entities|"
+  },
+  "JOMA_Survivor": {
+	  "connects_to": [],
+	  "requires": "|@JOMA Survivors|"
+  },
+  "JOMA_K": {
+	  "connects_to": [],
+	  "requires": "|@JOMA Survivors| AND |@JOMA Adversaries|"
   }
 }

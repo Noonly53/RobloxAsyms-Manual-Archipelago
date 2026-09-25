@@ -1161,55 +1161,55 @@
       "name": "Use 5 Colas in one match",
       "category": [
         "Forsaken",
-        "Noob Tasks"
+        "Noob (Forsaken) Tasks"
       ],
       "region": "Forsaken_S",
-      "requires": "|Noob| or |Bloxy Cola|"
+      "requires": "|Noob (Forsaken)| or |Bloxy Cola|"
     },
     {
       "name": "Successfully bodyblock a teammate with Slateskin",
       "category": [
         "Forsaken",
-        "Noob Tasks"
+        "Noob (Forsaken) Tasks"
       ],
       "region": "Forsaken_S",
-      "requires": "|Noob| or |Slateskin Potion|"
+      "requires": "|Noob (Forsaken)| or |Slateskin Potion|"
     },
     {
       "name": "Avoid any killer's detection with Ghost Burger",
       "category": [
         "Forsaken",
-        "Noob Tasks"
+        "Noob (Forsaken) Tasks"
       ],
       "region": "Forsaken_S",
-      "requires": "|Noob| or |GhostBurger|"
+      "requires": "|Noob (Forsaken)| or |GhostBurger|"
     },
     {
       "name": "Distract a killer for a collective time of 30-60 seconds",
       "category": [
         "Forsaken",
-        "Noob Tasks"
+        "Noob (Forsaken) Tasks"
       ],
       "region": "Forsaken_S",
-      "requires": "|Noob| or |Bloxy Cola|"
+      "requires": "|Noob (Forsaken)| or |Bloxy Cola|"
     },
     {
       "name": "Do a generator before being found by the killer",
       "category": [
         "Forsaken",
-        "Noob Tasks"
+        "Noob (Forsaken) Tasks"
       ],
       "region": "Forsaken_S",
-      "requires": "|Noob| OR (|Bloxy Cola| and |GhostBurger|)"
+      "requires": "|Noob (Forsaken)| OR (|Bloxy Cola| and |GhostBurger|)"
     },
     {
-      "name": "Win 3 times as Noob",
+      "name": "Win 3 times as Noob (Forsaken)",
       "category": [
         "Forsaken",
-        "Noob Tasks"
+        "Noob (Forsaken) Tasks"
       ],
       "region": "Forsaken_S",
-      "requires": "|Noob| OR (|Bloxy Cola| and |Slateskin Potion| and |GhostBurger|)"
+      "requires": "|Noob (Forsaken)| OR (|Bloxy Cola| and |Slateskin Potion| and |GhostBurger|)"
     },
     {
       "name": "Throw a pizza on top of a teammate 3 times",
@@ -3950,7 +3950,7 @@
         "Forsaken LMS Tasks"
       ],
       "region": "Forsaken_Misc",
-      "requires": "|Noob| OR |Guest 666| OR (|Bloxy Cola| AND |Slateskin Potion| AND |GhostBurger|)"
+      "requires": "|Noob (Forsaken)| OR |Guest 666| OR (|Bloxy Cola| AND |Slateskin Potion| AND |GhostBurger|)"
     },
 	{
       "name": "Win a Plead LMS on either side (007n7 Vs C00lkidd)",
@@ -4026,7 +4026,7 @@
         "Forsaken Skin LMS Tasks"
       ],
       "region": "Forsaken_Misc",
-      "requires": "(|Noob| AND |Noob Skin - Taunt|) OR (|Bloxy Cola| AND |Slateskin Potion| AND |GhostBurger| AND |Noob Skin - Taunt|) OR (|Shedletsky| AND |Shedletsky Skin - Hot Dog|) OR (|Slash| AND |Fried Chicken| AND |Shedletsky Skin - Hot Dog|) OR (|Elliot| AND |Elliot Skin - Caretaker|) OR (|Pizza Toss| AND |Rush Hour| AND |Elliot Skin - Caretaker|) OR (|Builderman| AND |Builderman Skin - Carepad|) OR (|Sentry| AND |Dispenser| AND |Carry| AND |Builderman Skin - Carepad|) OR (|Guest 1337| AND |Guest 1337 Skin - Block|) OR (|Guest Block| AND |Charge| AND |Guest Punch| AND |Guest 1337 Skin - Block|) OR (|Two Time| AND |Two Time Skin - Cloak|) OR (|Sacrificial Dagger| AND |Crouch| AND |Pray| AND |Ritual| AND |Two Time Skin - Cloak|) OR (|Taph| AND |Taph Skin - Banana|) OR (|Subspace Tripmine| AND |Taph Tripwire| AND |Taph Skin - Banana|) OR (|Chance| AND |Chance Skin - Revolver|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix| AND |Chance Skin - Revolver|) OR (|Chance| AND |Chance Skin - Loveshot|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix| AND |Chance Skin - Loveshot|) OR (|Slasher| AND |Slasher Skin - Pursuer|) OR (|Noli| AND |Noli Skin - Artful|) OR (|Noli| AND |Noli Skin - Devesto|)"
+      "requires": "(|Noob (Forsaken)| AND |Noob Skin - Taunt|) OR (|Bloxy Cola| AND |Slateskin Potion| AND |GhostBurger| AND |Noob Skin - Taunt|) OR (|Shedletsky| AND |Shedletsky Skin - Hot Dog|) OR (|Slash| AND |Fried Chicken| AND |Shedletsky Skin - Hot Dog|) OR (|Elliot| AND |Elliot Skin - Caretaker|) OR (|Pizza Toss| AND |Rush Hour| AND |Elliot Skin - Caretaker|) OR (|Builderman| AND |Builderman Skin - Carepad|) OR (|Sentry| AND |Dispenser| AND |Carry| AND |Builderman Skin - Carepad|) OR (|Guest 1337| AND |Guest 1337 Skin - Block|) OR (|Guest Block| AND |Charge| AND |Guest Punch| AND |Guest 1337 Skin - Block|) OR (|Two Time| AND |Two Time Skin - Cloak|) OR (|Sacrificial Dagger| AND |Crouch| AND |Pray| AND |Ritual| AND |Two Time Skin - Cloak|) OR (|Taph| AND |Taph Skin - Banana|) OR (|Subspace Tripmine| AND |Taph Tripwire| AND |Taph Skin - Banana|) OR (|Chance| AND |Chance Skin - Revolver|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix| AND |Chance Skin - Revolver|) OR (|Chance| AND |Chance Skin - Loveshot|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix| AND |Chance Skin - Loveshot|) OR (|Slasher| AND |Slasher Skin - Pursuer|) OR (|Noli| AND |Noli Skin - Artful|) OR (|Noli| AND |Noli Skin - Devesto|)"
     },
 	{
       "name": "Win a the Way it Ends LMS on either side (SCP Killer Vs Guard Guest 1337)",
@@ -5990,58 +5990,58 @@
       "requires": "|Sweep|"
     },
 	{
-      "name": "Win (Captain Lime)",
+      "name": "Win (Captain Limewire)",
       "region": "PS_K",
       "category": [
-        "Captain Lime Tasks",
+        "Captain Limewire Tasks",
         "PS"
       ],
-      "requires": "|Captain Lime|"
+      "requires": "|Captain Limewire|"
     },
 	{
-      "name": "Kill 5 Users (Captain Lime)",
+      "name": "Kill 5 Users (Captain Limewire)",
       "region": "PS_K",
       "category": [
-        "Captain Lime Tasks",
+        "Captain Limewire Tasks",
         "PS"
       ],
-      "requires": "|Captain Lime|"
+      "requires": "|Captain Limewire|"
     },
 	{
       "name": "Shoot a User with Limelock 5 times",
       "region": "PS_K",
       "category": [
-        "Captain Lime Tasks",
+        "Captain Limewire Tasks",
         "PS"
       ],
-      "requires": "|Captain Lime|"
+      "requires": "|Captain Limewire|"
     },
 	{
       "name": "Hook a User 5 times",
       "region": "PS_K",
       "category": [
-        "Captain Lime Tasks",
+        "Captain Limewire Tasks",
         "PS"
       ],
-      "requires": "|Captain Lime|"
+      "requires": "|Captain Limewire|"
     },
 	{
       "name": "Kill a User with a Suplex",
       "region": "PS_K",
       "category": [
-        "Captain Lime Tasks",
+        "Captain Limewire Tasks",
         "PS"
       ],
-      "requires": "|Captain Lime|"
+      "requires": "|Captain Limewire|"
     },
 	{
       "name": "Deal Damage with Torrential Leap",
       "region": "PS_K",
       "category": [
-        "Captain Lime Tasks",
+        "Captain Limewire Tasks",
         "PS"
       ],
-      "requires": "|Captain Lime|"
+      "requires": "|Captain Limewire|"
     },
 	{
       "name": "Win (Jack Noir)",
@@ -6793,7 +6793,7 @@
       "requires": ""
     },
 	{
-      "name": "Box Factory - Hite the entity with an exploding barrel",
+      "name": "Box Factory - Hit the entity with an exploding barrel",
       "region": "BIAST_Contractee",
       "category": [
 		"BIAST Map Tasks",
@@ -6831,6 +6831,411 @@
         "BIAST"
       ],
       "requires": ""
+    },
+	{
+      "name": "Push an Adversary 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Noob (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Noob (JOMA)|"
+    },
+	{
+      "name": "Heal yourself to full with sandwich",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Noob (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Noob (JOMA)|"
+    },
+	{
+      "name": "Throw a rock at an Adversary 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Noob (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Noob (JOMA)|"
+    },
+	{
+      "name": "Push an Adversary or Abberant off an edge",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Noob (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Noob (JOMA)|"
+    },
+	{
+      "name": "Throw a pie at an Adversary or Abberant 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Jester Tasks",
+        "JOMA"
+      ],
+      "requires": "|Jester|"
+    },
+	{
+      "name": "Land a successful Taunt at least 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Jester Tasks",
+        "JOMA"
+      ],
+      "requires": "|Jester|"
+    },
+	{
+      "name": "Have an Adversary experience the joy of conffeti 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Jester Tasks",
+        "JOMA"
+      ],
+      "requires": "|Jester|"
+    },
+	{
+      "name": "Balance 3 pies in your inventory at once",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Jester Tasks",
+        "JOMA"
+      ],
+      "requires": "|Jester|"
+    },
+	{
+      "name": "Inject at least 10 fellow Survivors",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Doctor Tasks",
+        "JOMA"
+      ],
+      "requires": "|Doctor|"
+    },
+	{
+      "name": "Wound an Adversary or Abberant 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Doctor Tasks",
+        "JOMA"
+      ],
+      "requires": "|Doctor|"
+    },
+	{
+      "name": "Heal either yourself or a Survivor with Medkit 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Doctor Tasks",
+        "JOMA"
+      ],
+      "requires": "|Doctor|"
+    },
+	{
+      "name": "Inject a Survivor in chase or on the frontlines 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Doctor Tasks",
+        "JOMA"
+      ],
+      "requires": "|Doctor|"
+    },
+	{
+      "name": "Bash an Adversary out of Shield 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Shielder Tasks",
+        "JOMA"
+      ],
+      "requires": "|Shielder|"
+    },
+	{
+      "name": "Have your Shield get broken by an Adversary or Abberant",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Shielder Tasks",
+        "JOMA"
+      ],
+      "requires": "|Shielder|"
+    },
+	{
+      "name": "Charge into an Adversary or Abberant 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Shielder Tasks",
+        "JOMA"
+      ],
+      "requires": "|Shielder|"
+    },
+	{
+      "name": "Rally 10 fellow Survivors",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Shielder Tasks",
+        "JOMA"
+      ],
+      "requires": "|Shielder|"
+    },
+	{
+      "name": "Slash an Adversary or Abberant 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Knight Tasks",
+        "JOMA"
+      ],
+      "requires": "|Knight|"
+    },
+	{
+      "name": "Hit 2 or more Adversaries with one Cleave",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Knight Tasks",
+        "JOMA"
+      ],
+      "requires": "|Knight|"
+    },
+	{
+      "name": "Parry an Adversary or Abberant 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Knight Tasks",
+        "JOMA"
+      ],
+      "requires": "|Knight|"
+    },
+	{
+      "name": "Land each move while under the effects of Braveheart",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Knight Tasks",
+        "JOMA"
+      ],
+      "requires": "|Knight|"
+    },
+	{
+      "name": "Shoot an Adversary or Abberant 20 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sherrif Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sherrif|"
+    },
+	{
+      "name": "Unload a full cylinder with Fire and land at least 5 shots",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sherrif Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sherrif|"
+    },
+	{
+      "name": "Lasso a fellow Survivor or an Adversary 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sherrif Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sherrif|"
+    },
+	{
+      "name": "Shoot an Adversary or Abberant with Wondershot 3 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sherrif Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sherrif|"
+    },
+	{
+      "name": "Finish the whole 2:23 second song as Vocalist",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Vocalist Tasks",
+        "JOMA"
+      ],
+      "requires": "|Vocalist|"
+    },
+	{
+      "name": "Place down both of your Speakers",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Vocalist Tasks",
+        "JOMA"
+      ],
+      "requires": "|Vocalist|"
+    },
+	{
+      "name": "Rupture an Adversary or Abberant 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Vocalist Tasks",
+        "JOMA"
+      ],
+      "requires": "|Vocalist|"
+    },
+	{
+      "name": "Land a combo of 50 while Playing",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Vocalist Tasks",
+        "JOMA"
+      ],
+      "requires": "|Vocalist|"
+    },
+	{
+      "name": "Hit an Adversary or Abberant with Fireaxe 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Firefighter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Firefighter|"
+    },
+	{
+      "name": "Throw a Molotov at an Adversary 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Firefighter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Firefighter|"
+    },
+	{
+      "name": "Burn an Adversary for roughly 50 collective seconds",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Firefighter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Firefighter|"
+    },
+	{
+      "name": "Use 50% of your fuel in one Flamethrower usage",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Firefighter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Firefighter|"
+    },
+	{
+      "name": "Hit an Adversary with every variant of Kick",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Guest (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Guest (JOMA)|"
+    },
+	{
+      "name": "Kick/Sweep an Adversary 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Guest (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Guest (JOMA)|"
+    },
+	{
+      "name": "Dodgeroll out of the way of an attack",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Guest (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Guest (JOMA)|"
+    },
+	{
+      "name": "Carry a fellow Survivor to safety from an Adversary",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Guest (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Guest (JOMA)|"
+    },
+	{
+      "name": "Dropkick an Adversary or Abberant",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Guest (JOMA) Tasks",
+        "JOMA"
+      ],
+      "requires": "|Guest (JOMA)|"
+    },
+	{
+      "name": "Beatdown an Adversary",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Brawler Tasks",
+        "JOMA"
+      ],
+      "requires": "|Brawler|"
+    },
+	{
+      "name": "Punch an Adversary or Abberant 10 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Brawler Tasks",
+        "JOMA"
+      ],
+      "requires": "|Brawler|"
+    },
+	{
+      "name": "Dodge 5 attacks from an Adversary (Not an Abberant)",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Brawler Tasks",
+        "JOMA"
+      ],
+      "requires": "|Brawler|"
+    },
+	{
+      "name": "Land a fully worked-out Punch",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Brawler Tasks",
+        "JOMA"
+      ],
+      "requires": "|Brawler|"
+    },
+	{
+      "name": "Shoot an Adversary 20 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sniper Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sniper|"
+    },
+	{
+      "name": "Headshot an Adversary",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sniper Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sniper|"
+    },
+	{
+      "name": "Throw Teargas at an Adversary 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sniper Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sniper|"
+    },
+	{
+      "name": "Land both parts of Retreat 3 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Sniper Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sniper|"
     }
   ]
 }

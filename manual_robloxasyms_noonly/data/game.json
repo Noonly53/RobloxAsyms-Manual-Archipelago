@@ -2,14 +2,15 @@
   "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.game.schema.json",
   "game": "robloxasyms",
   "creator": "noonly",
-  "filler_item_name": "Any skin of your choice",
+  "filler_item_name": "Nothing!",
   "death_link": true,
   "starting_items": [
     {
       "items": [
         "Civilian",
         "Trickstabs",
-        "React Blocking"
+        "React Blocking",
+		"Noob (Forsaken)"
       ]
     },
 	{
