@@ -146,10 +146,37 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "trapper": "Trapper Tasks",
         "cubedhexa22": "CubedHexa22 Tasks",
         "observer": "Observer Tasks",
-        "ashle": "Ashle Tasks"
+        "ashle": "Ashle Tasks",
+        "noob (joma)": "Noob (JOMA) Tasks",
+        "assistant": "Assistant Tasks",
+        "jester": "Jester Tasks",
+        "sniper": "Sniper Tasks",
+        "vocalist": "Vocalist Tasks",
+        "doctor": "Doctor Tasks",
+        "guest (joma)": "Guest (JOMA) Tasks",
+        "hemomancer": "Hemomancer Tasks",
+        "shielder": "Shielder Tasks",
+        "sherrif": "Sherrif Tasks",
+        "firefighter": "Firefighter Tasks",
+        "brawler": "Brawler Tasks",
+        "knight": "Knight Tasks",
+        "maniac": "Maniac Tasks",
+        "wrecker": "Wrecker Tasks",
+        "spotter": "Spotter Tasks",
+        "dullahan": "Dullahan Tasks",
+        "anarchist": "Anarchist Tasks",
+        "executioner": "Executioner Tasks",
+        "firework": "Firework Tasks",
+        "chronos": "Chronos Tasks",
+        "hunter": "Hunter Tasks",
+        "chaser": "Chaser Tasks",
+        "sin": "Sin Tasks",
+        "apprentice": "Apprentice Tasks",
+        "flarereaver": "Flarereaver Tasks",
+        "custodian": "Custodian Tasks"
     }
 
-    excluded_characters = (list(world.options.Forsaken_Exclude.value) + list(world.options.DoD_Exclude.value) + list(world.options.SJ_Exclude.value) + list(world.options.OM_Exclude.value) + list(world.options.PS_Exclude.value) + list(world.options.BIAST_Exclude.value))
+    excluded_characters = (list(world.options.Forsaken_Exclude.value) + list(world.options.DoD_Exclude.value) + list(world.options.SJ_Exclude.value) + list(world.options.OM_Exclude.value) + list(world.options.PS_Exclude.value) + list(world.options.BIAST_Exclude.value + list(world.options.JOMA_Exclude.value)))
 
     for location in location_table:
         if any(
@@ -287,6 +314,12 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
         for item_name in list(item_config):
             if item_name.lower() in world.options.BIAST_Exclude.value:
                 item_config.pop(item_name, None)
+
+    if world.options.Playing_Just_One_More_Asym.value == True:
+        for item_name in list(item_config):
+            if item_name.lower() in world.options.JOMA_Exclude.value:
+                item_config.pop(item_name, None)
+                
     return item_config
         
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
@@ -325,7 +358,9 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         "Noob (Forsaken)", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar",
         "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman",
         # Pursuit
-        "Dante", "Mikaela", "Nyan", "Fukatsuki", "Crafter", "Vinnie", "Tac9", "Roflpix", "The Kit"
+        "Dante", "Mikaela", "Nyan", "Fukatsuki", "Crafter", "Vinnie", "Tac9", "Roflpix", "The Kit",
+        # Joma
+        "Noob (JOMA)", "Doctor", "Jester", "Assistant", "Brawler", "Firefighter", "Shielder", "Knight", "Maniac", "Wrecker", "Guest (JOMA)", "Hemomancer", "Sniper", "Vocalist", "Sherrif"
     ]
 
     Kill_Map = [
@@ -340,7 +375,9 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         #Pursuit
         "Partypwny", "DotX", "Blankstare", "Sweep", "Captain Limewire", "Jack Noir",
         #BIAST
-        "Slacker", "Trapper", "CubedHexa22", "Observer", "Ashle", "Jeff the Killer"
+        "Slacker", "Trapper", "CubedHexa22", "Observer", "Ashle", "Jeff the Killer",
+        #JOMA
+        "Spotter", "Dullahan", "Anarchist", "Executioner", "Firework", "Chronos", "Hunter", "Chaser", "Sin", "Apprentice", "Flarereaver", "Custodian"
     ]
 
     move_sanity = is_option_enabled(multiworld, player, "Move_Sanity")
@@ -399,6 +436,10 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             gamesPlayed += 1
         if is_option_enabled(multiworld, player, "Playing_Break_in_and_Steal_Thingz"):
             survivorAmount += 0
+            killerAmount += 1
+            gamesPlayed += 1
+        if is_option_enabled(multiworld, player, "Playing_Just_One_More_Asym"):
+            survivorAmount += 2
             killerAmount += 1
             gamesPlayed += 1
 
