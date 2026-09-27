@@ -4,7 +4,7 @@ from Options import Option, FreeText, NumericOption, Toggle, DefaultOnToggle, Ch
 from ..Helpers import is_option_enabled, get_option_value
 from typing import Type, Any
 
-
+_global_option = None
 ####################################################################
 # NOTE: At the time that options are created, Manual has no concept of the multiworld or its own world.
 #       Options are defined before the world is even created.
@@ -25,6 +25,10 @@ from typing import Type, Any
 # To add an option, use the before_options_defined hook below and something like this:
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
+class GoalPlaceholder(Choice):
+    """Placeholder so Goal is listed first; Manual replaces this."""
+    option_placeholder = 0
+
 class MoveSanity(Toggle):
     """Replaces survivors with their individual moves. Currently only supports Forsaken and Outcome Memories"""
     display_name = "Move Sanity"
@@ -352,6 +356,7 @@ class JOMAExclude(OptionSet):
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
+    options["goal"] = GoalPlaceholder
     options["Move_Sanity"] = MoveSanity
     options["Wintoken_Amount"] = WintokenAmount
     options["Wintoken_Extra"] = WintokenExtra
@@ -400,6 +405,10 @@ def after_options_defined(options: Type[PerGameCommonOptions]):
     # To access a modifiable version of options check the dict in options.type_hints
     # For example if you want to change DLC_enabled's display name you would do:
     # options.type_hints["DLC_enabled"].display_name = "New Display Name"
+    global _goal_option
+    options.type_hints["goal"].display_name = "Goal"
+    options.type_hints["goal"].__doc__ = """Whatever Noonly Want To Put Here."""
+    _goal_option = options.type_hints["goal"]
 
     #  Here's an example on how to add your aliases to the generated goal
     # options.type_hints['goal'].aliases.update({"example": 0, "second_alias": 1})
@@ -410,6 +419,8 @@ def after_options_defined(options: Type[PerGameCommonOptions]):
 def before_option_groups_created(groups: dict[str, list[Type[Option[Any]]]]) -> dict[str, list[Type[Option[Any]]]]:
     # Uses the format groups['GroupName'] = [TotalCharactersToWinWith]
     groups['Global Things'] = [MoveSanity, WintokenAmount, WintokenExtra, SurvivorsNeeded, KillersNeeded, SkinFiller, StartingSkins, AutoBalanceStartingCharacterAmount, OverRideKillerStartingAmount, OverRideSurvivorStartingAmount]
+    if _goal_option is not None:
+        groups['Global Things'].insert(0, _goal_option)
     groups['Forsaken'] = [PlayingForsaken, ForsakenGens, GensanityAmount, ForsakenMisc, ForsakenLMS, ForsakenSkinLMS, Trickstabs, ReactBlocks]
     groups['Die of Death'] = [PlayingDoD, DoDMisc, DoDLMS, DoDSynergies]
     groups['Outcome Memories'] = [PlayingOM, OMMap]
