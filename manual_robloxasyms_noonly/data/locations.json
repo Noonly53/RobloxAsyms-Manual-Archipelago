@@ -7236,6 +7236,402 @@
         "JOMA"
       ],
       "requires": "|Sniper|"
+    },
+	{
+      "name": "Parry 5 attacks as Dullahan",
+      "region": "JOMA_K",
+      "category": [
+		"Dullahan Tasks",
+        "JOMA"
+      ],
+      "requires": "|Dullahan|"
+    },
+	{
+      "name": "Hit 3 Survivors with one Lunge use",
+      "region": "JOMA_K",
+      "category": [
+		"Dullahan Tasks",
+        "JOMA"
+      ],
+      "requires": "|Dullahan|"
+    },
+	{
+      "name": "Kill 2 Survivors while under the effects of Toll",
+      "region": "JOMA_K",
+      "category": [
+		"Dullahan Tasks",
+        "JOMA"
+      ],
+      "requires": "|Dullahan|"
+    },
+	{
+      "name": "Use Toll 5 times",
+      "region": "JOMA_K",
+      "category": [
+		"Dullahan Tasks",
+        "JOMA"
+      ],
+      "requires": "|Dullahan|"
+    },
+	{
+      "name": "Land Jawbreaker 5 times",
+      "region": "JOMA_K",
+      "category": [
+		"Anarchist Tasks",
+        "JOMA"
+      ],
+      "requires": "|Anarchist|"
+    },
+	{
+      "name": "Dodge 5 attacks as Anarchist",
+      "region": "JOMA_K",
+      "category": [
+		"Anarchist Tasks",
+        "JOMA"
+      ],
+      "requires": "|Anarchist|"
+    },
+	{
+      "name": "Land a max chain with an unempowered Onslaught",
+      "region": "JOMA_K",
+      "category": [
+		"Anarchist Tasks",
+        "JOMA"
+      ],
+      "requires": "|Anarchist|"
+    },
+	{
+      "name": "Land an Empowered Jawbreaker",
+      "region": "JOMA_K",
+      "category": [
+		"Anarchist Tasks",
+        "JOMA"
+      ],
+      "requires": "|Anarchist|"
+    },
+	{
+      "name": "Kill 3 Survivors while in Fury",
+      "region": "JOMA_K",
+      "category": [
+		"Executioner Tasks",
+        "JOMA"
+      ],
+      "requires": "|Executioner|"
+    },
+	{
+      "name": "Hit 5 Survivors with Axe Throw",
+      "region": "JOMA_K",
+      "category": [
+		"Executioner Tasks",
+        "JOMA"
+      ],
+      "requires": "|Executioner|"
+    },
+	{
+      "name": "Launch 3 Survivors with Knockout",
+      "region": "JOMA_K",
+      "category": [
+		"Executioner Tasks",
+        "JOMA"
+      ],
+      "requires": "|Executioner|"
+    },
+	{
+      "name": "Execute a Survivor with Divide, Horizontal or Knockout",
+      "region": "JOMA_K",
+      "category": [
+		"Executioner Tasks",
+        "JOMA"
+      ],
+      "requires": "|Executioner|"
+    },
+	{
+      "name": "Kill 2 Survivors while Detonating",
+      "region": "JOMA_K",
+      "category": [
+		"Firework Tasks",
+        "JOMA"
+      ],
+      "requires": "|Firework|"
+    },
+	{
+      "name": "Fully circle or trap a Survivor with Trailblaze",
+      "region": "JOMA_K",
+      "category": [
+		"Firework Tasks",
+        "JOMA"
+      ],
+      "requires": "|Firework|"
+    },
+	{
+      "name": "Directly hit a Survivor with Impact 3 times",
+      "region": "JOMA_K",
+      "category": [
+		"Firework Tasks",
+        "JOMA"
+      ],
+      "requires": "|Firework|"
+    },
+	{
+      "name": "Kill a Survivor with DETONATE",
+      "region": "JOMA_K",
+      "category": [
+		"Firework Tasks",
+        "JOMA"
+      ],
+      "requires": "|Firework|"
+    },
+	{
+      "name": "Land all 7 shots of Silencer",
+      "region": "JOMA_K",
+      "category": [
+		"Chronos Tasks",
+        "JOMA"
+      ],
+      "requires": "|Chronos|"
+    },
+	{
+      "name": "Kill 3 Survivors while Authority is Active",
+      "region": "JOMA_K",
+      "category": [
+		"Chronos Tasks",
+        "JOMA"
+      ],
+      "requires": "|Chronos|"
+    },
+	{
+      "name": "Eviscerate a Survivor with Hyperbolt",
+      "region": "JOMA_K",
+      "category": [
+		"Chronos Tasks",
+        "JOMA"
+      ],
+      "requires": "|Chronos|"
+    },
+	{
+      "name": "Afflict 3 Survivors with Timeshock with one use",
+      "region": "JOMA_K",
+      "category": [
+		"Chronos Tasks",
+        "JOMA"
+      ],
+      "requires": "|Chronos|"
+    },
+	{
+      "name": "Explode 3 Survivors with one C4",
+      "region": "JOMA_K",
+      "category": [
+		"Hunter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Hunter|"
+    },
+	{
+      "name": "Have 5 Survivors get trapped in your Beartraps",
+      "region": "JOMA_K",
+      "category": [
+		"Hunter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Hunter|"
+    },
+	{
+      "name": "Slow down 5 Survivors with Barbed Wire",
+      "region": "JOMA_K",
+      "category": [
+		"Hunter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Hunter|"
+    },
+	{
+      "name": "Suffer through a second killer round of this boring Adversary",
+      "region": "JOMA_K",
+      "category": [
+		"Hunter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Hunter|"
+    },
+	{
+      "name": "Gain 60 Defense as Custodian",
+      "region": "JOMA_K",
+      "category": [
+		"Custodian Tasks",
+        "JOMA"
+      ],
+      "requires": "|Custodian|"
+    },
+	{
+      "name": "Block at least 2 attacks with Brace",
+      "region": "JOMA_K",
+      "category": [
+		"Custodian Tasks",
+        "JOMA"
+      ],
+      "requires": "|Custodian|"
+    },
+	{
+      "name": "Launch a Survivor into another Survivor with Seize",
+      "region": "JOMA_K",
+      "category": [
+		"Custodian Tasks",
+        "JOMA"
+      ],
+      "requires": "|Custodian|"
+    },
+	{
+      "name": "Land a direct Tremor on 5 Survivors",
+      "region": "JOMA_K",
+      "category": [
+		"Custodian Tasks",
+        "JOMA"
+      ],
+      "requires": "|Custodian|"
+    },
+	{
+      "name": "Hit 2 Survivors with one Pounce usage",
+      "region": "JOMA_K",
+      "category": [
+		"Chaser Tasks",
+        "JOMA"
+      ],
+      "requires": "|Chaser|"
+    },
+	{
+      "name": "Hit 3 Survivors with one Scream Usage",
+      "region": "JOMA_K",
+      "category": [
+		"Chaser Tasks",
+        "JOMA"
+      ],
+      "requires": "|Chaser|"
+    },
+	{
+      "name": "Kill a Survivor with Pounce",
+      "region": "JOMA_K",
+      "category": [
+		"Chaser Tasks",
+        "JOMA"
+      ],
+      "requires": "|Chaser|"
+    },
+	{
+      "name": "Kill 5 Survivors with Chaser",
+      "region": "JOMA_K",
+      "category": [
+		"Chaser Tasks",
+        "JOMA"
+      ],
+      "requires": "|Chaser|"
+    },
+	{
+      "name": "Hit a Survivor with Landslide 5 times",
+      "region": "JOMA_K",
+      "category": [
+		"Sin Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sin|"
+    },
+	{
+      "name": "Hit 3 Survivors with one Boulder usage",
+      "region": "JOMA_K",
+      "category": [
+		"Sin Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sin|"
+    },
+	{
+      "name": "Charge into the same Survivor 3 times in one Charge usage",
+      "region": "JOMA_K",
+      "category": [
+		"Sin Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sin|"
+    },
+	{
+      "name": "Kill a Survivor with Boulder",
+      "region": "JOMA_K",
+      "category": [
+		"Sin Tasks",
+        "JOMA"
+      ],
+      "requires": "|Sin|"
+    },
+	{
+      "name": "Land all 5 projectiles from one Shadowcast use",
+      "region": "JOMA_K",
+      "category": [
+		"Apprentice Tasks",
+        "JOMA"
+      ],
+      "requires": "|Apprentice|"
+    },
+	{
+      "name": "Kill a Survivor with a summoned Miniexec or Skeleton",
+      "region": "JOMA_K",
+      "category": [
+		"Apprentice Tasks",
+        "JOMA"
+      ],
+      "requires": "|Apprentice|"
+    },
+	{
+      "name": "Hit 5 Survivors with Banebeam",
+      "region": "JOMA_K",
+      "category": [
+		"Apprentice Tasks",
+        "JOMA"
+      ],
+      "requires": "|Apprentice|"
+    },
+	{
+      "name": "Smack a Survivor off the edge of something",
+      "region": "JOMA_K",
+      "category": [
+		"Apprentice Tasks",
+        "JOMA"
+      ],
+      "requires": "|Apprentice|"
+    },
+	{
+      "name": "Kill a Survivor with Slash (Flarereaver)",
+      "region": "JOMA_K",
+      "category": [
+		"Flarereaver Tasks",
+        "JOMA"
+      ],
+      "requires": "|Flarereaver|"
+    },
+	{
+      "name": "Hit 3 Survivors with one Pursue usage",
+      "region": "JOMA_K",
+      "category": [
+		"Flarereaver Tasks",
+        "JOMA"
+      ],
+      "requires": "|Flarereaver|"
+    },
+	{
+      "name": "Hit 3 or more Survivors with Prominence",
+      "region": "JOMA_K",
+      "category": [
+		"Flarereaver Tasks",
+        "JOMA"
+      ],
+      "requires": "|Flarereaver|"
+    },
+	{
+      "name": "Hit a Survivor with Prominence in LMS",
+      "region": "JOMA_K",
+      "category": [
+		"Flarereaver Tasks",
+        "JOMA"
+      ],
+      "requires": "|Flarereaver|"
     }
   ]
 }
