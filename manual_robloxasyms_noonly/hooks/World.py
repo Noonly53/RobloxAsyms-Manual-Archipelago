@@ -176,7 +176,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "custodian": "Custodian Tasks"
     }
 
-    excluded_characters = (list(world.options.Forsaken_Exclude.value) + list(world.options.DoD_Exclude.value) + list(world.options.SJ_Exclude.value) + list(world.options.OM_Exclude.value) + list(world.options.PS_Exclude.value) + list(world.options.BIAST_Exclude.value + list(world.options.JOMA_Exclude.value)))
+    excluded_characters = (list(world.options.Forsaken_Exclude.value) + list(world.options.DoD_Exclude.value) + list(world.options.SJ_Exclude.value) + list(world.options.OM_Exclude.value) + list(world.options.PS_Exclude.value) + list(world.options.BIAST_Exclude.value) + list(world.options.JOMA_Exclude.value))
 
     for location in location_table:
         if any(
