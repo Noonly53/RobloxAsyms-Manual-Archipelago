@@ -413,7 +413,10 @@ def after_options_defined(options: Type[PerGameCommonOptions]):
     # options.type_hints["DLC_enabled"].display_name = "New Display Name"
     global _goal_option
     options.type_hints["goal"].display_name = "Goal"
-    options.type_hints["goal"].__doc__ = """Whatever Noonly Want To Put Here."""
+    options.type_hints["goal"].__doc__ = """Changes what is considered to be the Goal of the game.
+    Wintokens: Acts as macguffins (Seperate Items) When you collect your specified amount of them, you may goal.
+    Collect all Survivors / and killers: Requires you to collect all Survivors and Killers generated in order to goal.
+    Collect Specified Survivors / Killers: Requires you to collect a specified amount of Survivors and Killers, chosen by the sliders below."""
     _goal_option = options.type_hints["goal"]
 
     #  Here's an example on how to add your aliases to the generated goal
