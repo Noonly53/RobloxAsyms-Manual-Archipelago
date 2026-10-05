@@ -1,5 +1,5 @@
 # Object classes from AP that represent different types of options that you can create
-from Options import Option, FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange, OptionGroup, PerGameCommonOptions, OptionSet
+from Options import Option, FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange, OptionGroup, PerGameCommonOptions, OptionSet, DeathLink
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
 from ..Helpers import is_option_enabled, get_option_value
 from typing import Type, Any
@@ -28,6 +28,11 @@ _global_option = None
 class GoalPlaceholder(Choice):
     """Placeholder so Goal is listed first; Manual replaces this."""
     option_placeholder = 0
+
+class MovedDeathLink(DeathLink):
+    """When you die, everyone who enabled death link dies. Of course, the reverse is true too.
+    Death is self-explanatory, unless you decides otherwise."""
+    display_name = "Death Link"
 
 class MoveSanity(Toggle):
     """Replaces survivors with their individual moves. Currently only supports Forsaken and Outcome Memories"""
@@ -357,6 +362,7 @@ class JOMAExclude(OptionSet):
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, Type[Option[Any]]]:
     options["goal"] = GoalPlaceholder
+    options["death_link"] = MovedDeathLink
     options["Move_Sanity"] = MoveSanity
     options["Wintoken_Amount"] = WintokenAmount
     options["Wintoken_Extra"] = WintokenExtra
@@ -418,7 +424,7 @@ def after_options_defined(options: Type[PerGameCommonOptions]):
 # Use this Hook if you want to add your Option to an Option group (existing or not)
 def before_option_groups_created(groups: dict[str, list[Type[Option[Any]]]]) -> dict[str, list[Type[Option[Any]]]]:
     # Uses the format groups['GroupName'] = [TotalCharactersToWinWith]
-    groups['Global Things'] = [MoveSanity, WintokenAmount, WintokenExtra, SurvivorsNeeded, KillersNeeded, SkinFiller, StartingSkins, AutoBalanceStartingCharacterAmount, OverRideKillerStartingAmount, OverRideSurvivorStartingAmount]
+    groups['Global Things'] = [MovedDeathLink, MoveSanity, WintokenAmount, WintokenExtra, SurvivorsNeeded, KillersNeeded, SkinFiller, StartingSkins, AutoBalanceStartingCharacterAmount, OverRideKillerStartingAmount, OverRideSurvivorStartingAmount]
     if _goal_option is not None:
         groups['Global Things'].insert(0, _goal_option)
     groups['Forsaken'] = [PlayingForsaken, ForsakenGens, GensanityAmount, ForsakenMisc, ForsakenLMS, ForsakenSkinLMS, Trickstabs, ReactBlocks]
