@@ -3,7 +3,7 @@ from typing import Any
 from worlds.AutoWorld import World
 from BaseClasses import MultiWorld, CollectionState, Item, ItemClassification
 from Options import OptionError
-import random
+import re
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
 from ..Items import ManualItem
@@ -63,7 +63,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Add your code here to calculate which locations to remove
 
     category_map = {
-        "noob": "Noob Tasks",
+        "noob": "Noob (Forsaken) Tasks",
         "007n7": "007n7 Tasks",
         "veeronica": "Veeronica Tasks",
         "elliot": "Elliot Tasks",
@@ -82,6 +82,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "1x1x1x1": "1x1x1x1 Tasks",
         "guest 666": "Guest 666 Tasks",
         "nosferatu": "Nosferatu Tasks",
+        "azure": "Azure Tasks",
         "adrenaline": "Adrenaline Tasks",
         "banana peel": "Banana Peel Tasks",
         "bonuspad": "BonusPad Tasks",
@@ -145,10 +146,37 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "trapper": "Trapper Tasks",
         "cubedhexa22": "CubedHexa22 Tasks",
         "observer": "Observer Tasks",
-        "ashle": "Ashle Tasks"
+        "ashle": "Ashle Tasks",
+        "noob (joma)": "Noob (JOMA) Tasks",
+        "assistant": "Assistant Tasks",
+        "jester": "Jester Tasks",
+        "sniper": "Sniper Tasks",
+        "vocalist": "Vocalist Tasks",
+        "doctor": "Doctor Tasks",
+        "guest (joma)": "Guest (JOMA) Tasks",
+        "hemomancer": "Hemomancer Tasks",
+        "shielder": "Shielder Tasks",
+        "sherrif": "Sherrif Tasks",
+        "firefighter": "Firefighter Tasks",
+        "brawler": "Brawler Tasks",
+        "knight": "Knight Tasks",
+        "maniac": "Maniac Tasks",
+        "wrecker": "Wrecker Tasks",
+        "spotter": "Spotter Tasks",
+        "dullahan": "Dullahan Tasks",
+        "anarchist": "Anarchist Tasks",
+        "executioner": "Executioner Tasks",
+        "firework": "Firework Tasks",
+        "chronos": "Chronos Tasks",
+        "hunter": "Hunter Tasks",
+        "chaser": "Chaser Tasks",
+        "sin": "Sin Tasks",
+        "apprentice": "Apprentice Tasks",
+        "flarereaver": "Flarereaver Tasks",
+        "custodian": "Custodian Tasks"
     }
 
-    excluded_characters = (list(world.options.Forsaken_Exclude.value) + list(world.options.DoD_Exclude.value) + list(world.options.SJ_Exclude.value) + list(world.options.OM_Exclude.value) + list(world.options.PS_Exclude.value) + list(world.options.BIAST_Exclude.value))
+    excluded_characters = (list(world.options.Forsaken_Exclude.value) + list(world.options.DoD_Exclude.value) + list(world.options.SJ_Exclude.value) + list(world.options.OM_Exclude.value) + list(world.options.PS_Exclude.value) + list(world.options.BIAST_Exclude.value) + list(world.options.JOMA_Exclude.value))
 
     for location in location_table:
         if any(
@@ -156,6 +184,18 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             for character in excluded_characters
         ):
             locationNamesToRemove.append(location["name"])
+    
+    #Editing Gen amount DOESN'T WORK YET, MAKE THIS WORK NOONLY
+    # I made it work - StudMuffin
+    if get_option_value(multiworld, player, "Gensanity"):
+        genAmount = get_option_value(multiworld, player, "Gensanity_Amount")
+        
+        for location in location_table:
+            if "Forsaken Gensanity Tasks" not in location.get("category", []):
+                continue
+            match = re.search(r"Gen (\d+)$", location["name"])
+            if match and int(match.group(1)) > genAmount:
+                locationNamesToRemove.append(location["name"])
     
     for region in multiworld.regions:
         if region.player == player:
@@ -174,12 +214,9 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
     # Changes the Wintoken amount to the yaml Option or removes Wintokens if other goal is selected
     if world.options.goal.value == 0:
-        item_config["Wintoken"] = world.options.Wintoken_Amount.value + 5
+        item_config["Wintoken"] = world.options.Wintoken_Amount.value + world.options.Wintoken_Extra.value
     else:
         item_config["Wintoken"] = 0
-    # Changes the Killer Door Amount to the yaml Option
-    if world.options.Include_Killer_Doors.value == True:
-        item_config["Killer Door Use"] = world.options.Killer_Door_Amount.value
     # Remove Moves if Move Sanity or Forsaken are disabled
     if world.options.Move_Sanity.value == False or world.options.Playing_Forsaken.value == False:
         items_to_remove = ["Bloxy Cola", "Slateskin Potion", "GhostBurger", "Slash", "Fried Chicken", "Pizza Toss", "Rush Hour", "Guest Block", "Charge", "Guest Punch", "Sacrificial Dagger", "Crouch", "Pray", "Ritual", "Clone", "C00LGUI", "Inject", "Coin Flip", "One Shot", "Chance Reroll", "Hat Fix", "Plasma Beam", "Spawn Protection", "Subspace Tripmine", "Taph Tripwire", "Sentry", "Dispenser", "Carry", "Vandalism", "Sk8", "Broadcast", "Activate Battery", "Crystal Pitch", "Hatchet"]
@@ -187,12 +224,12 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
             item_config.pop(item, None)
     # Remove Regular Survivors if Movesanity and Forsaken are Enabled
     if world.options.Move_Sanity.value == True and world.options.Playing_Forsaken.value == True:
-        items_to_remove = ["Noob", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar", "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman"]
+        items_to_remove = ["Noob (Forsaken)", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar", "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman"]
         for item in items_to_remove:
             item_config.pop(item, None)
     # Remove Forsaken Survivors if Forsaken is Disabled
     if world.options.Playing_Forsaken.value == False:
-        items_to_remove = ["Noob", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar", "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman"]
+        items_to_remove = ["Noob (Forsaken)", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar", "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman"]
         for item in items_to_remove:
             item_config.pop(item, None)
     # Remove Moves if Move Sanity or Outcome Memories are disabled
@@ -277,6 +314,12 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
         for item_name in list(item_config):
             if item_name.lower() in world.options.BIAST_Exclude.value:
                 item_config.pop(item_name, None)
+
+    if world.options.Playing_Just_One_More_Asym.value == True:
+        for item_name in list(item_config):
+            if item_name.lower() in world.options.JOMA_Exclude.value:
+                item_config.pop(item_name, None)
+                
     return item_config
         
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
@@ -312,10 +355,12 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         # OM
         "Sonic", "Knuckles", "Amy", "Cream", "Tails", "Eggman", "Metal Sonic", "Blaze", "Silver",
         # Forsaken characters
-        "Noob", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar",
+        "Noob (Forsaken)", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar",
         "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman",
         # Pursuit
-        "Dante", "Mikaela", "Nyan", "Fukatsuki", "Crafter", "Vinnie", "Tac9", "Roflpix", "The Kit"
+        "Dante", "Mikaela", "Nyan", "Fukatsuki", "Crafter", "Vinnie", "Tac9", "Roflpix", "The Kit",
+        # Joma
+        "Noob (JOMA)", "Doctor", "Jester", "Assistant", "Brawler", "Firefighter", "Shielder", "Knight", "Maniac", "Wrecker", "Guest (JOMA)", "Hemomancer", "Sniper", "Vocalist", "Sherrif"
     ]
 
     Kill_Map = [
@@ -328,15 +373,23 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         #Saken
         "Slasher", "Coolkidd", "John Doe", "Noli", "1x1x1x1", "Guest 666", "Nosferatu", "Azure",
         #Pursuit
-        "Partypwny", "DotX", "Blankstare", "Sweep", "Captain Lime", "Jack Noir"
+        "Partypwny", "DotX", "Blankstare", "Sweep", "Captain Limewire", "Jack Noir",
+        #BIAST
+        "Slacker", "Trapper", "CubedHexa22", "Observer", "Ashle", "Jeff the Killer",
+        #JOMA
+        "Spotter", "Dullahan", "Anarchist", "Executioner", "Firework", "Chronos", "Hunter", "Chaser", "Sin", "Apprentice", "Flarereaver", "Custodian"
     ]
 
     move_sanity = is_option_enabled(multiworld, player, "Move_Sanity")
     Surv_Map = Surv_Map + (Move_Map if move_sanity else Char_Map)
+    pool_names = {i.name for i in item_pool}
+    #never_pick = get_option_value(multiworld, player, "Exclude_Starting_Characters")'''
+    never_pick = {""} # Remove this and uncomment the other once the option exists
 
     def pick_unique(pool: list, count: int) -> list:
         # Pick up to `count` unique names from pool, without mutating pool or crashing on oversized counts.
-        count = max(0, min(count, len(pool)))
+        available = [name for name in pool if name in pool_names and name not in never_pick]
+        count = max(0, min(count, len(available)))
         return world.random.sample(pool, count)
 
     override_survivors = get_option_value(multiworld, player, "Override_Starting_Survivors")
@@ -381,6 +434,14 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             survivorAmount += 1
             killerAmount += 1
             gamesPlayed += 1
+        if is_option_enabled(multiworld, player, "Playing_Break_in_and_Steal_Thingz"):
+            survivorAmount += 0
+            killerAmount += 1
+            gamesPlayed += 1
+        if is_option_enabled(multiworld, player, "Playing_Just_One_More_Asym"):
+            survivorAmount += 2
+            killerAmount += 1
+            gamesPlayed += 1
 
         if survivorAmount > 3 and move_sanity:
             survivorAmount = 5
@@ -404,12 +465,15 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         startingItems.extend(pick_unique(Kill_Map, 1))
 
     else:
-        # Auto-balance off, but one override was set and the other wasn't — default the unset one
+        # Auto-balance off, but one override was set and the other wasn't - default the unset one
         if override_survivors == -1:
             startingItems.extend(pick_unique(Surv_Map, 2))
         if override_killers == -1:
             startingItems.extend(pick_unique(Kill_Map, 1))
-
+    
+    #Don't mind the noonly code sneaking in here (This is for starting Skins)
+    startingItems.extend(get_option_value(multiworld, player, "Starting_Skins"))
+    
     for itemName in startingItems:
         item = next((i for i in item_pool if i.name == itemName), None)
         if item is None:
@@ -425,7 +489,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
     requirementssurvivors = []
     if is_option_enabled(multiworld, player, "Playing_Forsaken") and not is_option_enabled(multiworld, player, "Move_Sanity"):
         requiresforsaken = {
-            "noob": "|Noob|",
+            "noob": "|Noob (Forsaken)|",
             "007n7": "|007n7|",
             "veeronica": "|Veeronica|",
             "shedletsky": "|Shedletsky|",
@@ -540,6 +604,29 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         for character, requirement in requiresps.items():
             if character not in world.options.PS_Exclude.value:
                 requirementssurvivors.append(requirement)
+                
+    if is_option_enabled(multiworld, player, "Playing_Just_One_More_Asym"):
+        requiresjoma = {
+            "noob (joma)": "|Noob (JOMA)|",
+            "doctor": "|Doctor|",
+            "jester": "|Jester|",
+            "assistant": "|Assistant|",
+            "brawler": "|Brawler|",
+            "firefighter": "|Firefighter|",
+            "shielder": "|Shielder|",
+            "knight": "|Knight|",
+            "maniac": "|Maniac|",
+            "wrecker": "|Wrecker|",
+            "guest (joma)": "|Guest (JOMA)|",
+            "hemomancer": "|Hemomancer|",
+            "sniper": "|Sniper|",
+            "vocalist": "|Vocalist|",
+            "sherrif": "|Sherrif|"
+        }
+        for character, requirement in requiresjoma.items():
+            if character not in world.options.JOMA_Exclude.value:
+                requirementssurvivors.append(requirement)
+    
         print(requirementssurvivors)
     for location in location_table:
         if location["name"] == "Win (Collect all Survivors)":
@@ -549,7 +636,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
     
     if is_option_enabled(multiworld, player, "Playing_Forsaken") and not is_option_enabled(multiworld, player, "Move_Sanity"):
         requiresforsaken = {
-            "noob": "|Noob|",
+            "noob": "|Noob (Forsaken)|",
             "shedletsky": "|Shedletsky|",
             "007n7": "|007n7|",
             "veeronica": "|Veeronica|",
@@ -699,7 +786,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "dotx": "|DotX|",
             "blankstare": "|Blankstare|",
             "sweep": "|Sweep|",
-            "captain lime": "|Captain Lime|",
+            "captain limewire": "|Captain Limewire|",
             "jack noir": "|Jack Noir|",
         }
         for character, requirement in requiresps.items():
@@ -717,7 +804,41 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         for character, requirement in requiresbiast.items():
             if character not in world.options.BIAST_Exclude.value:
                 requirementskillers.append(requirement)
-    
+                
+    if is_option_enabled(multiworld, player, "Playing_Just_One_More_Asym"):
+        requiresjoma = {
+            "noob (joma)": "|Noob (JOMA)|",
+            "doctor": "|Doctor|",
+            "jester": "|Jester|",
+            "assistant": "|Assistant|",
+            "brawler": "|Brawler|",
+            "firefighter": "|Firefighter|",
+            "shielder": "|Shielder|",
+            "knight": "|Knight|",
+            "maniac": "|Maniac|",
+            "wrecker": "|Wrecker|",
+            "guest (joma)": "|Guest (JOMA)|",
+            "hemomancer": "|Hemomancer|",
+            "sniper": "|Sniper|",
+            "vocalist": "|Vocalist|",
+            "sherrif": "|Sherrif|",
+            "spotter": "|Spotter|",
+            "dullahan": "|Dullahan|",
+            "anarchist": "|Anarchist|",
+            "executioner": "|Executioner|",
+            "firework": "|Firework|",
+            "chronos": "|Chronos|",
+            "hunter": "|Hunter|",
+            "chaser": "|Chaser|",
+            "sin": "|Sin|",
+            "apprentice": "|Apprentice|",
+            "flarereaver": "|Flarereaver|",
+            "custodian": "|Custodian|"
+        }
+        for character, requirement in requiresjoma.items():
+            if character not in world.options.JOMA_Exclude.value:
+                requirementskillers.append(requirement) 
+        
     for location in location_table:
         if location["name"] == "Win (Collect all Survivors and Killers)":
             location["requires"] = " AND ".join(requirementskillers)

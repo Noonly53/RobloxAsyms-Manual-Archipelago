@@ -10,14 +10,6 @@
       "progression": true
     },
     {
-      "name": "Killer Door Use",
-      "count": 30,
-      "category": [
-        "Killer Door Uses"
-      ],
-      "useful": true
-    },
-    {
       "name": "Civilian",
       "category": [
         "DoD"
@@ -262,7 +254,7 @@
       "progression": true
     },
     {
-      "name": "Noob",
+      "name": "Noob (Forsaken)",
       "category": [
         "All Survivors", 
         "Forsaken Survivors"
@@ -1502,7 +1494,7 @@
       "progression": true
     },
 	{
-      "name": "Captain Lime",
+      "name": "Captain Limewire",
       "category": [
         "All Killers", 
         "PS Terminators",
@@ -1733,6 +1725,276 @@
         "BIAST Entities",
 		"Jeff the Killer",
         "BIAST"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Noob (JOMA)",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Assistant",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Jester",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Sniper",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Vocalist",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Doctor",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Guest (JOMA)",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Hemomancer",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Shielder",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Sherrif",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Firefighter",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Brawler",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Knight",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Maniac",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Wrecker",
+      "category": [
+		"All Survivors",
+        "JOMA Survivors",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Spotter",
+      "category": [
+		"All Killers",
+        "JOMA Adversaries",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Dullahan",
+      "category": [
+		"All Killers",
+        "JOMA Adversaries",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Anarchist",
+      "category": [
+		"All Killers",
+        "JOMA Adversaries",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Executioner",
+      "category": [
+		"All Killers",
+        "JOMA Adversaries",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Firework",
+      "category": [
+		"All Killers",
+        "JOMA Adversaries",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Chronos",
+      "category": [
+		"All Killers",
+        "JOMA Adversaries",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Hunter",
+      "category": [
+		"All Killers",
+        "JOMA Adversaries",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Chaser",
+      "category": [
+		"All Killers",
+        "JOMA Adversaries",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Sin",
+      "category": [
+		"All Killers",
+        "JOMA Adversaries",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Apprentice",
+      "category": [
+		"All Killers",
+        "JOMA Adversaries",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Flarereaver",
+      "category": [
+		"All Killers",
+        "JOMA Adversaries",
+        "JOMA"
+      ],
+      "count": 1,
+      "progression": true
+    },
+	{
+      "name": "Custodian",
+      "category": [
+		"All Killers",
+        "JOMA Adversaries",
+        "JOMA"
       ],
       "count": 1,
       "progression": true

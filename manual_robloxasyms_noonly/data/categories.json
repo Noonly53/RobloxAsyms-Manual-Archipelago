@@ -38,11 +38,6 @@
       "Gensanity"
     ]
   },
-  "Killer Door Uses": {
-    "yaml_option": [
-      "Include Killer Doors"
-    ]
-  },
   "Forsaken Misc Tasks": {
     "yaml_option": [
       "Include Forsaken Misc Tasks"
@@ -97,8 +92,7 @@
   "PSMisc": {
     "yaml_option": [
       "Include Pursuitcore Misc Tasks"
-    ],
-    "hidden": true
+    ]
   },
   "Kit": {
     "yaml_option": [
@@ -122,5 +116,16 @@
     "yaml_option": [
       "Include Map Tasks"
     ]
+  },
+  "JOMA": {
+	  "yaml_option": [
+	  "Playing Just One More Asym"
+	  ],
+	  "hidden": true
+  },
+  "All Skins": {
+	  "yaml_option": [
+		"Skins as Filler"
+	  ]
   }
 }
