@@ -390,7 +390,9 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         # Pick up to `count` unique names from pool, without mutating pool or crashing on oversized counts.
         available = [name for name in pool if name in pool_names and name not in never_pick]
         count = max(0, min(count, len(available)))
-        return world.random.sample(pool, count)
+        picks = world.random.sample(available, count)
+        logging.info(picks)
+        return picks
 
     override_survivors = get_option_value(multiworld, player, "Override_Starting_Survivors")
     override_killers = get_option_value(multiworld, player, "Override_Starting_Killers")
