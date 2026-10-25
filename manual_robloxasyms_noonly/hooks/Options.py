@@ -31,7 +31,7 @@ class GoalPlaceholder(Choice):
 
 class MovedDeathLink(DeathLink):
     """When you die, everyone who enabled death link dies. Of course, the reverse is true too.
-    Death is self-explanatory, unless you decides otherwise."""
+    Death is self-explanatory, unless you decide otherwise."""
     display_name = "Death Link"
 
 class MoveSanity(Toggle):
@@ -97,7 +97,8 @@ class PlayingForsaken(Toggle):
     display_name = "Playing Forsaken"
     
 class ForsakenGens(Toggle):
-    """Adds Maps as Items and Generator Spawns as locations. Highly recommend using the Poptracker for this. You do not need maps to play on them (Unless you want to do that)"""
+    """Adds Maps as Items and Generator Spawns as locations.
+    You do not need maps to play on them (Unless you want to do that)"""
     display_name = "Forsaken Gensanity"
     
 class GensanityAmount(Range):
@@ -113,10 +114,15 @@ class SkinFiller(Toggle):
     display_name = "Skins as Filler"
     default = 1
     
+class SeasonalSkinFiller(Toggle):
+    """Includes seasonal skins across games as filler items."""
+    display_name = "Seasonal Skins as Filler"
+    
 class StartingSkins(OptionSet):
     """Choose skins you'd like to start with (Can just ignore if skins are turned off)
     Must follow the template: [Character name] Skin - [Skin Name]
-    Example: Noob Skin - Inverted"""
+    Example: Noob Skin - Inverted
+    Ask the discord thread for any help with this!"""
     display_name = "Starting Skins"
     valid_keys = frozenset([
     ])
@@ -157,6 +163,8 @@ class ForsakenExclude(OptionSet):
         "builderman",
         "taph",
         "dusekkar",
+        "jane doe",
+        "helperbot",
         "slasher",
         "c00lkidd",
         "john doe",
@@ -302,7 +310,7 @@ class PlayingBIAST(Toggle):
     display_name = "Playing Break in and Steal Thingz"
     
 class BIASTVIP(Toggle):
-    """Includes Killers or Characters that need VIP to use. Currently just Jeff the Killer"""
+    """Includes Killers or Characters that need VIP to use. Currently Harborer"""
     display_name = "Include Early Access Killer"
     
 class BIASTMap(Toggle):
@@ -317,7 +325,8 @@ class BIASTExclude(OptionSet):
         "trapper",
         "cubedhexa22",
         "observer",
-        "ashle"
+        "ashle",
+        "jeff the killer"
     ])
     default = frozenset([])
     
@@ -369,6 +378,7 @@ def before_options_defined(options: dict[str, Type[Option[Any]]]) -> dict[str, T
     options["Survivors_Needed"] = SurvivorsNeeded
     options["Killers_Needed"] = KillersNeeded
     options["Skins_as_Filler"] = SkinFiller
+    options["Seasonal_Skins_as_Filler"] = SeasonalSkinFiller
     options["Starting_Skins"] = StartingSkins
     options["Playing_Forsaken"] = PlayingForsaken
     options["Gensanity"] = ForsakenGens
@@ -414,7 +424,7 @@ def after_options_defined(options: Type[PerGameCommonOptions]):
     global _goal_option
     options.type_hints["goal"].display_name = "Goal"
     options.type_hints["goal"].__doc__ = """Changes what is considered to be the Goal of the game.
-    Wintokens: Acts as macguffins (Seperate Items) When you collect your specified amount of them, you may goal.
+    Wintokens: Acts as macguffins. (Seperate Items) When you collect your specified amount of them, you may goal.
     Collect all Survivors / and killers: Requires you to collect all Survivors and Killers generated in order to goal.
     Collect Specified Survivors / Killers: Requires you to collect a specified amount of Survivors and Killers, chosen by the sliders below."""
     _goal_option = options.type_hints["goal"]
@@ -427,7 +437,7 @@ def after_options_defined(options: Type[PerGameCommonOptions]):
 # Use this Hook if you want to add your Option to an Option group (existing or not)
 def before_option_groups_created(groups: dict[str, list[Type[Option[Any]]]]) -> dict[str, list[Type[Option[Any]]]]:
     # Uses the format groups['GroupName'] = [TotalCharactersToWinWith]
-    groups['Global Things'] = [MovedDeathLink, MoveSanity, WintokenAmount, WintokenExtra, SurvivorsNeeded, KillersNeeded, SkinFiller, StartingSkins, AutoBalanceStartingCharacterAmount, OverRideKillerStartingAmount, OverRideSurvivorStartingAmount]
+    groups['Global Things'] = [MovedDeathLink, MoveSanity, WintokenAmount, WintokenExtra, SurvivorsNeeded, KillersNeeded, SkinFiller, SeasonalSkinFiller, StartingSkins, AutoBalanceStartingCharacterAmount, OverRideKillerStartingAmount, OverRideSurvivorStartingAmount]
     if _goal_option is not None:
         groups['Global Things'].insert(0, _goal_option)
     groups['Forsaken'] = [PlayingForsaken, ForsakenGens, GensanityAmount, ForsakenMisc, ForsakenLMS, ForsakenSkinLMS, Trickstabs, ReactBlocks]

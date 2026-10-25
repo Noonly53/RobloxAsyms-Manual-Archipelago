@@ -106,7 +106,7 @@
     ],
     "hidden": true
   },
-  "Jeff the Killer": {
+  "Harborer": {
     "yaml_option": [
       "Include Early Access Killer"
     ],
@@ -126,6 +126,11 @@
   "All Skins": {
 	  "yaml_option": [
 		"Skins as Filler"
+	  ]
+  },
+  "Seasonal Skins": {
+	  "yaml_option": [
+	    "Seasonal Skins as Filler"
 	  ]
   }
 }
