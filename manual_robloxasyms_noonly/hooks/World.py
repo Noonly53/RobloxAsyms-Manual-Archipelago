@@ -75,6 +75,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "taph": "Taph Tasks",
         "dusekkar": "Dusekkar Tasks",
         "jane doe": "Jane Doe Tasks",
+        "helperbot": "Helperbot Tasks",
         "slasher": "Slasher Tasks",
         "coolkidd": "Coolkidd Tasks",
         "john doe": "John Doe Tasks",
@@ -147,6 +148,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "cubedhexa22": "CubedHexa22 Tasks",
         "observer": "Observer Tasks",
         "ashle": "Ashle Tasks",
+        "jeff the killer": "Jeff the Killer Tasks",
         "noob (joma)": "Noob (JOMA) Tasks",
         "assistant": "Assistant Tasks",
         "jester": "Jester Tasks",
@@ -219,17 +221,17 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
         item_config["Wintoken"] = 0
     # Remove Moves if Move Sanity or Forsaken are disabled
     if world.options.Move_Sanity.value == False or world.options.Playing_Forsaken.value == False:
-        items_to_remove = ["Bloxy Cola", "Slateskin Potion", "GhostBurger", "Slash", "Fried Chicken", "Pizza Toss", "Rush Hour", "Guest Block", "Charge", "Guest Punch", "Sacrificial Dagger", "Crouch", "Pray", "Ritual", "Clone", "C00LGUI", "Inject", "Coin Flip", "One Shot", "Chance Reroll", "Hat Fix", "Plasma Beam", "Spawn Protection", "Subspace Tripmine", "Taph Tripwire", "Sentry", "Dispenser", "Carry", "Vandalism", "Sk8", "Broadcast", "Activate Battery", "Crystal Pitch", "Hatchet"]
+        items_to_remove = ["Bloxy Cola", "Slateskin Potion", "GhostBurger", "Slash", "Fried Chicken", "Pizza Toss", "Rush Hour", "Guest Block", "Charge", "Guest Punch", "Sacrificial Dagger", "Crouch", "Pray", "Ritual", "Clone", "C00LGUI", "Inject", "Coin Flip", "One Shot", "Chance Reroll", "Hat Fix", "Plasma Beam", "Spawn Protection", "Subspace Tripmine", "Taph Tripwire", "Sentry", "Dispenser", "Carry", "Vandalism", "Sk8", "Broadcast", "Activate Battery", "Crystal Pitch", "Hatchet", "Pulse", "Inspire"]
         for item in items_to_remove:
             item_config.pop(item, None)
     # Remove Regular Survivors if Movesanity and Forsaken are Enabled
     if world.options.Move_Sanity.value == True and world.options.Playing_Forsaken.value == True:
-        items_to_remove = ["Noob (Forsaken)", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar", "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman"]
+        items_to_remove = ["Noob (Forsaken)", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar", "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman", "Helperbot"]
         for item in items_to_remove:
             item_config.pop(item, None)
     # Remove Forsaken Survivors if Forsaken is Disabled
     if world.options.Playing_Forsaken.value == False:
-        items_to_remove = ["Noob (Forsaken)", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar", "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman"]
+        items_to_remove = ["Noob (Forsaken)", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar", "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman", "Helperbot"]
         for item in items_to_remove:
             item_config.pop(item, None)
     # Remove Moves if Move Sanity or Outcome Memories are disabled
@@ -266,6 +268,7 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
             "taph": ["taph tripwire", "subspace tripmine"],
             "dusekkar": ["plasma beam", "spawn protection"],
             "jane doe": ["crystal pitch", "hatchet"],
+            "helperbot": ["pulse", "inspire"]
         }
         for character in world.options.Forsaken_Exclude.value:
             for move in forsmoves.get(character.lower(), []):
@@ -341,7 +344,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         "Pray", "Ritual", "Clone", "C00LGUI", "Inject", "Coin Flip", "One Shot", "Chance Reroll",
         "Hat Fix", "Plasma Beam", "Spawn Protection", "Subspace Tripmine", "Taph Tripwire",
         "Sentry", "Dispenser", "Carry", "Vandalism", "Sk8", "Broadcast", "Activate Battery",
-        "Crystal Pitch", "Hatchet",
+        "Crystal Pitch", "Hatchet", "Pulse", "Inspire"
 
         # OM
         "Dropdash", "Peelout", "Glide", "Laser Cannon", "Switch",
@@ -356,7 +359,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         "Sonic", "Knuckles", "Amy", "Cream", "Tails", "Eggman", "Metal Sonic", "Blaze", "Silver",
         # Forsaken characters
         "Noob (Forsaken)", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar",
-        "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman",
+        "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman", "Helperbot",
         # Pursuit
         "Dante", "Mikaela", "Nyan", "Fukatsuki", "Crafter", "Vinnie", "Tac9", "Roflpix", "The Kit",
         # Joma
@@ -375,7 +378,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         #Pursuit
         "Partypwny", "DotX", "Blankstare", "Sweep", "Captain Limewire", "Jack Noir",
         #BIAST
-        "Slacker", "Trapper", "CubedHexa22", "Observer", "Ashle", "Jeff the Killer",
+        "Slacker", "Trapper", "CubedHexa22", "Observer", "Ashle", "Jeff the Killer", "Harborer",
         #JOMA
         "Spotter", "Dullahan", "Anarchist", "Executioner", "Firework", "Chronos", "Hunter", "Chaser", "Sin", "Apprentice", "Flarereaver", "Custodian"
     ]
@@ -500,7 +503,8 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "two time": "|Two Time|",
             "chance": "|Chance|",
             "elliot": "|Elliot|",
-            "builderman": "|Builderman|"
+            "builderman": "|Builderman|",
+            "helperbot": "|Helperbot|"
         }
         for character, requirement in requiresforsaken.items():
             if character not in world.options.Forsaken_Exclude.value:
@@ -519,6 +523,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "taph": "|Taph Tripwire| AND |Subspace Tripmine|",
             "dusekkar": "|Plasma Beam| AND |Spawn Protection|",
             "jane doe": "|Crystal Pitch| AND |Hatchet|",
+            "helperbot": "|Pulse| AND |Inspire|",
         }
         for character, requirement in requiresforsaken.items():
             if character not in world.options.Forsaken_Exclude.value:
@@ -648,6 +653,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "chance": "|Chance|",
             "elliot": "|Elliot|",
             "builderman": "|Builderman|",
+            "helperbot": "|Helperbot|",
             "slasher": "|Slasher|",
             "coolkidd": "|Coolkidd|",
             "john doe": "|John Doe|",
@@ -655,7 +661,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "1x1x1x1": "|1x1x1x1|",
             "guest 666": "|Guest 666|",
             "nosferatu": "|Nosferatu|",
-            "azure": "|Azure|",
+            "azure": "|Azure|"
         }
         for character, requirement in requiresforsaken.items():
             if character not in world.options.Forsaken_Exclude.value:
@@ -674,6 +680,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "taph": "|Taph Tripwire| AND |Subspace Tripmine|",
             "dusekkar": "|Plasma Beam| AND |Spawn Protection|",
             "jane doe": "|Crystal Pitch| AND |Hatchet|",
+            "helperbot": "|Pulse| AND |Inspire|",
             "slasher": "|Slasher|",
             "coolkidd": "|Coolkidd|",
             "john doe": "|John Doe|",
@@ -799,7 +806,8 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "trapper": "|Trapper|",
             "cubedhexa22": "|CubedHexa22|",
             "observer": "|Observer|",
-            "ashle": "|Ashle|"
+            "ashle": "|Ashle|",
+            "jeff the killer": "|Jeff the Killer|"
         }
         for character, requirement in requiresbiast.items():
             if character not in world.options.BIAST_Exclude.value:
@@ -883,7 +891,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
 
 # The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
 def after_create_items(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-    skin_items = ["007n7 Skin - 118o8", "C00lkidd Skin - bluudud", "Two Time Skin - Ghoul", "1x1x1x1 Skin - Diva", "Shedletsky Skin - The Heartbroken", "1x1x1x1 Skin - Hacklord", "Noob Skin - Taunt", "Shedletsky Skin - Hot Dog", "Elliot Skin - Caretaker", "Builderman Skin - Carepad", "Guest 1337 Skin - Block", "Two Time Skin - Cloak", "Taph Skin - Banana", "Chance Skin - Revolver", "Chance Skin - Loveshot", "Slasher Skin - Pursuer", "Noli Skin - Artful", "Noli Skin - Devesto", "Guest 1337 Skin - Guard", "1x1x1x1 Skin - The Pestilence", "Noli Skin - The Possessed", "Dusekkar Skin - Golden", "Shedletsky Skin - Golden", "Chance Skin - Golden", "C00lkidd Skin - P4rtyPwny", "Elliot Skin - Friend", "John Doe Skin - Annihilation", "Slasher Skin - Vanity", "John Doe Skin - Gasharpoon"]
+    skin_items = ["007n7 Skin - 118o8", "C00lkidd Skin - bluudud", "Two Time Skin - Ghoul", "1x1x1x1 Skin - Diva", "Shedletsky Skin - The Heartbroken", "1x1x1x1 Skin - Hacklord", "Noob Skin - Taunt", "Shedletsky Skin - Hot Dog", "Elliot Skin - Caretaker", "Builderman Skin - Carepad", "Guest 1337 Skin - Block", "Two Time Skin - Cloak", "Taph Skin - Banana", "Chance Skin - Revolver", "Chance Skin - Loveshot", "Slasher Skin - Pursuer", "Noli Skin - Artful", "Noli Skin - Devesto", "Guest 1337 Skin - Guard", "1x1x1x1 Skin - The Pestilence", "Noli Skin - The Possessed", "Dusekkar Skin - Golden", "Shedletsky Skin - Golden", "Chance Skin - Golden", "C00lkidd Skin - P4rtyPwny", "Elliot Skin - Friend", "John Doe Skin - Annihilation", "Slasher Skin - Vanity", "John Doe Skin - Gasharpoon", "Guest 1337 Skin - Golden"]
     if not (world.options.Playing_Forsaken.value == True and world.options.Include_Forsaken_Skin_LMS_Tasks.value == True and world.options.Include_Forsaken_LMS_Tasks.value == True):
         for item in item_pool:
             if item.name in skin_items:

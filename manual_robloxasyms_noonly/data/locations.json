@@ -719,15 +719,6 @@
       "requires": "|Pursuer|"
     },
     {
-      "name": "Get 10 kills (Pursuer)",
-      "category": [
-        "DoD",
-        "Pursuer Tasks"
-      ],
-      "region": "DoD_K",
-      "requires": "|Pursuer|"
-    },
-    {
       "name": "Get stunned while roaring or going invis",
       "category": [
         "DoD",
@@ -773,15 +764,6 @@
       "requires": "|Badware|"
     },
     {
-      "name": "Get 10 kills (Badware)",
-      "category": [
-        "DoD",
-        "Badware Tasks"
-      ],
-      "region": "DoD_K",
-      "requires": "|Badware|"
-    },
-    {
       "name": "Place down max computers (4)",
       "category": [
         "DoD",
@@ -819,15 +801,6 @@
     },
     {
       "name": "Win (Artful)",
-      "category": [
-        "DoD",
-        "Artful Tasks"
-      ],
-      "region": "DoD_K",
-      "requires": "|Artful|"
-    },
-    {
-      "name": "Get 10 kills (Artful)",
       "category": [
         "DoD",
         "Artful Tasks"
@@ -1763,24 +1736,6 @@
       "requires": "|Slasher|"
     },
     {
-      "name": "Get 10 kills as Slasher",
-      "category": [
-        "Forsaken",
-        "Slasher Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|Slasher|"
-    },
-    {
-      "name": "Win 2 times as Slasher",
-      "category": [
-        "Forsaken",
-        "Slasher Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|Slasher|"
-    },
-    {
       "name": "Hit 2+ people with Entanglement or Mass Infection",
       "category": [
         "Forsaken",
@@ -1800,24 +1755,6 @@
     },
     {
       "name": "Kill a survivor with any ranged move",
-      "category": [
-        "Forsaken",
-        "1x1x1x1 Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|1x1x1x1|"
-    },
-    {
-      "name": "Get 10 kills as 1x1x1x1",
-      "category": [
-        "Forsaken",
-        "1x1x1x1 Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|1x1x1x1|"
-    },
-    {
-      "name": "Win 2 times as 1x1x1x1",
       "category": [
         "Forsaken",
         "1x1x1x1 Tasks"
@@ -1853,25 +1790,7 @@
       "requires": "|Coolkidd|"
     },
     {
-      "name": "Get 10 kills as Coolkidd",
-      "category": [
-        "Forsaken",
-        "Coolkidd Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|Coolkidd|"
-    },
-    {
       "name": "Kill a survivor with damage over time",
-      "category": [
-        "Forsaken",
-        "Coolkidd Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|Coolkidd|"
-    },
-    {
-      "name": "Win 2 times as Coolkidd",
       "category": [
         "Forsaken",
         "Coolkidd Tasks"
@@ -1916,24 +1835,6 @@
       "requires": "|John Doe|"
     },
     {
-      "name": "Get 10 kills as John Doe",
-      "category": [
-        "Forsaken",
-        "John Doe Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|John Doe|"
-    },
-    {
-      "name": "Win 2 times as John Doe",
-      "category": [
-        "Forsaken",
-        "John Doe Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|John Doe|"
-    },
-    {
       "name": "Win a bloodhook struggle",
       "category": [
         "Forsaken",
@@ -1962,24 +1863,6 @@
     },
     {
       "name": "Land a maximum Ascension",
-      "category": [
-        "Forsaken",
-        "Nosferatu Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|Nosferatu|"
-    },
-    {
-      "name": "Get 10 kills as Nosferatu",
-      "category": [
-        "Forsaken",
-        "Nosferatu Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|Nosferatu|"
-    },
-    {
-      "name": "Win 2 times as Nosferatu",
       "category": [
         "Forsaken",
         "Nosferatu Tasks"
@@ -2033,24 +1916,6 @@
       "requires": "|Guest 666|"
     },
     {
-      "name": "Get 10 kills as Guest 666",
-      "category": [
-        "Forsaken",
-        "Guest 666 Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|Guest 666|"
-    },
-    {
-      "name": "Win 2 times as Guest 666",
-      "category": [
-        "Forsaken",
-        "Guest 666 Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|Guest 666|"
-    },
-    {
       "name": "Hit 3 survivors with one Void Rush and successfully slam someone",
       "category": [
         "Forsaken",
@@ -2085,33 +1950,6 @@
       ],
       "region": "Forsaken_K",
       "requires": "|Noli|"
-    },
-    {
-      "name": "Get 10 kills as Noli",
-      "category": [
-        "Forsaken",
-        "Noli Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|Noli|"
-    },
-    {
-      "name": "Win 2 times as Noli",
-      "category": [
-        "Forsaken",
-        "Noli Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|Noli|"
-    },
-	{
-      "name": "Win 2 times as Azure",
-      "category": [
-        "Forsaken",
-        "Azure Tasks"
-      ],
-      "region": "Forsaken_K",
-      "requires": "|Azure|"
     },
 	{
       "name": "Kill a Survivor ensnared by Stigmatize",
@@ -2187,6 +2025,24 @@
     },
     {
       "name": "Complete the huge generator in the lobby",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+	{
+      "name": "Complete the custom Brandon's place Objective",
+      "category": [
+        "Forsaken",
+        "Forsaken Misc Tasks"
+      ],
+      "region": "Forsaken_Misc",
+      "requires": ""
+    },
+	{
+      "name": "Complete the custom Horror Hotel Objective",
       "category": [
         "Forsaken",
         "Forsaken Misc Tasks"
@@ -2604,16 +2460,6 @@
       "requires": "|Brandon6875935's Place|"
     },
 	{
-      "name": "Brandon6875935's Place Gen 10",
-      "category": [
-        "Forsaken",
-        "Forsaken Gensanity Tasks",
-		"Brandon6875935's Place Generators"
-      ],
-      "region": "Forsaken_Gens",
-      "requires": "|Brandon6875935's Place|"
-    },
-	{
       "name": "Yorick's Resting Place Gen 1",
       "category": [
         "Forsaken",
@@ -2675,26 +2521,6 @@
     },
 	{
       "name": "Yorick's Resting Place Gen 7",
-      "category": [
-        "Forsaken",
-        "Forsaken Gensanity Tasks",
-		"Yorick's Resting Place Generators"
-      ],
-      "region": "Forsaken_Gens",
-      "requires": "|Yorick's Resting Place|"
-    },
-	{
-      "name": "Yorick's Resting Place Gen 8",
-      "category": [
-        "Forsaken",
-        "Forsaken Gensanity Tasks",
-		"Yorick's Resting Place Generators"
-      ],
-      "region": "Forsaken_Gens",
-      "requires": "|Yorick's Resting Place|"
-    },
-	{
-      "name": "Yorick's Resting Place Gen 9",
       "category": [
         "Forsaken",
         "Forsaken Gensanity Tasks",
@@ -2865,6 +2691,16 @@
     },
 	{
       "name": "Planet Voss Gen 9",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"Planet Voss Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|Planet Voss|"
+    },
+	{
+      "name": "Planet Voss Gen 10",
       "category": [
         "Forsaken",
         "Forsaken Gensanity Tasks",
@@ -3075,6 +2911,16 @@
     },
 	{
       "name": "The Tempest Gen 8",
+      "category": [
+        "Forsaken",
+        "Forsaken Gensanity Tasks",
+		"The Tempest Generators"
+      ],
+      "region": "Forsaken_Gens",
+      "requires": "|The Tempest|"
+    },
+	{
+      "name": "The Tempest Gen 9",
       "category": [
         "Forsaken",
         "Forsaken Gensanity Tasks",
@@ -3844,16 +3690,6 @@
       "requires": "|Reborn Family Abode|"
     },
 	{
-      "name": "Reborn Family Abode Gen 7",
-      "category": [
-        "Forsaken",
-        "Forsaken Gensanity Tasks",
-		"Reborn Family Abode Generators"
-      ],
-      "region": "Forsaken_Gens",
-      "requires": "|Reborn Family Abode|"
-    },
-	{
       "name": "Roblox HQ Gen 1",
       "category": [
         "Forsaken",
@@ -3915,26 +3751,6 @@
     },
 	{
       "name": "Roblox HQ Gen 7",
-      "category": [
-        "Forsaken",
-        "Forsaken Gensanity Tasks",
-		"Roblox HQ Generators"
-      ],
-      "region": "Forsaken_Gens",
-      "requires": "|Roblox HQ|"
-    },
-	{
-      "name": "Roblox HQ Gen 8",
-      "category": [
-        "Forsaken",
-        "Forsaken Gensanity Tasks",
-		"Roblox HQ Generators"
-      ],
-      "region": "Forsaken_Gens",
-      "requires": "|Roblox HQ|"
-    },
-	{
-      "name": "Roblox HQ Gen 9",
       "category": [
         "Forsaken",
         "Forsaken Gensanity Tasks",
@@ -4026,7 +3842,7 @@
         "Forsaken Skin LMS Tasks"
       ],
       "region": "Forsaken_Misc",
-      "requires": "(|Noob (Forsaken)| AND |Noob Skin - Taunt|) OR (|Bloxy Cola| AND |Slateskin Potion| AND |GhostBurger| AND |Noob Skin - Taunt|) OR (|Shedletsky| AND |Shedletsky Skin - Hot Dog|) OR (|Slash| AND |Fried Chicken| AND |Shedletsky Skin - Hot Dog|) OR (|Elliot| AND |Elliot Skin - Caretaker|) OR (|Pizza Toss| AND |Rush Hour| AND |Elliot Skin - Caretaker|) OR (|Builderman| AND |Builderman Skin - Carepad|) OR (|Sentry| AND |Dispenser| AND |Carry| AND |Builderman Skin - Carepad|) OR (|Guest 1337| AND |Guest 1337 Skin - Block|) OR (|Guest Block| AND |Charge| AND |Guest Punch| AND |Guest 1337 Skin - Block|) OR (|Two Time| AND |Two Time Skin - Cloak|) OR (|Sacrificial Dagger| AND |Crouch| AND |Pray| AND |Ritual| AND |Two Time Skin - Cloak|) OR (|Taph| AND |Taph Skin - Banana|) OR (|Subspace Tripmine| AND |Taph Tripwire| AND |Taph Skin - Banana|) OR (|Chance| AND |Chance Skin - Revolver|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix| AND |Chance Skin - Revolver|) OR (|Chance| AND |Chance Skin - Loveshot|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix| AND |Chance Skin - Loveshot|) OR (|Slasher| AND |Slasher Skin - Pursuer|) OR (|Noli| AND |Noli Skin - Artful|) OR (|Noli| AND |Noli Skin - Devesto|)"
+      "requires": "(|Noob (Forsaken)| AND |Noob (Forsaken) Skin - Taunt|) OR (|Bloxy Cola| AND |Slateskin Potion| AND |GhostBurger| AND |Noob (Forsaken) Skin - Taunt|) OR (|Shedletsky| AND |Shedletsky Skin - Hot Dog|) OR (|Slash| AND |Fried Chicken| AND |Shedletsky Skin - Hot Dog|) OR (|Elliot| AND |Elliot Skin - Caretaker|) OR (|Pizza Toss| AND |Rush Hour| AND |Elliot Skin - Caretaker|) OR (|Builderman| AND |Builderman Skin - Carepad|) OR (|Sentry| AND |Dispenser| AND |Carry| AND |Builderman Skin - Carepad|) OR (|Guest 1337| AND |Guest 1337 Skin - Block|) OR (|Guest Block| AND |Charge| AND |Guest Punch| AND |Guest 1337 Skin - Block|) OR (|Two Time| AND |Two Time Skin - Cloak|) OR (|Sacrificial Dagger| AND |Crouch| AND |Pray| AND |Ritual| AND |Two Time Skin - Cloak|) OR (|Taph| AND |Taph Skin - Banana|) OR (|Subspace Tripmine| AND |Taph Tripwire| AND |Taph Skin - Banana|) OR (|Chance| AND |Chance Skin - Revolver|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix| AND |Chance Skin - Revolver|) OR (|Chance| AND |Chance Skin - Loveshot|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Hat Fix| AND |Chance Skin - Loveshot|) OR (|Slasher| AND |Slasher Skin - Pursuer|) OR (|Noli| AND |Noli Skin - Artful|) OR (|Noli| AND |Noli Skin - Devesto|)"
     },
 	{
       "name": "Win a the Way it Ends LMS on either side (SCP Killer Vs Guard Guest 1337)",
@@ -4046,7 +3862,7 @@
         "Forsaken Skin LMS Tasks"
       ],
       "region": "Forsaken_Misc",
-      "requires": "(|Dusekkar| AND |Dusekkar Skin - Golden|) OR (|Plasma Beam| AND |Spawn Protection| AND |Dusekkar Skin - Golden|) OR (|Shedletsky| AND |Shedletsky Skin - Golden|) OR (|Slash| AND |Fried Chicken| AND |Shedletsky Skin - Golden|) OR (|Chance| AND |Chance Skin - Golden|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Chance Skin - Golden|)"
+      "requires": "(|Dusekkar| AND |Dusekkar Skin - Golden|) OR (|Plasma Beam| AND |Spawn Protection| AND |Dusekkar Skin - Golden|) OR (|Shedletsky| AND |Shedletsky Skin - Golden|) OR (|Slash| AND |Fried Chicken| AND |Shedletsky Skin - Golden|) OR (|Chance| AND |Chance Skin - Golden|) OR (|Coin Flip| AND |One Shot| AND |Chance Reroll| AND |Chance Skin - Golden|) OR (|Guest 1337| AND |Guest 1337 Skin - Golden|) OR (|Guest Punch| AND |Guest Block| AND |Charge| AND |Guest 1337 Skin - Golden|)"
     },
 	{
       "name": "Win a Make a Cake LMS as C00lkidd (Elliot Vs P4rtyPwny C00lkidd)",
@@ -4149,24 +3965,6 @@
       "requires": ""
     },
     {
-      "name": "Win 3 times (Pancho)",
-      "category": [
-        "SJ",
-        "Pancho Tasks"
-      ],
-      "region": "SJ_S",
-      "requires": "|Pancho|"
-    },
-    {
-      "name": "Complete 3 individual tasks (Pancho)",
-      "category": [
-        "SJ",
-        "Pancho Tasks"
-      ],
-      "region": "SJ_S",
-      "requires": "|Pancho|"
-    },
-    {
       "name": "Throw the killer off with Shake 5 times",
       "category": [
         "SJ",
@@ -4201,24 +3999,6 @@
       ],
       "region": "SJ_S",
       "requires": "|Pancho|"
-    },
-    {
-      "name": "Win 3 times (Bloxxer)",
-      "category": [
-        "SJ",
-        "Bloxxer Tasks"
-      ],
-      "region": "SJ_S",
-      "requires": "|Bloxxer|"
-    },
-    {
-      "name": "Complete 5 Individual Tasks (Bloxxer)",
-      "category": [
-        "SJ",
-        "Bloxxer Tasks"
-      ],
-      "region": "SJ_S",
-      "requires": "|Bloxxer|"
     },
     {
       "name": "Stun the killer with Rocket 3 times",
@@ -4257,15 +4037,6 @@
       "requires": "|Bloxxer|"
     },
     {
-      "name": "Win 3 times (MrRobot)",
-      "category": [
-        "SJ",
-        "MrRobot Tasks"
-      ],
-      "region": "SJ_S",
-      "requires": "|MrRobot|"
-    },
-    {
       "name": "Place down an Antenna 10 times",
       "category": [
         "SJ",
@@ -4293,31 +4064,13 @@
       "requires": "|MrRobot|"
     },
     {
-      "name": "Heal a antenna to 30 HP",
+      "name": "Heal an antenna to 30 HP",
       "category": [
         "SJ",
         "MrRobot Tasks"
       ],
       "region": "SJ_S",
       "requires": "|MrRobot|"
-    },
-    {
-      "name": "Win 3 times (Betty)",
-      "category": [
-        "SJ",
-        "Betty Tasks"
-      ],
-      "region": "SJ_S",
-      "requires": "|Betty|"
-    },
-    {
-      "name": "Complete 5 Individual Tasks (Betty)",
-      "category": [
-        "SJ",
-        "Betty Tasks"
-      ],
-      "region": "SJ_S",
-      "requires": "|Betty|"
     },
     {
       "name": "Stun the killer 5 times (Betty)",
@@ -4347,7 +4100,7 @@
       "requires": "|Betty|"
     },
     {
-      "name": "Win 3 times (Calindra)",
+      "name": "Plant one of each flower type",
       "category": [
         "SJ",
         "Calindra Tasks"
@@ -4356,25 +4109,7 @@
       "requires": "|Calindra|"
     },
     {
-      "name": "Complete 5 individual Tasks (Calindra)",
-      "category": [
-        "SJ",
-        "Calindra Tasks"
-      ],
-      "region": "SJ_S",
-      "requires": "|Calindra|"
-    },
-    {
-      "name": "Plant down max flowers",
-      "category": [
-        "SJ",
-        "Calindra Tasks"
-      ],
-      "region": "SJ_S",
-      "requires": "|Calindra|"
-    },
-    {
-      "name": "Speed up two Flowers with one Sprinkler",
+      "name": "Water a plant to 100% 5 times",
       "category": [
         "SJ",
         "Calindra Tasks"
@@ -4391,23 +4126,14 @@
       "region": "SJ_S",
       "requires": "|Calindra|"
     },
-    {
-      "name": "Win 3 times (Jimmy)",
+	{
+      "name": "Slow down a killer with a Daisy 3 times",
       "category": [
         "SJ",
-        "Jimmy Tasks"
+        "Calindra Tasks"
       ],
       "region": "SJ_S",
-      "requires": "|Jimmy|"
-    },
-    {
-      "name": "Complete 5 individual Tasks (Jimmy)",
-      "category": [
-        "SJ",
-        "Jimmy Tasks"
-      ],
-      "region": "SJ_S",
-      "requires": "|Jimmy|"
+      "requires": "|Calindra|"
     },
     {
       "name": "Earn a chocolate 5 times",
@@ -4436,8 +4162,17 @@
       "region": "SJ_S",
       "requires": "|Jimmy|"
     },
+	{
+      "name": "Hit a killer with an Airball while under the effects of Chocolate",
+      "category": [
+        "SJ",
+        "Jimmy Tasks"
+      ],
+      "region": "SJ_S",
+      "requires": "|Jimmy|"
+    },
     {
-      "name": "Win 3 times (Clockwork)",
+      "name": "Kick a teapot into the killer 10 times",
       "category": [
         "SJ",
         "Clockwork Tasks"
@@ -4446,7 +4181,7 @@
       "requires": "|Clockwork|"
     },
     {
-      "name": "Complete 5 individual Tasks (Clockwork)",
+      "name": "Buff 10 teammates with your Clock countdown",
       "category": [
         "SJ",
         "Clockwork Tasks"
@@ -4455,49 +4190,13 @@
       "requires": "|Clockwork|"
     },
     {
-      "name": "Have you or your teammates pick up 10 teapots",
+      "name": "Have your Clock count to 12 after landing 4 teapots",
       "category": [
         "SJ",
         "Clockwork Tasks"
       ],
       "region": "SJ_S",
       "requires": "|Clockwork|"
-    },
-    {
-      "name": "Heal a teammate with Pot Shield 5 times",
-      "category": [
-        "SJ",
-        "Clockwork Tasks"
-      ],
-      "region": "SJ_S",
-      "requires": "|Clockwork|"
-    },
-    {
-      "name": "Slow or trip the killer with Teapot Toss",
-      "category": [
-        "SJ",
-        "Clockwork Tasks"
-      ],
-      "region": "SJ_S",
-      "requires": "|Clockwork|"
-    },
-    {
-      "name": "Win 2 Times (KillerKyle)",
-      "category": [
-        "SJ",
-        "KillerKyle Tasks"
-      ],
-      "region": "SJ_K",
-      "requires": "|KillerKyle|"
-    },
-    {
-      "name": "Complete 3 Individual Tasks (KillerKyle)",
-      "category": [
-        "SJ",
-        "KillerKyle Tasks"
-      ],
-      "region": "SJ_K",
-      "requires": "|KillerKyle|"
     },
     {
       "name": "Kill a survivor with Hat Toss",
@@ -4527,24 +4226,6 @@
       "requires": "|KillerKyle|"
     },
     {
-      "name": "Win 2 Times (Fencer)",
-      "category": [
-        "SJ",
-        "Fencer Tasks"
-      ],
-      "region": "SJ_K",
-      "requires": "|Fencer|"
-    },
-    {
-      "name": "Complete 3 Individual Tasks (Fencer)",
-      "category": [
-        "SJ",
-        "Fencer Tasks"
-      ],
-      "region": "SJ_K",
-      "requires": "|Fencer|"
-    },
-    {
       "name": "Kill a Survivor with each sword",
       "category": [
         "SJ",
@@ -4571,23 +4252,14 @@
       "region": "SJ_K",
       "requires": "|Fencer|"
     },
-    {
-      "name": "Win 2 Times (ClawsGuy)",
+	{
+      "name": "Launch a Survivor into the corner with Windforce",
       "category": [
         "SJ",
-        "ClawsGuy Tasks"
+        "Fencer Tasks"
       ],
       "region": "SJ_K",
-      "requires": "|ClawsGuy|"
-    },
-    {
-      "name": "Complete 3 Individual Tasks (ClawsGuy)",
-      "category": [
-        "SJ",
-        "ClawsGuy Tasks"
-      ],
-      "region": "SJ_K",
-      "requires": "|ClawsGuy|"
+      "requires": "|Fencer|"
     },
     {
       "name": "Kill a Survior with Charge",
@@ -4609,6 +4281,15 @@
     },
     {
       "name": "Kill a Survivor after using Wave",
+      "category": [
+        "SJ",
+        "ClawsGuy Tasks"
+      ],
+      "region": "SJ_K",
+      "requires": "|ClawsGuy|"
+    },
+	{
+      "name": "Lunge at a Survivor 3 times as ClawsGuy",
       "category": [
         "SJ",
         "ClawsGuy Tasks"
@@ -4770,7 +4451,7 @@
       "requires": "|Amy| OR |Amy Reroll|"
     },
     {
-      "name": "Reroll the worst cards (Cream and Knuckles/Tails)",
+      "name": "Reroll the worst cards (Tikal and Knuckles/Tails)",
       "region": "OM_S",
       "category": [
         "Amy Tasks",
@@ -4779,7 +4460,7 @@
       "requires": "|Amy| OR |Amy Reroll|"
     },
     {
-      "name": "Hit a hammer throw while having Cream card",
+      "name": "Hit a hammer throw while having Moon card",
       "region": "OM_S",
       "category": [
         "Amy Tasks",
@@ -6468,7 +6149,7 @@
 		"Slacker Tasks",
         "BIAST"
       ],
-      "requires": "|Slacker| AND (|Slacker Skin - Wonderful| OR |Slacker Skin - Atrocity| OR |Slacker Skin - Mimic|)"
+      "requires": "|Slacker| AND (|Slacker Skin - Wonderful| OR |Slacker Skin - Atrocity| OR |Slacker Skin - Exosuit|)"
     },
 	{
       "name": "Kill a contractee with Juvenile Burden as the finisher",
@@ -6498,13 +6179,13 @@
       "requires": "|Trapper|"
     },
 	{
-      "name": "Win as Mouth/Corroded/Charlie",
+      "name": "Win as Corroded/Trencher",
       "region": "BIAST_K",
       "category": [
 		"Trapper Tasks",
         "BIAST"
       ],
-      "requires": "|Trapper| AND (|Trapper Skin - Mouth| OR |Trapper Skin - Corroded| OR |Trapper Skin - Charlie|)"
+      "requires": "|Trapper| AND (|Trapper Skin - Mouth| OR |Trapper Skin - Trencher|)"
     },
 	{
       "name": "Kill a contractee while they're stuck in a trap",
@@ -6570,13 +6251,13 @@
       "requires": "|Observer|"
     },
 	{
-      "name": "Win as Queen/NOLI/Revengeseeker",
+      "name": "Win as Weatherver/NOLI/Revengeseeker",
       "region": "BIAST_K",
       "category": [
 		"Observer Tasks",
         "BIAST"
       ],
-      "requires": "|Observer| AND (|Observer Skin - Queen| OR |Observer Skin - NOLI| OR |Observer Skin - Revengeseeker|)"
+      "requires": "|Observer| AND (|Observer Skin - Weatherver| OR |Observer Skin - NOLI| OR |Observer Skin - Revengeseeker|)"
     },
 	{
       "name": "Coldstalk a player",
@@ -6606,16 +6287,16 @@
       "requires": "|Ashle|"
     },
 	{
-      "name": "Win as Hitman/Krystal Dance/Priceless",
+      "name": "Win as Hitman/Krystal Dance",
       "region": "BIAST_K",
       "category": [
 		"Ashle Tasks",
         "BIAST"
       ],
-      "requires": "|Ashle| AND (|Ashle Skin - Hitman| OR |Ashle Skin - Krystal Dance| OR |Ashle Skin - Priceless|)"
+      "requires": "|Ashle| AND (|Ashle Skin - Hitman| OR |Ashle Skin - Krystal Dance|)"
     },
 	{
-      "name": "Parry an incoming attack with m1",
+      "name": "Parry an incoming attack with m1 5 times",
       "region": "BIAST_K",
       "category": [
 		"Ashle Tasks",
@@ -6637,17 +6318,15 @@
       "region": "BIAST_K",
       "category": [
 		"Jeff the Killer Tasks",
-		"Jeff the Killer",
         "BIAST"
       ],
       "requires": "|Jeff the Killer|"
     },
 	{
-      "name": "Win as Jeff the Killer... Again",
+      "name": "Land Pounce directly onto a contractee",
       "region": "BIAST_K",
       "category": [
 		"Jeff the Killer Tasks",
-		"Jeff the Killer",
         "BIAST"
       ],
       "requires": "|Jeff the Killer|"
@@ -6657,10 +6336,39 @@
       "region": "BIAST_K",
       "category": [
 		"Jeff the Killer Tasks",
-		"Jeff the Killer",
         "BIAST"
       ],
       "requires": "|Jeff the Killer|"
+    },
+	{
+      "name": "Win as Harborer",
+      "region": "BIAST_K",
+      "category": [
+		"Harborer Tasks",
+		"Harborer",
+        "BIAST"
+      ],
+      "requires": "|Harborer|"
+    },
+	{
+      "name": "Win while playing as Blossomed Descendant",
+      "region": "BIAST_K",
+      "category": [
+		"Harborer Tasks",
+		"Harborer",
+        "BIAST"
+      ],
+      "requires": "|Harborer|"
+    },
+	{
+      "name": "Kill a Contractee with Ghost Charge",
+      "region": "BIAST_K",
+      "category": [
+		"Harborer Tasks",
+		"Harborer",
+        "BIAST"
+      ],
+      "requires": "|Harborer|"
     },
 	{
       "name": "Tearpo Inc. - Activate a Flare Stack",
@@ -6701,6 +6409,16 @@
         "BIAST"
       ],
       "requires": "|Charge (F Ability)|"
+    },
+	{
+      "name": "Teapot Harbor - Retrieve a heavy far-spawn artifact",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"Teapot Harbor",
+        "BIAST"
+      ],
+      "requires": "|Heavy Artifacts|"
     },
 	{
       "name": "Dustspire - Cross the sweeper bridge, grab the artifact, and go back without taking damage",
@@ -6831,6 +6549,46 @@
         "BIAST"
       ],
       "requires": ""
+    },
+	{
+      "name": "BowlR - Shut off the power to the alley",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"BowlR",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "BowlR - Bowl a spare on a lane",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"BowlR",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Area 61 - Survive against Jeff the Killer",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"BowlR",
+        "BIAST"
+      ],
+      "requires": ""
+    },
+	{
+      "name": "Area 61 - Knock someone into the basement's lava",
+      "region": "BIAST_Contractee",
+      "category": [
+		"BIAST Map Tasks",
+		"BowlR",
+        "BIAST"
+      ],
+      "requires": "|Charge (F Ability)|"
     },
 	{
       "name": "Push an Adversary 10 times",
@@ -7236,6 +6994,114 @@
         "JOMA"
       ],
       "requires": "|Sniper|"
+    },
+	{
+      "name": "Land 20 shots on Salvo mode",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Assistant Tasks",
+        "JOMA"
+      ],
+      "requires": "|Assistant|"
+    },
+	{
+      "name": "Heal 5 teammates to full hp as Assistant",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Assistant Tasks",
+        "JOMA"
+      ],
+      "requires": "|Assistant|"
+    },
+	{
+      "name": "Land Piston 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Assistant Tasks",
+        "JOMA"
+      ],
+      "requires": "|Assistant|"
+    },
+	{
+      "name": "Heal 3 Survivors with one shot",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Assistant Tasks",
+        "JOMA"
+      ],
+      "requires": "|Assistant|"
+    },
+	{
+      "name": "Land all three daggers with one Piercer use",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Hemomancer Tasks",
+        "JOMA"
+      ],
+      "requires": "|Hemomancer|"
+    },
+	{
+      "name": "Heal a Golem or teammate to full with Transfusion",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Hemomancer Tasks",
+        "JOMA"
+      ],
+      "requires": "|Hemomancer|"
+    },
+	{
+      "name": "Reach 110 Max HP from Drain",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Hemomancer Tasks",
+        "JOMA"
+      ],
+      "requires": "|Hemomancer|"
+    },
+	{
+      "name": "land your Carbon Golem's cast 5 times",
+      "region": "JOMA_Survivor",
+      "category": [
+		"Hemomancer Tasks",
+        "JOMA"
+      ],
+      "requires": "|Hemomancer|"
+    },
+	{
+      "name": "Land Seer 5 times on pull mode",
+      "region": "JOMA_K",
+      "category": [
+		"Spotter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Spotter|"
+    },
+	{
+      "name": "Inflict 10 survivors with Deathmark",
+      "region": "JOMA_K",
+      "category": [
+		"Spotter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Spotter|"
+    },
+	{
+      "name": "Land Seer 5 times on push mode",
+      "region": "JOMA_K",
+      "category": [
+		"Spotter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Spotter|"
+    },
+	{
+      "name": "Inflict 3 or more Survivors with one Deathmark use",
+      "region": "JOMA_K",
+      "category": [
+		"Spotter Tasks",
+        "JOMA"
+      ],
+      "requires": "|Spotter|"
     },
 	{
       "name": "Parry 5 attacks as Dullahan",
