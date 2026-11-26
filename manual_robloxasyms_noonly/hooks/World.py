@@ -3,7 +3,7 @@ from typing import Any
 from worlds.AutoWorld import World
 from BaseClasses import MultiWorld, CollectionState, Item, ItemClassification
 from Options import OptionError
-import random
+import re
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
 from ..Items import ManualItem
@@ -63,7 +63,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Add your code here to calculate which locations to remove
 
     category_map = {
-        "noob": "Noob Tasks",
+        "noob": "Noob (Forsaken) Tasks",
         "007n7": "007n7 Tasks",
         "veeronica": "Veeronica Tasks",
         "elliot": "Elliot Tasks",
@@ -75,16 +75,19 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "taph": "Taph Tasks",
         "dusekkar": "Dusekkar Tasks",
         "jane doe": "Jane Doe Tasks",
+        "helperbot": "Helperbot Tasks",
         "slasher": "Slasher Tasks",
         "coolkidd": "Coolkidd Tasks",
+        "c00lkidd": "Coolkidd Tasks",  # the Forsaken_Exclude option uses this spelling
         "john doe": "John Doe Tasks",
         "noli": "Noli Tasks",
         "1x1x1x1": "1x1x1x1 Tasks",
         "guest 666": "Guest 666 Tasks",
         "nosferatu": "Nosferatu Tasks",
+        "azure": "Azure Tasks",
         "adrenaline": "Adrenaline Tasks",
         "banana peel": "Banana Peel Tasks",
-        "bonuspad": "BonusPad Tasks",
+        "bonuspad": "Bonuspad Tasks",
         "block": "Block Tasks",
         "bugle": "Bugle Tasks",
         "caretaker": "Caretaker Tasks",
@@ -111,7 +114,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "metal sonic": "Metal Sonic Tasks",
         "silver": "Silver Tasks",
         "blaze": "Blaze Tasks",
-        "2011x": "2011X Tasks",
+        "2011x": "2011x Tasks",
         "kolossos": "Kolossos Tasks",
         "tripwire": "Tripwire Tasks",
         "fleetway": "Fleetway Tasks",
@@ -122,8 +125,9 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "vinnie": "Vinnie Tasks",
         "crafter": "Crafter Tasks",
         "tac9": "Tac9 Tasks",
+        "kit": "The Kit Tasks",
         "roflpix": "Roflpix Tasks",
-        "partypwny": "PartyPwny Tasks",
+        "partypwny": "Partypwny Tasks",
         "dotx": "DotX Tasks",
         "blankstare": "Blankstare Tasks",
         "sweep": "Sweep Tasks",
@@ -145,17 +149,87 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "trapper": "Trapper Tasks",
         "cubedhexa22": "CubedHexa22 Tasks",
         "observer": "Observer Tasks",
-        "ashle": "Ashle Tasks"
+        "ashle": "Ashle Tasks",
+        "jeff the killer": "Jeff the Killer Tasks",
+        "noob (joma)": "Noob (JOMA) Tasks",
+        "assistant": "Assistant Tasks",
+        "jester": "Jester Tasks",
+        "sniper": "Sniper Tasks",
+        "vocalist": "Vocalist Tasks",
+        "doctor": "Doctor Tasks",
+        "guest (joma)": "Guest (JOMA) Tasks",
+        "hemomancer": "Hemomancer Tasks",
+        "shielder": "Shielder Tasks",
+        "sherrif": "Sherrif Tasks",
+        "firefighter": "Firefighter Tasks",
+        "brawler": "Brawler Tasks",
+        "knight": "Knight Tasks",
+        "maniac": "Maniac Tasks",
+        "wrecker": "Wrecker Tasks",
+        "spotter": "Spotter Tasks",
+        "dullahan": "Dullahan Tasks",
+        "anarchist": "Anarchist Tasks",
+        "executioner": "Executioner Tasks",
+        "firework": "Firework Tasks",
+        "chronos": "Chronos Tasks",
+        "hunter": "Hunter Tasks",
+        "chaser": "Chaser Tasks",
+        "sin": "Sin Tasks",
+        "apprentice": "Apprentice Tasks",
+        "flarereaver": "Flarereaver Tasks",
+        "custodian": "Custodian Tasks"
     }
 
-    excluded_characters = (list(world.options.Forsaken_Exclude.value) + list(world.options.DoD_Exclude.value) + list(world.options.SJ_Exclude.value) + list(world.options.OM_Exclude.value) + list(world.options.PS_Exclude.value) + list(world.options.BIAST_Exclude.value))
+    excluded_characters = (list(world.options.Forsaken_Exclude.value) + list(world.options.DoD_Exclude.value) + list(world.options.SJ_Exclude.value) + list(world.options.OM_Exclude.value) + list(world.options.PS_Exclude.value) + list(world.options.BIAST_Exclude.value) + list(world.options.JOMA_Exclude.value))
 
     for location in location_table:
         if any(
-            category_map[character] in location["category"]
+            category_map.get(character) in location["category"]
             for character in excluded_characters
         ):
             locationNamesToRemove.append(location["name"])
+
+    # Random task removal: keep only N random tasks per character category.
+    # Only the categories listed in category_map count as character categories,
+    # so Misc / LMS / Map / Gensanity tasks and the Win locations are never touched.
+    tasks_to_keep = get_option_value(multiworld, player, "Tasks_Per_Character")
+    if tasks_to_keep != -1:
+        character_categories = set(category_map.values())
+        already_removed = set(locationNamesToRemove)
+        # Only consider locations that actually exist in this world (disabled games/categories aren't created)
+        existing_names = {loc.name for loc in multiworld.get_locations(player)}
+
+        tasks_by_character: dict[str, list[str]] = {}
+        for location in location_table:
+            name = location["name"]
+            if location.get("victory") or name not in existing_names or name in already_removed:
+                continue
+            for cat in location.get("category", []):
+                if cat in character_categories:
+                    tasks_by_character.setdefault(cat, []).append(name)
+
+        # A task shared by several characters is kept if any of them keeps it
+        kept: set[str] = set()
+        for cat in sorted(tasks_by_character):  # sorted so the same seed always gives the same result
+            names = tasks_by_character[cat]
+            kept.update(world.random.sample(names, min(tasks_to_keep, len(names))))
+
+        for names in tasks_by_character.values():
+            for name in names:
+                if name not in kept:
+                    locationNamesToRemove.append(name)
+
+    #Editing Gen amount DOESN'T WORK YET, MAKE THIS WORK NOONLY
+    # I made it work - StudMuffin
+    if get_option_value(multiworld, player, "Gensanity"):
+        genAmount = get_option_value(multiworld, player, "Gensanity_Amount")
+        
+        for location in location_table:
+            if "Forsaken Gensanity Tasks" not in location.get("category", []):
+                continue
+            match = re.search(r"Gen (\d+)$", location["name"])
+            if match and int(match.group(1)) > genAmount:
+                locationNamesToRemove.append(location["name"])
     
     for region in multiworld.regions:
         if region.player == player:
@@ -174,25 +248,22 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
     # Changes the Wintoken amount to the yaml Option or removes Wintokens if other goal is selected
     if world.options.goal.value == 0:
-        item_config["Wintoken"] = world.options.Wintoken_Amount.value + 5
+        item_config["Wintoken"] = world.options.Wintoken_Amount.value + world.options.Wintoken_Extra.value
     else:
         item_config["Wintoken"] = 0
-    # Changes the Killer Door Amount to the yaml Option
-    if world.options.Include_Killer_Doors.value == True:
-        item_config["Killer Door Use"] = world.options.Killer_Door_Amount.value
     # Remove Moves if Move Sanity or Forsaken are disabled
     if world.options.Move_Sanity.value == False or world.options.Playing_Forsaken.value == False:
-        items_to_remove = ["Bloxy Cola", "Slateskin Potion", "GhostBurger", "Slash", "Fried Chicken", "Pizza Toss", "Rush Hour", "Guest Block", "Charge", "Guest Punch", "Sacrificial Dagger", "Crouch", "Pray", "Ritual", "Clone", "C00LGUI", "Inject", "Coin Flip", "One Shot", "Chance Reroll", "Hat Fix", "Plasma Beam", "Spawn Protection", "Subspace Tripmine", "Taph Tripwire", "Sentry", "Dispenser", "Carry", "Vandalism", "Sk8", "Broadcast", "Activate Battery", "Crystal Pitch", "Hatchet"]
+        items_to_remove = ["Bloxy Cola", "Slateskin Potion", "GhostBurger", "Slash", "Fried Chicken", "Pizza Toss", "Rush Hour", "Guest Block", "Charge", "Guest Punch", "Sacrificial Dagger", "Crouch", "Pray", "Ritual", "Clone", "C00LGUI", "Inject", "Coin Flip", "One Shot", "Chance Reroll", "Hat Fix", "Plasma Beam", "Spawn Protection", "Subspace Tripmine", "Taph Tripwire", "Sentry", "Dispenser", "Carry", "Vandalism", "Sk8", "Broadcast", "Activate Battery", "Crystal Pitch", "Hatchet", "Pulse", "Inspire"]
         for item in items_to_remove:
             item_config.pop(item, None)
     # Remove Regular Survivors if Movesanity and Forsaken are Enabled
     if world.options.Move_Sanity.value == True and world.options.Playing_Forsaken.value == True:
-        items_to_remove = ["Noob", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar", "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman"]
+        items_to_remove = ["Noob (Forsaken)", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar", "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman", "Helperbot"]
         for item in items_to_remove:
             item_config.pop(item, None)
     # Remove Forsaken Survivors if Forsaken is Disabled
     if world.options.Playing_Forsaken.value == False:
-        items_to_remove = ["Noob", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar", "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman"]
+        items_to_remove = ["Noob (Forsaken)", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar", "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman", "Helperbot"]
         for item in items_to_remove:
             item_config.pop(item, None)
     # Remove Moves if Move Sanity or Outcome Memories are disabled
@@ -229,6 +300,7 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
             "taph": ["taph tripwire", "subspace tripmine"],
             "dusekkar": ["plasma beam", "spawn protection"],
             "jane doe": ["crystal pitch", "hatchet"],
+            "helperbot": ["pulse", "inspire"]
         }
         for character in world.options.Forsaken_Exclude.value:
             for move in forsmoves.get(character.lower(), []):
@@ -277,6 +349,12 @@ def before_create_items_all(item_config: dict[str, int|dict], world: World, mult
         for item_name in list(item_config):
             if item_name.lower() in world.options.BIAST_Exclude.value:
                 item_config.pop(item_name, None)
+
+    if world.options.Playing_Just_One_More_Asym.value == True:
+        for item_name in list(item_config):
+            if item_name.lower() in world.options.JOMA_Exclude.value:
+                item_config.pop(item_name, None)
+                
     return item_config
         
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
@@ -298,7 +376,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         "Pray", "Ritual", "Clone", "C00LGUI", "Inject", "Coin Flip", "One Shot", "Chance Reroll",
         "Hat Fix", "Plasma Beam", "Spawn Protection", "Subspace Tripmine", "Taph Tripwire",
         "Sentry", "Dispenser", "Carry", "Vandalism", "Sk8", "Broadcast", "Activate Battery",
-        "Crystal Pitch", "Hatchet",
+        "Crystal Pitch", "Hatchet", "Pulse", "Inspire"
 
         # OM
         "Dropdash", "Peelout", "Glide", "Laser Cannon", "Switch",
@@ -312,10 +390,12 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         # OM
         "Sonic", "Knuckles", "Amy", "Cream", "Tails", "Eggman", "Metal Sonic", "Blaze", "Silver",
         # Forsaken characters
-        "Noob", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar",
-        "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman",
+        "Noob (Forsaken)", "Shedletsky", "007n7", "Veeronica", "Guest 1337", "Taph", "Dusekkar",
+        "Jane Doe", "Two Time", "Chance", "Elliot", "Builderman", "Helperbot",
         # Pursuit
-        "Dante", "Mikaela", "Nyan", "Fukatsuki", "Crafter", "Vinnie", "Tac9", "Roflpix", "The Kit"
+        "Dante", "Mikaela", "Nyan", "Fukatsuki", "Crafter", "Vinnie", "Tac9", "Roflpix", "The Kit",
+        # Joma
+        "Noob (JOMA)", "Doctor", "Jester", "Assistant", "Brawler", "Firefighter", "Shielder", "Knight", "Maniac", "Wrecker", "Guest (JOMA)", "Hemomancer", "Sniper", "Vocalist", "Sherrif"
     ]
 
     Kill_Map = [
@@ -328,15 +408,23 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         #Saken
         "Slasher", "Coolkidd", "John Doe", "Noli", "1x1x1x1", "Guest 666", "Nosferatu", "Azure",
         #Pursuit
-        "Partypwny", "DotX", "Blankstare", "Sweep", "Captain Lime", "Jack Noir"
+        "Partypwny", "DotX", "Blankstare", "Sweep", "Captain Limewire", "Jack Noir",
+        #BIAST
+        "Slacker", "Trapper", "CubedHexa22", "Observer", "Ashle", "Jeff the Killer", "Harborer",
+        #JOMA
+        "Spotter", "Dullahan", "Anarchist", "Executioner", "Firework", "Chronos", "Hunter", "Chaser", "Sin", "Apprentice", "Flarereaver", "Custodian"
     ]
 
     move_sanity = is_option_enabled(multiworld, player, "Move_Sanity")
     Surv_Map = Surv_Map + (Move_Map if move_sanity else Char_Map)
+    pool_names = {i.name for i in item_pool}
+    #never_pick = get_option_value(multiworld, player, "Exclude_Starting_Characters")'''
+    never_pick = {""} # Remove this and uncomment the other once the option exists
 
     def pick_unique(pool: list, count: int) -> list:
         # Pick up to `count` unique names from pool, without mutating pool or crashing on oversized counts.
-        count = max(0, min(count, len(pool)))
+        available = [name for name in pool if name in pool_names and name not in never_pick]
+        count = max(0, min(count, len(available)))
         return world.random.sample(pool, count)
 
     override_survivors = get_option_value(multiworld, player, "Override_Starting_Survivors")
@@ -381,6 +469,14 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             survivorAmount += 1
             killerAmount += 1
             gamesPlayed += 1
+        if is_option_enabled(multiworld, player, "Playing_Break_in_and_Steal_Thingz"):
+            survivorAmount += 0
+            killerAmount += 1
+            gamesPlayed += 1
+        if is_option_enabled(multiworld, player, "Playing_Just_One_More_Asym"):
+            survivorAmount += 2
+            killerAmount += 1
+            gamesPlayed += 1
 
         if survivorAmount > 3 and move_sanity:
             survivorAmount = 5
@@ -404,12 +500,15 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         startingItems.extend(pick_unique(Kill_Map, 1))
 
     else:
-        # Auto-balance off, but one override was set and the other wasn't — default the unset one
+        # Auto-balance off, but one override was set and the other wasn't - default the unset one
         if override_survivors == -1:
             startingItems.extend(pick_unique(Surv_Map, 2))
         if override_killers == -1:
             startingItems.extend(pick_unique(Kill_Map, 1))
-
+    
+    #Don't mind the noonly code sneaking in here (This is for starting Skins)
+    startingItems.extend(get_option_value(multiworld, player, "Starting_Skins"))
+    
     for itemName in startingItems:
         item = next((i for i in item_pool if i.name == itemName), None)
         if item is None:
@@ -425,7 +524,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
     requirementssurvivors = []
     if is_option_enabled(multiworld, player, "Playing_Forsaken") and not is_option_enabled(multiworld, player, "Move_Sanity"):
         requiresforsaken = {
-            "noob": "|Noob|",
+            "noob": "|Noob (Forsaken)|",
             "007n7": "|007n7|",
             "veeronica": "|Veeronica|",
             "shedletsky": "|Shedletsky|",
@@ -436,7 +535,8 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "two time": "|Two Time|",
             "chance": "|Chance|",
             "elliot": "|Elliot|",
-            "builderman": "|Builderman|"
+            "builderman": "|Builderman|",
+            "helperbot": "|Helperbot|"
         }
         for character, requirement in requiresforsaken.items():
             if character not in world.options.Forsaken_Exclude.value:
@@ -455,6 +555,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "taph": "|Taph Tripwire| AND |Subspace Tripmine|",
             "dusekkar": "|Plasma Beam| AND |Spawn Protection|",
             "jane doe": "|Crystal Pitch| AND |Hatchet|",
+            "helperbot": "|Pulse| AND |Inspire|",
         }
         for character, requirement in requiresforsaken.items():
             if character not in world.options.Forsaken_Exclude.value:
@@ -540,6 +641,29 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         for character, requirement in requiresps.items():
             if character not in world.options.PS_Exclude.value:
                 requirementssurvivors.append(requirement)
+                
+    if is_option_enabled(multiworld, player, "Playing_Just_One_More_Asym"):
+        requiresjoma = {
+            "noob (joma)": "|Noob (JOMA)|",
+            "doctor": "|Doctor|",
+            "jester": "|Jester|",
+            "assistant": "|Assistant|",
+            "brawler": "|Brawler|",
+            "firefighter": "|Firefighter|",
+            "shielder": "|Shielder|",
+            "knight": "|Knight|",
+            "maniac": "|Maniac|",
+            "wrecker": "|Wrecker|",
+            "guest (joma)": "|Guest (JOMA)|",
+            "hemomancer": "|Hemomancer|",
+            "sniper": "|Sniper|",
+            "vocalist": "|Vocalist|",
+            "sherrif": "|Sherrif|"
+        }
+        for character, requirement in requiresjoma.items():
+            if character not in world.options.JOMA_Exclude.value:
+                requirementssurvivors.append(requirement)
+    
         print(requirementssurvivors)
     for location in location_table:
         if location["name"] == "Win (Collect all Survivors)":
@@ -549,7 +673,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
     
     if is_option_enabled(multiworld, player, "Playing_Forsaken") and not is_option_enabled(multiworld, player, "Move_Sanity"):
         requiresforsaken = {
-            "noob": "|Noob|",
+            "noob": "|Noob (Forsaken)|",
             "shedletsky": "|Shedletsky|",
             "007n7": "|007n7|",
             "veeronica": "|Veeronica|",
@@ -561,6 +685,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "chance": "|Chance|",
             "elliot": "|Elliot|",
             "builderman": "|Builderman|",
+            "helperbot": "|Helperbot|",
             "slasher": "|Slasher|",
             "coolkidd": "|Coolkidd|",
             "john doe": "|John Doe|",
@@ -568,7 +693,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "1x1x1x1": "|1x1x1x1|",
             "guest 666": "|Guest 666|",
             "nosferatu": "|Nosferatu|",
-            "azure": "|Azure|",
+            "azure": "|Azure|"
         }
         for character, requirement in requiresforsaken.items():
             if character not in world.options.Forsaken_Exclude.value:
@@ -587,6 +712,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "taph": "|Taph Tripwire| AND |Subspace Tripmine|",
             "dusekkar": "|Plasma Beam| AND |Spawn Protection|",
             "jane doe": "|Crystal Pitch| AND |Hatchet|",
+            "helperbot": "|Pulse| AND |Inspire|",
             "slasher": "|Slasher|",
             "coolkidd": "|Coolkidd|",
             "john doe": "|John Doe|",
@@ -699,7 +825,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "dotx": "|DotX|",
             "blankstare": "|Blankstare|",
             "sweep": "|Sweep|",
-            "captain lime": "|Captain Lime|",
+            "captain limewire": "|Captain Limewire|",
             "jack noir": "|Jack Noir|",
         }
         for character, requirement in requiresps.items():
@@ -712,12 +838,47 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
             "trapper": "|Trapper|",
             "cubedhexa22": "|CubedHexa22|",
             "observer": "|Observer|",
-            "ashle": "|Ashle|"
+            "ashle": "|Ashle|",
+            "jeff the killer": "|Jeff the Killer|"
         }
         for character, requirement in requiresbiast.items():
             if character not in world.options.BIAST_Exclude.value:
                 requirementskillers.append(requirement)
-    
+                
+    if is_option_enabled(multiworld, player, "Playing_Just_One_More_Asym"):
+        requiresjoma = {
+            "noob (joma)": "|Noob (JOMA)|",
+            "doctor": "|Doctor|",
+            "jester": "|Jester|",
+            "assistant": "|Assistant|",
+            "brawler": "|Brawler|",
+            "firefighter": "|Firefighter|",
+            "shielder": "|Shielder|",
+            "knight": "|Knight|",
+            "maniac": "|Maniac|",
+            "wrecker": "|Wrecker|",
+            "guest (joma)": "|Guest (JOMA)|",
+            "hemomancer": "|Hemomancer|",
+            "sniper": "|Sniper|",
+            "vocalist": "|Vocalist|",
+            "sherrif": "|Sherrif|",
+            "spotter": "|Spotter|",
+            "dullahan": "|Dullahan|",
+            "anarchist": "|Anarchist|",
+            "executioner": "|Executioner|",
+            "firework": "|Firework|",
+            "chronos": "|Chronos|",
+            "hunter": "|Hunter|",
+            "chaser": "|Chaser|",
+            "sin": "|Sin|",
+            "apprentice": "|Apprentice|",
+            "flarereaver": "|Flarereaver|",
+            "custodian": "|Custodian|"
+        }
+        for character, requirement in requiresjoma.items():
+            if character not in world.options.JOMA_Exclude.value:
+                requirementskillers.append(requirement) 
+        
     for location in location_table:
         if location["name"] == "Win (Collect all Survivors and Killers)":
             location["requires"] = " AND ".join(requirementskillers)
@@ -762,7 +923,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
 
 # The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
 def after_create_items(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-    skin_items = ["007n7 Skin - 118o8", "C00lkidd Skin - bluudud", "Two Time Skin - Ghoul", "1x1x1x1 Skin - Diva", "Shedletsky Skin - The Heartbroken", "1x1x1x1 Skin - Hacklord", "Noob Skin - Taunt", "Shedletsky Skin - Hot Dog", "Elliot Skin - Caretaker", "Builderman Skin - Carepad", "Guest 1337 Skin - Block", "Two Time Skin - Cloak", "Taph Skin - Banana", "Chance Skin - Revolver", "Chance Skin - Loveshot", "Slasher Skin - Pursuer", "Noli Skin - Artful", "Noli Skin - Devesto", "Guest 1337 Skin - Guard", "1x1x1x1 Skin - The Pestilence", "Noli Skin - The Possessed", "Dusekkar Skin - Golden", "Shedletsky Skin - Golden", "Chance Skin - Golden", "C00lkidd Skin - P4rtyPwny", "Elliot Skin - Friend", "John Doe Skin - Annihilation", "Slasher Skin - Vanity", "John Doe Skin - Gasharpoon"]
+    skin_items = ["007n7 Skin - 118o8", "C00lkidd Skin - bluudud", "Two Time Skin - Ghoul", "1x1x1x1 Skin - Diva", "Shedletsky Skin - The Heartbroken", "1x1x1x1 Skin - Hacklord", "Noob Skin - Taunt", "Shedletsky Skin - Hot Dog", "Elliot Skin - Caretaker", "Builderman Skin - Carepad", "Guest 1337 Skin - Block", "Two Time Skin - Cloak", "Taph Skin - Banana", "Chance Skin - Revolver", "Chance Skin - Loveshot", "Slasher Skin - Pursuer", "Noli Skin - Artful", "Noli Skin - Devesto", "Guest 1337 Skin - Guard", "1x1x1x1 Skin - The Pestilence", "Noli Skin - The Possessed", "Dusekkar Skin - Golden", "Shedletsky Skin - Golden", "Chance Skin - Golden", "C00lkidd Skin - P4rtyPwny", "Elliot Skin - Friend", "John Doe Skin - Annihilation", "Slasher Skin - Vanity", "John Doe Skin - Gasharpoon", "Guest 1337 Skin - Golden"]
     if not (world.options.Playing_Forsaken.value == True and world.options.Include_Forsaken_Skin_LMS_Tasks.value == True and world.options.Include_Forsaken_LMS_Tasks.value == True):
         for item in item_pool:
             if item.name in skin_items:
