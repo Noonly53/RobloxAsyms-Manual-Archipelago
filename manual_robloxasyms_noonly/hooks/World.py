@@ -78,7 +78,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "helperbot": "Helperbot Tasks",
         "slasher": "Slasher Tasks",
         "coolkidd": "Coolkidd Tasks",
-        "c00lkidd": "Coolkidd Tasks",  # the Forsaken_Exclude option uses this spelling
+        "c00lkidd": "Coolkidd Tasks",
         "john doe": "John Doe Tasks",
         "noli": "Noli Tasks",
         "1x1x1x1": "1x1x1x1 Tasks",
@@ -193,7 +193,13 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Only the categories listed in category_map count as character categories,
     # so Misc / LMS / Map / Gensanity tasks and the Win locations are never touched.
     tasks_to_keep = get_option_value(multiworld, player, "Tasks_Per_Character")
-    if tasks_to_keep != -1:
+    # Universal Tracker re-runs generation to work out logic, and its random rolls don't match the real seed.
+    # So the real generation saves its picks in slot_data (see after_fill_slot_data), and the tracker reuses them here.
+    passthrough = getattr(multiworld, "re_gen_passthrough", {}).get(world.game, {})
+    if "Random_Removed_Tasks" in passthrough:
+        world.random_removed_tasks = list(passthrough["Random_Removed_Tasks"])
+        locationNamesToRemove.extend(world.random_removed_tasks)
+    elif tasks_to_keep != -1:
         character_categories = set(category_map.values())
         already_removed = set(locationNamesToRemove)
         # Only consider locations that actually exist in this world (disabled games/categories aren't created)
@@ -214,10 +220,10 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             names = tasks_by_character[cat]
             kept.update(world.random.sample(names, min(tasks_to_keep, len(names))))
 
-        for names in tasks_by_character.values():
-            for name in names:
-                if name not in kept:
-                    locationNamesToRemove.append(name)
+        world.random_removed_tasks = sorted({
+            name for names in tasks_by_character.values() for name in names if name not in kept
+        })
+        locationNamesToRemove.extend(world.random_removed_tasks)
 
     #Editing Gen amount DOESN'T WORK YET, MAKE THIS WORK NOONLY
     # I made it work - StudMuffin
@@ -376,7 +382,7 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         "Pray", "Ritual", "Clone", "C00LGUI", "Inject", "Coin Flip", "One Shot", "Chance Reroll",
         "Hat Fix", "Plasma Beam", "Spawn Protection", "Subspace Tripmine", "Taph Tripwire",
         "Sentry", "Dispenser", "Carry", "Vandalism", "Sk8", "Broadcast", "Activate Battery",
-        "Crystal Pitch", "Hatchet", "Pulse", "Inspire"
+        "Crystal Pitch", "Hatchet", "Pulse", "Inspire",
 
         # OM
         "Dropdash", "Peelout", "Glide", "Laser Cannon", "Switch",
@@ -425,7 +431,9 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
         # Pick up to `count` unique names from pool, without mutating pool or crashing on oversized counts.
         available = [name for name in pool if name in pool_names and name not in never_pick]
         count = max(0, min(count, len(available)))
-        return world.random.sample(pool, count)
+        picks = world.random.sample(available, count)
+        logging.info(picks)
+        return picks
 
     override_survivors = get_option_value(multiworld, player, "Override_Starting_Survivors")
     override_killers = get_option_value(multiworld, player, "Override_Starting_Killers")
@@ -993,6 +1001,8 @@ def before_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld,
 
 # This is called after slot data is set and provides the slot data at the time, in case you want to check and modify it after Manual is done with it
 def after_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld, player: int) -> dict:
+    # Lets Universal Tracker remove exactly the same random tasks as the real generation did
+    slot_data["Random_Removed_Tasks"] = getattr(world, "random_removed_tasks", [])
     return slot_data
 
 # This is called right at the end, in case you want to write stuff to the spoiler log

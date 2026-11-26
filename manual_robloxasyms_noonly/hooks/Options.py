@@ -98,7 +98,7 @@ class TasksPerCharacter(NamedRange):
     Default (all) keeps every task."""
     display_name = "Tasks per Character"
     default = -1
-    range_start = 1
+    range_start = 3
     range_end = 8
     special_range_names = {"all": -1}
 
